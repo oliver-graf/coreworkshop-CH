@@ -202,6 +202,8 @@ Task 2: Extracting Information
     In this task you will work together to use the nCLI shell to answer the following questions.
 
 **1**. Type **storagepool** list. How many storage pools does the cluster have?
+
+>>>     <ncli> storagepool ls
     
 **2**. Type the command that lists all the storage containers in the cluster. How many storage containers does the cluster have?
     
@@ -236,7 +238,8 @@ Task 2: Extracting Information
 
 **8**. In the Prism UI, confirm your findings by switching to the **Hardware** dashboard, clicking the **Table** tab, then clicking the **Disk** button. Review the **Tier** column to confirm.
 
-    **Task 3: Using nCLI to Build a Storage Container**
+Task 3: Using nCLI to Build a Storage Container
++++++++++++++++++++++++++++++++++++++++++++++++
 
 
         **Group Exercise**
