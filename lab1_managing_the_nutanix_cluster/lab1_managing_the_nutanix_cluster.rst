@@ -258,13 +258,11 @@ In this task you will create and delete a storage container using nCLI.
 
 **4**. Create a container named **cli-container1** by typing the following command:
 
->>>     <ncli> container create name=cli-container1 sp-name=default-storage-pool-#####
-
-        Where ##### is the cluster ID based on what you discovered in the previous step.
+>>>     <ncli> container create name=cli-container1 sp-name=SP01
 
 **5**. Repeat the previous step to create a second container named cli-container2 in the default storage pool
 
-**6**. From the Prism UI, click the **Dashboard** menu and go to ***Storage > Table > Storage Container** to confirm both containers were created.
+**6**. From the Prism UI, click the **Dashboard** menu and go to **Storage > Table > Storage Container** to confirm both containers were created.
 
 
     |image014|
