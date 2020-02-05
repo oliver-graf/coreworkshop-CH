@@ -126,19 +126,21 @@ IP Address            Description
 ===================== ==============================================
 10.*XYZ*.\ *XYZ*\ .7  Nutanix Cluster Virtual IP
 10.*XYZ*.\ *XYZ*\ .10 **PC** VM IP, Prism Central
-10.*XYZ*.\ *XYZ*\ .54 **DC1** VM IP, nutanix.local Domain Controller
-10.*XYZ*.\ *XYZ*\ .41 **DC2** VM IP, nutanix.local Domain Controller
+10.*XYZ*.\ *XYZ*\ .15 **DC1** VM IP, nutanix.local Domain Controller
+10.*XYZ*.\ *XYZ*\ .16 **DC2** VM IP, nutanix.local Domain Controller
 ===================== ==============================================
 
 
 Each cluster is configured with 1 VLAN which can be used for VMs:
 
 
-============ ========================= ====== ============================================
-Network Name Address                   VLAN   DHCP Scope
-============ ========================= ====== ============================================
-Network-01   10.*XYZ*.\ *XYZ*\ .1/25   0      10.*XYZ*.\ *XYZ*\ .50-10.*XYZ*.\ *XYZ*\ .124
-============ ========================= ====== ============================================
+================= ========================= ====== =============================================
+Network           Name Address              VLAN   DHCP Scope
+================= ========================= ====== =============================================
+Network-01        10.*XYZ*.\ *XYZ*\ .1/26   0      10.*XYZ*.\ *XYZ*\ .33-10.*XYZ*.\ *XYZ*\ .61
+Unmanaged Network                           71
+Managed Network   10.*XYZ*.\ *XYZ*\ .128/26 71     10.*XYZ*.\ *XYZ*\ .132-10.*XYZ*.\ *XYZ*\ .253
+================= ========================= ====== =============================================
 
 
 
