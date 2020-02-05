@@ -47,7 +47,7 @@
   appendix/glossary
   appendix/basics
 
-.. _getting_started:
+.. _Getting_Started:
 
 ---------------
 Getting Started
@@ -61,10 +61,16 @@ At the end of the bootcamp, attendees should understand the Core concepts and te
 
 What's New
 ++++++++++
-- Workshop updated for the following software versions:
-    - AOS & PC 5.10.x
 
-- Optional Lab Updates:
+..
+
+ * Workshop updated for the following software versions:
+    
+    * AOS & PC 5.11.x
+
+ * Optional Lab Updates:
+
+    * This Workshop has been done with the 1-Click-Demo 
 
 
 Agenda
@@ -81,12 +87,12 @@ Introductions
 
 - Name
 - Familiarity with Nutanix
+- Expectations
 
 Initial Setup
 +++++++++++++
 
-- Take note of the *Passwords* being used.
-- Log into your virtual desktops (connection info below)
+- There will be a handout with all the information you need to connect to the Lab
 
 Environment Details
 +++++++++++++++++++
@@ -98,103 +104,81 @@ Networking
 
 Hosted POC clusters follow a standard naming convention:
 
-- **Cluster Name** - POC\ *XYZ*
-- **Subnet** - 10.**21**.\ *XYZ*\ .0
-- **Cluster IP** - 10.**21**.\ *XYZ*\ .37
-
-If provisioned from the marketing pool:
-
-- **Cluster Name** - MKT\ *XYZ*
-- **Subnet** - 10.**20**.\ *XYZ*\ .0
-- **Cluster IP** - 10.**20**.\ *XYZ*\ .37
+=================== ====================
+**Cluster Name**    POC\ *XYZ*
+**Subnet**          10.*XYZ*.\ *XYZ*\ .0
+**Cluster IP**      10.*XYZ*.\ *XYZ*\ .7
+=================== ====================
 
 For example:
 
-- **Cluster Name** - POC055
-- **Subnet** - 10.21.55.0
-- **Cluster IP** - 10.21.55.37
+=================== ==========
+**Cluster Name**    POC055
+**Subnet**          10.21.55.0
+**Cluster IP**      10.21.55.7
+=================== ==========
 
 Throughout the Workshop there are multiple instances where you will need to substitute *XYZ* with the correct octet for your subnet, for example:
 
-.. list-table::
-   :widths: 25 75
-   :header-rows: 1
-   * - IP Address
-     - Description
-   * - 10.21.\ *XYZ*\ .37
-     - Nutanix Cluster Virtual IP
-   * - 10.21.\ *XYZ*\ .39
-     - **PC** VM IP, Prism Central
-   * - 10.21.\ *XYZ*\ .40
-     - **DC** VM IP, NTNXLAB.local Domain Controller
 
-Each cluster is configured with 2 VLANs which can be used for VMs:
+===================== ==============================================
+IP Address            Description
+===================== ==============================================
+10.*XYZ*.\ *XYZ*\ .7  Nutanix Cluster Virtual IP
+10.*XYZ*.\ *XYZ*\ .10 **PC** VM IP, Prism Central
+10.*XYZ*.\ *XYZ*\ .54 **DC1** VM IP, nutanix.local Domain Controller
+10.*XYZ*.\ *XYZ*\ .41 **DC2** VM IP, nutanix.local Domain Controller
+===================== ==============================================
 
-.. list-table::
-  :widths: 25 25 10 40
-  :header-rows: 1
-  * - Network Name
-    - Address
-    - VLAN
-    - DHCP Scope
-  * - Primary
-    - 10.21.\ *XYZ*\ .1/25
-    - 0
-    - 10.21.\ *XYZ*\ .50-10.21.\ *XYZ*\ .124
-  * - Secondary
-    - 10.21.\ *XYZ*\ .129/25
-    - *XYZ1*
-    - 10.21.\ *XYZ*\ .132-10.21.\ *XYZ*\ .253
+
+Each cluster is configured with 1 VLAN which can be used for VMs:
+
+
+============ ========================= ====== ============================================
+Network Name Address                   VLAN   DHCP Scope
+============ ========================= ====== ============================================
+Network-01   10.*XYZ*.\ *XYZ*\ .1/25   0      10.*XYZ*.\ *XYZ*\ .50-10.*XYZ*.\ *XYZ*\ .124
+============ ========================= ====== ============================================
+
+
 
 Credentials
 ...........
 
 .. note::
 
-  The *<Cluster Password>* is unique to each cluster and will be provided by the leader of the Workshop.
+  The *<Cluster Password>* is the Same for all
 
-.. list-table::
-   :widths: 25 35 40
-   :header-rows: 1
-   * - Credential
-     - Username
-     - Password
-   * - Prism Element
-     - admin
-     - *<Cluster Password>*
-   * - Prism Central
-     - admin
-     - *<Cluster Password>*
-   * - Controller VM
-     - nutanix
-     - *<Cluster Password>*
-   * - Prism Central VM
-     - nutanix
-     - *<Cluster Password>*
+============= ========== ====================
+Credential    Username   Password
+============= ========== ====================
+Prism Element admin      *<Cluster Password>*
+Prism Central admin      *<Cluster Password>*
+Controller VM nutanix    *<Cluster Password>*
+Prism Central VM nutanix *<Cluster Password>*
+============= ========== ====================
 
-Each cluster has a dedicated domain controller VM, **DC**, responsible for providing AD services for the **NTNXLAB.local** domain. The domain is populated with the following Users and Groups:
 
-.. list-table::
-   :widths: 25 35 40
-   :header-rows: 1
-   * - Group
-     - Username(s)
-     - Password
-   * - Administrators
-     - Administrator
-     - nutanix/4u
-   * - SSP Admins
-     - adminuser01-adminuser25
-     - nutanix/4u
-   * - SSP Developers
-     - devuser01-devuser25
-     - nutanix/4u
-   * - SSP Power Users
-     - poweruser01-poweruser25
-     - nutanix/4u
-   * - SSP Basic Users
-     - basicuser01-basicuser25
-     - nutanix/4u
+
+Each cluster has a dedicated domain controller VM, **DC1**, **DC2** responsible for providing AD services for the **nutanix.local** domain. The domain is populated with the following Users and Groups:
+
+================================ ============================================================================================== ====================
+Group                            Username(s)                                                                                    Password
+================================ ============================================================================================== ====================
+Customer-A-Admin-Account-Group   adm-User-1-A, adm-User-2-A, adm-User-3-A, adm-User-4-A, adm-User-5-A                           *<Cluster Password>*
+Customer-A-Service-Account-Group ntnx-bck-svc-A, ntnx-exc-svc-A, ntnx-ntx-svc-A, ntnx-psr-svc-A, ntnx-sql-svc-A, ntnx-xda-svc-A *<Cluster Password>*
+Customer-A-User-Account-Group    user-1-A, user-2-A, user-3-A, user-4-A, user-5-A                                               *<Cluster Password>*
+Customer-B-Admin-Account-Group   adm-User-1-B, adm-User-2-B, adm-User-3-B, adm-User-4-B, adm-User-5-B                           *<Cluster Password>*
+Customer-B-Service-Account-Group ntnx-bck-svc-B, ntnx-exc-svc-B, ntnx-ntx-svc-B, ntnx-psr-svc-B, ntnx-sql-svc-B, ntnx-xda-svc-B *<Cluster Password>*
+Customer-B-User-Account-Group    user-1-B, user-2-B, user-3-B, user-4-B, user-5-B                                               *<Cluster Password>*
+Customer-C-Admin-Account-Group   adm-User-1-C, adm-User-2-C, adm-User-3-C, adm-User-4-C, adm-User-5-C                           *<Cluster Password>*
+Customer-C-Service-Account-Group ntnx-bck-svc-C, ntnx-exc-svc-C, ntnx-ntx-svc-C, ntnx-psr-svc-C, ntnx-sql-svc-C, ntnx-xda-svc-C *<Cluster Password>*
+Customer-C-User-Account-Group    user-1-C, user-2-C, user-3-C, user-4-C, user-5-C                                               *<Cluster Password>*
+Customer-D-Admin-Account-Group   adm-User-1-D, adm-User-2-D, adm-User-3-D, adm-User-4-D, adm-User-5-D                           *<Cluster Password>*
+Customer-D-Service-Account-Group ntnx-bck-svc-D, ntnx-exc-svc-D, ntnx-ntx-svc-D, ntnx-psr-svc-D, ntnx-sql-svc-D, ntnx-xda-svc-D *<Cluster Password>*
+Customer-D-User-Account-Group    user-1-D, user-2-D, user-3-D, user-4-D, user-5-D                                               *<Cluster Password>*
+================================ ============================================================================================== ====================
+
 
 Access Instructions
 +++++++++++++++++++
@@ -202,8 +186,8 @@ Access Instructions
 The Nutanix Hosted POC environment can be accessed a number of different ways:
 
 
-Parallels VDI
-.................
+Parallels VDI this is slow and shoudl only be used if any thing else dose not work.
+...................................................................................
 
 Login to: https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutanix.com (for RTP)
 
@@ -211,7 +195,7 @@ Login to: https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutan
 **Non-Employees** - **Username:** POCxxx-User01 (up to POCxxx-User20), **Password:** *<Provided by Instructor>*
 
 Employee Pulse Secure VPN
-..........................
+.........................
 
 To download the client: login to https://xlv-uswest1.nutanix.com or https://xlv-useast1.nutanix.com - **Username:** POCxxx-User01 (up to POCxxx-User20), **Password:** *<Provided by Instructor>*
 
@@ -221,20 +205,39 @@ In Pulse Secure Client, **Add** a connection:
 
 For PHX:
 
-- **Type** - Policy Secure (UAC) or Connection Server
-- **Name** - X-Labs - PHX
-- **Server URL** - xlv-uswest1.nutanix.com
+============== ========================================
+**Type**       Policy Secure (UAC) or Connection Server
+**Name**       X-Labs - PHX
+**Server URL** xlv-uswest1.nutanix.com
+============== ========================================
 
 For RTP:
 
-- **Type** - Policy Secure (UAC) or Connection Server
-- **Name** - X-Labs - RTP
-- **Server URL** - xlv-useast1.nutanix.com
+============== ========================================
+**Type**       Policy Secure (UAC) or Connection Server
+**Name**       X-Labs - RTP
+**Server URL** xlv-useast1.nutanix.com
+============== ========================================
+
+Bootcamp WLAN Connection
+........................
+
+============ ==========
+ntnx_hpoc_5G nutanix/4u
+ntnx_hpoc    nutanix/4u
+============ ==========
 
 
 Nutanix Version Info
 ++++++++++++++++++++
 
-- **AHV Version** - AHV 20170830.185 (5.9+/5.10+)
-- **AOS Version** - 5.10.2
-- **PC Version** - 5.10.2
+- **AHV Version** - AHV 20170830.301  (5.11+/5.11+)
+- **AOS Version** - 5.11.1
+- **PC Version** - 5.11.1
+
+----------------------
+**Indices and tables**
+----------------------
+
+* :ref:`genindex`
+* :ref:`search`

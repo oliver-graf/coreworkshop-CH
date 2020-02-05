@@ -1,4 +1,4 @@
-.. _lab_nutanix_technology_overview:
+.. _mod1_nutanix_technology_overview:
 
 Nutanix Tech Overview Lab
 =========================
