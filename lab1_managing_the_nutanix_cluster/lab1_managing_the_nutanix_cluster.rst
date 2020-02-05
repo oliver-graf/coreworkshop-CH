@@ -43,7 +43,7 @@ Nutanix cluster.
 
     a. Open the PuTTY utility on your virtual desktop.
     b. In the PuTTY Host Name (or IP address) field, type the IP address of the first CVM from your lab handout.
-    c. In the PuTTY terminal window, login using the default CVM credentials. user: nutanix and password: *<cluster password>*
+    c. In the PuTTY terminal window, login using the default CVM credentials. user: nutanix and password: *<password>*
     d. Once logged in, type the command:
         
         $ ncli cluster get-ntp-servers
@@ -73,7 +73,7 @@ What is the license type on your cluster?
 
 **4**. When completed, click OK, got it! to exit the simulation.
 
-**5**. Click the dashboard drop down menu (currently labeled Health). This drop down menu will show of all the dashboards. Select the VM dashboard.
+**5**. Click the dashboard drop down menu (currently labeled Health). This drop down menu will show of all the dashboards. Select the **VM** dashboard.
 
 
     |image006|
@@ -141,6 +141,7 @@ Exercise 4: Exploring Prism Views
     What is the IP of the current name server (Name Servers)?
 
 **3**. Click the cluster name at the top-left corner of the UI and review the **Cluster Details** window.
+
 **4**. Explore the functions available under the **User** menu (it will be labeled with the currently logged-in user, **admin**). The several **Download** selections open new tabs in your browser and require internet access.
 
 
