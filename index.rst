@@ -3,10 +3,10 @@
 .. toctree::
   :maxdepth: 2
   :caption: MANAGING THE NUTANIX CLUSTER
-  :name: _nutanix_configuration
+  :name: _managing_the_nutanix_cluster
   :hidden:
 
-  lab_nutanix_tech_overview/lab_nutanix_tech_overview
+  exercise1_managing_the_nutanix_cluster/execice1_managing_the_nutanix_cluster
   lab_storage_configuration/lab_storage_configuration
   lab_network_configuration/lab_network_configuration
 
