@@ -1,6 +1,6 @@
 .. _managing_the_nutanix_cluster:
 
-Module 1
+Lab 1
 ========
 
 Exercise 1: Conducting Prism Element initial setup
