@@ -149,15 +149,15 @@ Credentials
 
 .. note::
 
-  The *<Cluster Password>* is the Same for all
+  The *<Password>* is the Same for all
 
 ============= ========== ====================
 Credential    Username   Password
 ============= ========== ====================
-Prism Element admin      *<Cluster Password>*
-Prism Central admin      *<Cluster Password>*
-Controller VM nutanix    *<Cluster Password>*
-Prism Central VM nutanix *<Cluster Password>*
+Prism Element admin      *<Password>*
+Prism Central admin      *<Password>*
+Controller VM nutanix    *<Password>*
+Prism Central VM nutanix *<Password>*
 ============= ========== ====================
 
 
@@ -167,18 +167,18 @@ Each cluster has a dedicated domain controller VM, **DC1**, **DC2** responsible 
 ================================ ============================================================================================== ====================
 Group                            Username(s)                                                                                    Password
 ================================ ============================================================================================== ====================
-Customer-A-Admin-Account-Group   adm-User-1-A, adm-User-2-A, adm-User-3-A, adm-User-4-A, adm-User-5-A                           *<Cluster Password>*
-Customer-A-Service-Account-Group ntnx-bck-svc-A, ntnx-exc-svc-A, ntnx-ntx-svc-A, ntnx-psr-svc-A, ntnx-sql-svc-A, ntnx-xda-svc-A *<Cluster Password>*
-Customer-A-User-Account-Group    user-1-A, user-2-A, user-3-A, user-4-A, user-5-A                                               *<Cluster Password>*
-Customer-B-Admin-Account-Group   adm-User-1-B, adm-User-2-B, adm-User-3-B, adm-User-4-B, adm-User-5-B                           *<Cluster Password>*
-Customer-B-Service-Account-Group ntnx-bck-svc-B, ntnx-exc-svc-B, ntnx-ntx-svc-B, ntnx-psr-svc-B, ntnx-sql-svc-B, ntnx-xda-svc-B *<Cluster Password>*
-Customer-B-User-Account-Group    user-1-B, user-2-B, user-3-B, user-4-B, user-5-B                                               *<Cluster Password>*
-Customer-C-Admin-Account-Group   adm-User-1-C, adm-User-2-C, adm-User-3-C, adm-User-4-C, adm-User-5-C                           *<Cluster Password>*
-Customer-C-Service-Account-Group ntnx-bck-svc-C, ntnx-exc-svc-C, ntnx-ntx-svc-C, ntnx-psr-svc-C, ntnx-sql-svc-C, ntnx-xda-svc-C *<Cluster Password>*
-Customer-C-User-Account-Group    user-1-C, user-2-C, user-3-C, user-4-C, user-5-C                                               *<Cluster Password>*
-Customer-D-Admin-Account-Group   adm-User-1-D, adm-User-2-D, adm-User-3-D, adm-User-4-D, adm-User-5-D                           *<Cluster Password>*
-Customer-D-Service-Account-Group ntnx-bck-svc-D, ntnx-exc-svc-D, ntnx-ntx-svc-D, ntnx-psr-svc-D, ntnx-sql-svc-D, ntnx-xda-svc-D *<Cluster Password>*
-Customer-D-User-Account-Group    user-1-D, user-2-D, user-3-D, user-4-D, user-5-D                                               *<Cluster Password>*
+Customer-A-Admin-Account-Group   adm-User-1-A, adm-User-2-A, adm-User-3-A, adm-User-4-A, adm-User-5-A                           *<Password>*
+Customer-A-Service-Account-Group ntnx-bck-svc-A, ntnx-exc-svc-A, ntnx-ntx-svc-A, ntnx-psr-svc-A, ntnx-sql-svc-A, ntnx-xda-svc-A *<Password>*
+Customer-A-User-Account-Group    user-1-A, user-2-A, user-3-A, user-4-A, user-5-A                                               *<Password>*
+Customer-B-Admin-Account-Group   adm-User-1-B, adm-User-2-B, adm-User-3-B, adm-User-4-B, adm-User-5-B                           *<Password>*
+Customer-B-Service-Account-Group ntnx-bck-svc-B, ntnx-exc-svc-B, ntnx-ntx-svc-B, ntnx-psr-svc-B, ntnx-sql-svc-B, ntnx-xda-svc-B *<Password>*
+Customer-B-User-Account-Group    user-1-B, user-2-B, user-3-B, user-4-B, user-5-B                                               *<Password>*
+Customer-C-Admin-Account-Group   adm-User-1-C, adm-User-2-C, adm-User-3-C, adm-User-4-C, adm-User-5-C                           *<Password>*
+Customer-C-Service-Account-Group ntnx-bck-svc-C, ntnx-exc-svc-C, ntnx-ntx-svc-C, ntnx-psr-svc-C, ntnx-sql-svc-C, ntnx-xda-svc-C *<Password>*
+Customer-C-User-Account-Group    user-1-C, user-2-C, user-3-C, user-4-C, user-5-C                                               *<Password>*
+Customer-D-Admin-Account-Group   adm-User-1-D, adm-User-2-D, adm-User-3-D, adm-User-4-D, adm-User-5-D                           *<Password>*
+Customer-D-Service-Account-Group ntnx-bck-svc-D, ntnx-exc-svc-D, ntnx-ntx-svc-D, ntnx-psr-svc-D, ntnx-sql-svc-D, ntnx-xda-svc-D *<Password>*
+Customer-D-User-Account-Group    user-1-D, user-2-D, user-3-D, user-4-D, user-5-D                                               *<Password>*
 ================================ ============================================================================================== ====================
 
 
@@ -193,8 +193,7 @@ Parallels VDI this is slow and shoudl only be used if any thing else dose not wo
 
 Login to: https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutanix.com (for RTP)
 
-**Nutanix Employees** - Use your NUTANIXDC credentials
-**Non-Employees** - **Username:** POCxxx-User01 (up to POCxxx-User20), **Password:** *<Provided by Instructor>*
+**Username:** POCxxx-User01 (up to POCxxx-User20), **Password:** *<Provided by Instructor>*
 
 Employee Pulse Secure VPN
 .........................
@@ -233,9 +232,9 @@ ntnx_hpoc    nutanix/4u
 Nutanix Version Info
 ++++++++++++++++++++
 
-- **AHV Version** - AHV 20170830.301  (5.11+/5.11+)
-- **AOS Version** - 5.11.1
-- **PC Version** - 5.11.1
+  * **AHV Version** - AHV 20170830.301  (5.11+/5.11+)
+  * **AOS Version** - 5.11.1
+  * **PC Version** - 5.11.1
 
 ----------------------
 **Indices and tables**
