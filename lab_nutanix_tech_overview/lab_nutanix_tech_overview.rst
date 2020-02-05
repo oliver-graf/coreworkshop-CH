@@ -1,16 +1,15 @@
 .. _lab_nutanix_technology_overview:
 
----------------------------------
 Nutanix Tech Overview Lab
----------------------------------
+=========================
 
 Overview
-++++++++
+--------
 
 This lab will introduce the Prism Element UI, and familiarize you with its layout and navigation.
 
 Prism Element
-+++++++++++++
+-------------
 
 The Prism service provides the web UI for managing Nutanix clusters and runs on every Controller VM (CVM). This local Prism service, referred to Prism Element, can be accessed via the IP of any individual CVM, or via the virtual IP for the cluster, which will redirect to the current Prism leader.
 
@@ -67,25 +66,25 @@ From the Firefox web browser (preferred), log into the Nutanix Prism GUI using t
 
 #. Review other sections of the Prism UI
 
-   - Health :fa:`heartbeat`
-   - Alarms :fa:`bell`
-   - Tasks :fa:`circle-o`
-   - Search :fa:`search`
-   - Help :fa:`question`
-   - Configuration :fa:`cog`
-   - User :fa:`user`
+   - Health 
+   - Alarms 
+   - Tasks 
+   - Search 
+   - Help 
+   - Configuration 
+   - User 
 
    .. figure:: images/nutanix_tech_overview_05.png
 
-.......................
+
 Prism Element UI Review
-.......................
+-----------------------
 
 Where would you locate the version of AOS you are running?
 
 .. figure:: images/nutanix_tech_overview_06.png
 
-You can do this by clicking on the **User** drop down :fa:`user`, and clicking **About Nutanix**.
+You can do this by clicking on the **User** drop down , and clicking **About Nutanix**.
 
 How would you get to the following screen to view a summary of the number of hosts (or nodes) and the resource capacity and current utilization?
 
@@ -103,7 +102,7 @@ What page would show you the latest activity in the system? On this page, you ca
 
 .. figure:: images/nutanix_tech_overview_09.png
 
-First Way, In **Prism > Tasks**, click **Tasks**. Second Way, click :fa:`circle-o`.
+First Way, In **Prism > Tasks**, click **Tasks**. Second Way, click.
 
 .. note::
 
@@ -120,7 +119,7 @@ First Way, In **Prism > Tasks**, click **Tasks**. Second Way, click :fa:`circle-
   .. figure:: images/nutanix_tech_overview_14.png
 
 Takeaways
-+++++++++
+---------
 
 - Prism is thoughtfully laid out UI
 - Critical information is displayed front and center

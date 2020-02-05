@@ -2,7 +2,7 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Nutanix Configuration
+  :caption: MANAGING THE NUTANIX CLUSTER
   :name: _nutanix_configuration
   :hidden:
 
