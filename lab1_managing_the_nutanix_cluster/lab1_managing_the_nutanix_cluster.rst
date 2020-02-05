@@ -183,11 +183,11 @@ Task 1: Accessing nCLI and Using Basic Commands
 
 **4**. To display help for the datastore entity, type the command: 
 
-    **<ncli> datastore help**
+>>>     <ncli> datastore help
 
 **5**. To get help on the container entity, type the command:
 
-    **<ncli> container help**
+>>>     <ncli> container help
 
 What command do you enter to get nCLI help for user accounts?
 
@@ -206,17 +206,17 @@ Task 2: Extracting Information
     
 **3**. Refer to the storage container named **default** and answer the following questions:
         
-        - How much free space is available in the storage container?
-        - How much space has been used in the storage container?
-        - What is the compression setting?
+        * How much free space is available in the storage container?
+        * How much space has been used in the storage container?
+        * What is the compression setting?
 
 **4**. Find and use the command to list all virtual machines in the cluster. How many virtual machines are there in the cluster? Does this include or exclude CVMs?
     
 **5**. Type **cluster info** to display cluster information. Answer the following questions:
         
-        - What AOS software version is running on the cluster? (Compare the output from the cluster version command.)
-        - How many nodes and blocks are in the cluster?
-        - What is the cluster time zone?
+        * What AOS software version is running on the cluster? (Compare the output from the cluster version command.)
+        * How many nodes and blocks are in the cluster?
+        * What is the cluster time zone?
 
 **6**. Type **exit** to leave the **nCLI** shell and return to the **Bash** shell.
 
@@ -230,8 +230,8 @@ Task 2: Extracting Information
 
 ..
 
-        - How many SSDs are in the cluster?
-        - How many HDDs are in the cluster?
+        * How many SSDs are in the cluster?
+        * How many HDDs are in the cluster?
 
 **8**. In the Prism UI, confirm your findings by switching to the **Hardware** dashboard, clicking the **Table** tab, then clicking the **Disk** button. Review the **Tier** column to confirm.
 
