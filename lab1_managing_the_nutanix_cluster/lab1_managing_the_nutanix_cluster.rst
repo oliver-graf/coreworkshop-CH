@@ -46,7 +46,8 @@ Nutanix cluster.
     c. In the PuTTY terminal window, login using the default CVM credentials. user: nutanix and password: *<password>*
     d. Once logged in, type the command:
         
-        $ ncli cluster get-ntp-servers
+>>>     $ ncli cluster get-ntp-servers
+
     e. Confirm the IP address you entered in Prism is shown. Type exit to close the PuTTY session.
 
 Exercise 3: Using Nutanix Interfaces
