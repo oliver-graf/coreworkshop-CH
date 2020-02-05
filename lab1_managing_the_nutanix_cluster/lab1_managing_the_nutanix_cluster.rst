@@ -99,11 +99,10 @@ How much memory is allocated to each CVM?
 **8**. Click the gear icon, scroll through the Settings on the left, select SSL Certificate, write down the Type and Algogithm
 
 
-+---------------------------------------+--------------------------------------+
-| Key Type                              | **HA-Lab-<initials>**                |
-+---------------------------------------+--------------------------------------+
-| Signing Algorithm                     | **1**                                |
-+---------------------------------------+--------------------------------------+
+======================================== =======================================
+Key Type
+Signing Algorithm
+======================================== =======================================
 
 
 **9**. Click the magnifying glass found at the top right of the Prism window.
