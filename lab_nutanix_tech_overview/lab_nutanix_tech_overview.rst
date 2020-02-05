@@ -123,3 +123,11 @@ Takeaways
 
 - Prism is thoughtfully laid out UI
 - Critical information is displayed front and center
+
+
+.. |image001| image:: images/img001.jpg
+.. |image002| image:: images/img002.jpg
+.. |image003| image:: images/img003.jpg
+.. |image004| image:: images/img004.jpg
+.. |image005| image:: images/img005.jpg
+.. |image006| image:: images/img006.jpg
