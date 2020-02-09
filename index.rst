@@ -26,13 +26,11 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Deploying and Managing Workloads
-  :name: _deploying_and_managing_workloads
-  :hidden:
+  :caption: VM Managment
+  :name: _lab4_vm_managment
 
-  lab_deploy_workloads/lab_deploy_workloads
-  lab_manage_workloads/lab_manage_workloads
-  lab_data_protection/lab_data_protection
+  lab4_vm_managment/lab4_vm_managment
+
 
 .. toctree::
   :maxdepth: 2

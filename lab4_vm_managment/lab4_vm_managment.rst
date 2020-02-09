@@ -1,7 +1,7 @@
-.. _module5_vm_managment:
+.. _lab4_vm_managment:
 
 
-Module 5
+Lab4
 ========
 
 Exercise 1: Uploading an Image
