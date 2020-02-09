@@ -1,7 +1,7 @@
 .. _lab4_vm_managment:
 
 
-Lab4
+Lab 4
 ========
 
 Exercise 1: Uploading an Image
