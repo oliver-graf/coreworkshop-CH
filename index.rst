@@ -7,8 +7,14 @@
   :hidden:
 
   lab1_managing_the_nutanix_cluster/lab1_managing_the_nutanix_cluster
-  lab_storage_configuration/lab_storage_configuration
-  lab_network_configuration/lab_network_configuration
+
+.. toctree::
+  :maxdepth: 2
+  :caption: SECURING THE NUTANIX CLUSTER
+  :name: _lab2_Securing the Nutanix Cluster
+  :hidden:
+
+  lab2_securing_nutanix_cluster/lab2_securing_nutanix_cluster
 
 .. toctree::
   :maxdepth: 2
