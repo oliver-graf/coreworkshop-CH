@@ -1,6 +1,6 @@
-.. _module4_networking:
+.. _lab3_networking:
 
-Module 4
+Lab 3
 ========
 
 Exercise 1: Creating an Unmanaged Network
