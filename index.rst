@@ -18,6 +18,14 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: NETWORKING
+  :name: _networking
+  :hidden:
+
+  lab3_networking/lab3_networking
+
+.. toctree::
+  :maxdepth: 2
   :caption: Deploying and Managing Workloads
   :name: _deploying_and_managing_workloads
   :hidden:
