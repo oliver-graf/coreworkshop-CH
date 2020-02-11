@@ -34,11 +34,11 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Security Compliance
-  :name: _security_compliance
+  :caption: Healt Monitoring and Alerts
+  :name: _Healtsmonitoring_and_alerts
   :hidden:
 
-  lab_stig/lab_stig
+  lab5_healt_mintoring_and_alerts/lab5_healt_mintoring_and_alerts
 
 .. toctree::
   :maxdepth: 2
