@@ -4,12 +4,12 @@
 Lab 4
 ========
 
-Exercise 1: Uploading an Image
+Exercise 1: Uploading an Image (Optional)
 ------------------------------
 
         **Group Exercise**
 
-    In this exercise you will upload ISO images for Windows Server 2012 R2, CentOS7 and Nutanix VirtIO.
+    In this exercise you will upload ISO images for Windows Server 2016, CentOS7 and Nutanix VirtIO.
 
 **1**. Log on to your cluster’s Prism UI as the **admin** user.
 
@@ -50,7 +50,7 @@ Storage Container **ISOs**
 
   **c**. In the **Create Image** dialog box, under **Image Source**, click **Upload a file.**
 
-  **d**. Click **Choose File** and navigate to the location of the **Windows 2012 R2 ISO** file and select it. The file name and location are listed in your lab handout.
+  **d**. Click **Choose File** and navigate to the location of the **Windows 2016 ISO** file and select it. The file name and location are listed in your lab handout.
   
   **e**. Click **Open**.
 
@@ -150,20 +150,15 @@ Memory  					**4**
 
 ..
 
-5. Attach the **Windows 2012 R2 ISO** from the Image Service to the VM by completing the **Update Disk** dialog box with the information contained in the following table:
+5. Attach the **Windows2016ISO** from the Image Service to the VM by completing the **Update Disk** dialog box with the information contained in the following table:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
 
- * - Type
-   - **CD-ROM (greyed out)**
- * - OPERATION   
-   - **Clone from Image Service**
- * - BUS TYPE   
-   - **Leave at default (IDE)**.
- * - IMAGE   
-   - **Select the Windows 2012 R2 ISO image**
+============== ===============================
+Type **CD-ROM (greyed out)**
+OPERATION **Clone from Image Service**
+BUS TYPE **Leave at default (IDE)**.
+IMAGE **Select the Windows 2016 ISO image**
+============== ===============================
 
 ..
 
@@ -173,18 +168,13 @@ Memory  					**4**
 
 **8**. Attach the **Nutanix VirtIO ISO** from the Image Service to the VM by completing the **Update Disk** dialog box with the information contained in the following table:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
 
- * - Type
-   - **CD-ROM (greyed out)**
- * - OPERATION   
-   - **Clone from Image Service**
- * - BUS TYPE   
-   - **Leave at default (IDE)**.
- * - IMAGE   
-   - **Select the Nutanix VirtIO image**
+============== ===============================
+Type **CD-ROM (greyed out)**
+OPERATION **Clone from Image Service**
+BUS TYPE **Leave at default (IDE)**.
+IMAGE **Select the Nutanix VirtIO image**
+
 
 ..
 
@@ -194,22 +184,14 @@ Memory  					**4**
 
 **11**. Add a **40GB** virtual disk to the VM by completing the **Update Disk** dialog box with the information contained in the following table:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
+============== ===============================
+Type **DISK**
+OPERATION **Allocate on Storage Container**
+BUS TYPE **Leave at default (SCSI)**.
+Storage Container **default**
+Size (GiB) **40**.
+Index **Leave at the default value**
 
- * - Type
-   - **DISK**
- * - OPERATION   
-   - **Allocate on Storage Container**
- * - BUS TYPE   
-   - **Leave at default (SCSI)**.
- * - Storage Container    
-   - **default-container-#####**
- * - Size (GiB)    
-   - **40**.
- * - Index    
-   - **Leave at the default value**
 
 ..
 
@@ -235,7 +217,9 @@ Task 2: Installing the Windows Operating System
 
     **Individual Exercise**
 
-  In this exercise, you will work individually to power on your new virtual machine and install the **Windows Server 2012 R2** operating system. These steps require a console connection to the VM. To get the maximum ability to resize the console, use **Internet Explorer** as the Prism browser. If you would rather use Chrome or Firefox, you will need to disable the pop-up blocker. All console exercises can be done with any browser.
+**Optional**
+
+  In this exercise, you will work individually to power on your new virtual machine and install the **Windows 2016 ISO** operating system. These steps require a console connection to the VM. To get the maximum ability to resize the console, use **Internet Explorer** as the Prism browser. If you would rather use Chrome or Firefox, you will need to disable the pop-up blocker. All console exercises can be done with any browser.
 
  **Chrome**
 
