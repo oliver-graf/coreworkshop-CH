@@ -57,7 +57,7 @@ Storage Container **ISOs**
   **f**. Click **Save**.
 
 **8**. Upload the **CentOS ISO** to the Image Configuration:
-
+    
   **a**. Click **+ Upload Image**.
 
   **b**. Fill in the **Create Image** dialog box fields as follows:
@@ -69,13 +69,12 @@ Storage Container **ISOs**
 ================= ========================
 ..
 
-**c**. In the **Create Image** dialog box, under **Image Source**, click **Upload a file**.
+**c**. In the **Create Image** dialog box, under **Image Source**, click **from URL**.
 
-**d**. Click **Choose File** and navigate to the location of the **CentOS ISO** file and select it. The file name and location are listed in your lab handout.
-
-**e**. Click **Open**.
+>>> http://ftp.osuosl.org/pub/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-DVD-1908.iso
 
 **f**. Click **Save**.
+
 
 **9**. Upload the Nutanix VirtIO ISO to the Image Configuration:
 
@@ -221,7 +220,7 @@ Task 2: Installing the Windows Operating System
 
 .. note::
 
-**Optional**
+ **Optional**
 
   In this exercise, you will work individually to power on your new virtual machine and install the **Windows 2016 ISO** operating system. These steps require a console connection to the VM. To get the maximum ability to resize the console, use **Internet Explorer** as the Prism browser. If you would rather use Chrome or Firefox, you will need to disable the pop-up blocker. All console exercises can be done with any browser.
 
@@ -233,7 +232,6 @@ Task 2: Installing the Windows Operating System
     * Click popups and then click the **slider** button to the right of **Blocked (recommended)**.
     * Close the tab.
 
-..
 
  **Firefox**
 
@@ -260,7 +258,7 @@ Task 2: Installing the Windows Operating System
 
 .. note::
 
-  If you receive a **boot image** error and the 2048 game is displayed, check the CD-ROM images you have set for the VM and verify the **Windows 2012 R2 installer** image is in the first CD-ROM.
+  If you receive a **boot image** error and the 2048 game is displayed, check the CD-ROM images you have set for the VM and verify the **Windows 2016 ISO installer** image is in the first CD-ROM.
 
 ..
 
@@ -268,7 +266,7 @@ Task 2: Installing the Windows Operating System
 
 **6**. Click **Install now**.
 
-**7**. Click to select **Windows Server 2012 R2 Standard (Server with a GUI)** and click **Next**.
+**7**. Click to select **Windows 2016 Standard (Desktop Experience)** and click **Next**.
 
   |image030|
 
@@ -370,39 +368,33 @@ Exercise 3: Creating a Linux Virtual Machine
 
 **2**. Complete the **Create VM** dialog box with the information contained in the following table:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
 
- * - NAME
-   - **CentOS7-<your initials>, use the initials of your full name. For example: CentOS7-ABC**
- * - DESCRIPTION   
-   - **Leave blank.**
- * - Use this VM as an agent VM   
-   - **Do not select.**.
- * - VCPU(S)     
-   - **2**
- * - NUMBER OF CORES PER VCPU    
-   - **2**.
- * - MEMORY    
-   - **8**
+=========================== =====================================
+NAME                        **CentOS7-<your initials>, use the initials of your full name. For example: CentOS7-ABC**         
+DESCRIPTION                 **Leave blank.**
+Use this VM as an agent VM  **Do not select.**.
+VCPU(S)                     **2**
+NUMBER OF CORES PER VCPU    **2**
+MEMORY                      **8**
+=========================== =====================================
+
+
 
 **3**. Scroll down in the **Create VM** dialog box to the **Disks** section and click the CD-ROM’s **pencil** icon.
 
 4. Complete the **Update Disk** dialog box with the information contained in the following table:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
 
- * - Type
-   - **CD-ROM (greyed out)**
- * - OPERATION    
-   - **Clone from Image Service**
- * - BUS TYPE   
-   - **Leave at default (IDE)**.
- * - IMAGE     
-   - **Select the CentOS7 ISO image**
+=========================== =====================================
+Type                        **CD-ROM (greyed out)**
+OPERATION                   **Clone from Image Service**
+BUS TYPE                    **Leave at default (IDE)**
+IMAGE                       **Select the CentOS7 ISO image**
+=========================== =====================================
+
+
+
+
 
 **5**. Click **Update**.
 
@@ -410,22 +402,17 @@ Exercise 3: Creating a Linux Virtual Machine
 
 **7**. Complete the **Add Disk** dialog box with the information contained in the following table:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
+=========================== =====================================
+Type                        **DISK**
+OPERATION                   **Allocate on Storage Container**
+BUS TYPE                    **Leave at default (SCSI)**.
+Storage Container           **default**
+Size                        **40**.
+Index                       **Leave at default value**
+=========================== =====================================
 
- * - Type
-   - **DISK**
- * - OPERATION   
-   - **Allocate on Storage Container**
- * - BUS TYPE   
-   - **Leave at default (SCSI)**.
- * - Storage Container     
-   - **default-container-#####**
- * - Size    
-   - **40**.
- * - Index    
-   - **Leave at default value**
+
+
 
 **8**. Click **Add**.
 
