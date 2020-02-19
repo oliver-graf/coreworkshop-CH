@@ -29,7 +29,7 @@ Advanced Settings **Do not configure Advanced Settings**
 
 **6**. Click the **gear** icon and in the **Settings** column on the left, locate and click **Image Configuration**.
 
-**7**. Upload the **Windows 2012 R2 ISO** to the Image Configuration: 
+**7**. Upload the **Windows 2016 ISO** to the Image Configuration: 
   
   **a**. Click **+ Upload Image**.
 
@@ -41,7 +41,7 @@ Advanced Settings **Do not configure Advanced Settings**
   **b**. Fill in the **Create Image** dialog box fields as follows:
 
 ================= =======================
-Name              **Windows-2012-R2-ISO**
+Name              **Windows2016ISO**
 Image Type        **ISO**
 Storage Container **ISOs**
 ================= ========================
