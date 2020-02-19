@@ -23,16 +23,13 @@ Exercise 1: Creating an Unmanaged Network
 
 **5**. Fill out the Create Network dialog box as follows:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
 
- * - Name
-   - **Unmanaged Network**
- * - VLAN ID 
-   - **Refer to your lab handout**
- * - Enable IP address management
-   - **Leave unchecked**
+============================= =============================
+Name                          **Unmanaged Network**
+LAN ID                        **Refer to your lab handout**
+Enable IP address management  **Leave unchecked**
+============================= =============================
+
 
 **6**. Click Save to create the network.
 
