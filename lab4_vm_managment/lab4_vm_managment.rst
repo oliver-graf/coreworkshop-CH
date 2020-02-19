@@ -19,16 +19,11 @@ Exercise 1: Uploading an Image
 
 **4**. Use the following table to complete the fields in the **Create Storage Container** window:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
-
- * - Name
-   - **ISOs**
- * - Storage Pool  
-   - **Use default storage pool**
- * - Advanced Settings 
-   - **Do not configure Advanced Settings**
+================= ========================================
+Name              **ISOs**
+Storage Pool      **Use default storage pool**
+Advanced Settings **Do not configure Advanced Settings**
+================= ========================================
 
 **5**. Click **Save**.
 
@@ -45,16 +40,11 @@ Exercise 1: Uploading an Image
 
   **b**. Fill in the **Create Image** dialog box fields as follows:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
-
- * - Name
-   - **Windows-2012-R2-ISO**
- * - Image Type   
-   - **ISO**
- * - Storage Container  
-   - **ISOs**
+================= =======================
+Name              **Windows-2012-R2-ISO**
+Image Type        **ISO**
+Storage Container **ISOs**
+================= ========================
 
 ..
 
@@ -72,17 +62,11 @@ Exercise 1: Uploading an Image
 
   **b**. Fill in the **Create Image** dialog box fields as follows:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
-
- * - Name
-   - **CentOS7-ISO**
- * - Image Type   
-   - **ISO**
- * - Storage Container  
-   - **ISOs**
-
+================= =======================
+Name              **CentOS7-ISO**
+Image Type        **ISO**
+Storage Container **ISOs**
+================= ========================
 ..
 
 **c**. In the **Create Image** dialog box, under **Image Source**, click **Upload a file**.
@@ -99,16 +83,11 @@ Exercise 1: Uploading an Image
 
   **b**. Fill in the **Create Image** dialog box fields as follows:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
-
- * - Name
-   - **Nutanix-VirtIO-ISO**
- * - Image Type   
-   - **ISO**
- * - Storage Container  
-   - **ISOs**
+================= =======================
+Name              **Nutanix-VirtIO-ISO**
+Image Type        **ISO**
+Storage Container **ISOs**
+================= ========================
 
 ..
 
@@ -154,22 +133,14 @@ Task 1: Building a Windows Virtual Machine
 
 **3**. Complete the Create VM dialog box with the information contained in the following table:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
-
- * - Name
-   - **Windows-<your initials>** Use the initials of your full name. For example: Windows-ABC
- * - Description   
-   - Leave blank.
- * - Use this VM as an agent VM  
-   - Do not select.
- * - VCPU(s)   
-   - **1**
- * - Number of Cores per VCPU  
-   - **2**
- * - Memory  
-   - **4**
+==========================  ========================================================================================
+Name						**Windows-<your initials>** Use the initials of your full name. For example: Windows-ABC
+Description					Leave blank.
+Use this VM as an agent VM	Do not select.
+VCPU(s)   					**1**
+Number of Cores per VCPU  	**2**
+Memory  					**4**
+==========================  ========================================================================================
 
 ..
 
