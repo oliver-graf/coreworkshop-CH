@@ -150,8 +150,7 @@ Each cluster is configured with 1 VLAN which can be used for VMs:
 Network           Name Address              VLAN   DHCP Scope
 ================= ========================= ====== =============================================
 Network-01        10.*xxx*.\ *xxx*\ .1/26   0      10.*xxx*.\ *xxx*\ .33-10.*xxx*.\ *xxx*\ .61
-Unmanaged Network                           71
-Managed Network   10.*xxx*.\ *xxx*\ .128/26 71     10.*xxx*.\ *xxx*\ .132-10.*xxx*.\ *xxx*\ .189
+Unmanaged Network                           141
 ================= ========================= ====== =============================================
 
 

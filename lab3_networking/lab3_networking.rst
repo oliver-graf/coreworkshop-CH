@@ -46,8 +46,8 @@ In this exercise you will work with your lab partner to create an IP address man
 
 
 ================================= ===============================
-Name                              **Managed Network**
-VLAN ID                           **71 (zero)**
+Name                              **Network-01**
+VLAN ID                           **0 (zero)**
 Enable IP address management      **Click the check box to enable.**
 Network IP Address/Prefix Length  **Refer to your lab handout.**
 Gateway IP address                **Refer to your lab handout.**
