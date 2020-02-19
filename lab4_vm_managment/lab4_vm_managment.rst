@@ -154,10 +154,10 @@ Memory  					**4**
 
 
 ============== ===============================
-Type **CD-ROM (greyed out)**
-OPERATION **Clone from Image Service**
-BUS TYPE **Leave at default (IDE)**.
-IMAGE **Select the Windows 2016 ISO image**
+Type           **CD-ROM (greyed out)**
+OPERATION      **Clone from Image Service**
+BUS TYPE       **Leave at default (IDE)**.
+IMAGE          **Select the Windows 2016 ISO image**
 ============== ===============================
 
 ..
@@ -174,6 +174,7 @@ Type **CD-ROM (greyed out)**
 OPERATION **Clone from Image Service**
 BUS TYPE **Leave at default (IDE)**.
 IMAGE **Select the Nutanix VirtIO image**
+============== ===============================
 
 
 ..
@@ -184,13 +185,14 @@ IMAGE **Select the Nutanix VirtIO image**
 
 **11**. Add a **40GB** virtual disk to the VM by completing the **Update Disk** dialog box with the information contained in the following table:
 
-============== ===============================
-Type **DISK**
-OPERATION **Allocate on Storage Container**
-BUS TYPE **Leave at default (SCSI)**.
+================= ===============================
+Type              **DISK**
+OPERATION         **Allocate on Storage Container**
+BUS TYPE          **Leave at default (SCSI)**.
 Storage Container **default**
-Size (GiB) **40**.
-Index **Leave at the default value**
+Size (GiB)        **40**.
+Index             **Leave at the default value**
+================= ===============================
 
 
 ..
