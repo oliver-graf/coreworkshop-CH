@@ -170,10 +170,10 @@ IMAGE          **Select the Windows 2016 ISO image**
 
 
 ============== ===============================
-Type **CD-ROM (greyed out)**
-OPERATION **Clone from Image Service**
-BUS TYPE **Leave at default (IDE)**.
-IMAGE **Select the Nutanix VirtIO image**
+Type           **CD-ROM (greyed out)**
+OPERATION      **Clone from Image Service**
+BUS TYPE       **Leave at default (IDE)**.
+IMAGE          **Select the Nutanix VirtIO image**
 ============== ===============================
 
 
@@ -218,6 +218,8 @@ Task 2: Installing the Windows Operating System
 ..
 
     **Individual Exercise**
+
+.. note::
 
 **Optional**
 
