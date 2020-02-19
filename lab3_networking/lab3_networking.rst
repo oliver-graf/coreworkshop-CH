@@ -44,22 +44,17 @@ In this exercise you will work with your lab partner to create an IP address man
 
 **2**. Use the information in the table below to complete the **Create Network** dialog box:
 
-.. list-table::
- :widths: 25 75
- :header-rows: 0
 
- * - Name
-   - **Managed Network**
- * - VLAN ID 
-   - **0 (zero)**
- * - Enable IP address management
-   - **Click the check box to enable.**
- * - Network IP Address/Prefix Length
-   - **Refer to your lab handout.**
- * - Gateway IP address  
-   - **Refer to your lab handout.**
- * - Configure Domain Settings 
-   - **Uncheck the box**
+================================= ===============================
+Name                              **Managed Network**
+VLAN ID                           **71 (zero)**
+Enable IP address management      **Click the check box to enable.**
+Network IP Address/Prefix Length  **Refer to your lab handout.**
+Gateway IP address                **Refer to your lab handout.**
+Configure Domain Settings         **Uncheck the box**
+================================= ===============================
+
+
 
 **3**. Scroll down and click **+ Create Pool**.
 
