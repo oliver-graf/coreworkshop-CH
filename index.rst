@@ -117,9 +117,9 @@ Networking
 Hosted POC clusters follow a standard naming convention:
 
 =================== ====================
-**Cluster Name**    POC\ *XYZ*
-**Subnet**          10.*XYZ*.\ *XYZ*\ .0
-**Cluster IP**      10.*XYZ*.\ *XYZ*\ .7
+**Cluster Name**    POC\ *xxx*
+**Subnet**          10.*xxx*.\ *xxx*\ .0
+**Cluster IP**      10.*xxx*.\ *xxx*\ .7
 =================== ====================
 
 For example:
@@ -136,10 +136,10 @@ Throughout the Workshop there are multiple instances where you will need to subs
 ===================== ==============================================
 IP Address            Description
 ===================== ==============================================
-10.*XYZ*.\ *XYZ*\ .7  Nutanix Cluster Virtual IP
-10.*XYZ*.\ *XYZ*\ .10 **PC** VM IP, Prism Central
-10.*XYZ*.\ *XYZ*\ .15 **DC1** VM IP, nutanix.local Domain Controller
-10.*XYZ*.\ *XYZ*\ .16 **DC2** VM IP, nutanix.local Domain Controller
+10.*xxx*.\ *xxx*\ .7  Nutanix Cluster Virtual IP
+10.*xxx*.\ *xxx*\ .10 **PC** VM IP, Prism Central
+10.*xxx*.\ *xxx*\ .15 **DC1** VM IP, nutanix.local Domain Controller
+10.*xxx*.\ *xxx*\ .16 **DC2** VM IP, nutanix.local Domain Controller
 ===================== ==============================================
 
 
@@ -149,9 +149,9 @@ Each cluster is configured with 1 VLAN which can be used for VMs:
 ================= ========================= ====== =============================================
 Network           Name Address              VLAN   DHCP Scope
 ================= ========================= ====== =============================================
-Network-01        10.*XYZ*.\ *XYZ*\ .1/26   0      10.*XYZ*.\ *XYZ*\ .33-10.*XYZ*.\ *XYZ*\ .61
+Network-01        10.*xxx*.\ *xxx*\ .1/26   0      10.*xxx*.\ *xxx*\ .33-10.*xxx*.\ *xxx*\ .61
 Unmanaged Network                           71
-Managed Network   10.*XYZ*.\ *XYZ*\ .128/26 71     10.*XYZ*.\ *XYZ*\ .132-10.*XYZ*.\ *XYZ*\ .190
+Managed Network   10.*xxx*.\ *xxx*\ .128/26 71     10.*xxx*.\ *xxx*\ .132-10.*xxx*.\ *xxx*\ .190
 ================= ========================= ====== =============================================
 
 
