@@ -25,7 +25,7 @@ Deploy this VM on your assigned cluster if directed to do so as part of **Lab Se
 
 Click the **gear** icon and in the **Settings** column on the left, locate and click **Image Configuration**.
 
-**1**. Upload the **CentOS ISO** to the Image Configuration:
+**1**. Upload the **Windows disk image** to the Image Configuration:
     
   **a**. Click **+ Upload Image**.
 
