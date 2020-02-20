@@ -49,7 +49,11 @@
 
   lab6_distributed_storage_fabric/lab6_distributed_storage_fabric
 
-..
+.. toctree::
+  :maxdepth: 2
+  :caption: APPENDIX  
+  :name: _appendix
+  :hidden:
 
   appendix/glossary
   appendix/basics
