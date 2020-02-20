@@ -4,8 +4,8 @@
 Linux Tools VM
 ---------------
 
-Overview
-+++++++++
+Upload image
+++++++++++++
 
 This CentOS VM image will be staged with packages used to support multiple lab exercises.
 

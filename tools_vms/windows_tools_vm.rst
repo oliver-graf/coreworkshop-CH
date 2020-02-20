@@ -4,8 +4,8 @@
 Windows Tools VM
 ----------------
 
-Overview
-+++++++++
+Upload image
+++++++++++++
 
 This Windows Server 2012 R2 image comes pre-installed with a number of tools, including:
 

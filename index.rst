@@ -59,11 +59,21 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: TOOLSVMs  
+  :name: _toolsvms
+  :hidden:
+
+  tools_vms/linux_tools_vm
+  tools_vms/windows_tools_vm
+
+.. toctree::
+  :maxdepth: 2
   :caption: APPENDIX  
   :name: _appendix
   :hidden:
 
   appendix/glossary
+
 
 .. _Getting_Started:
 
