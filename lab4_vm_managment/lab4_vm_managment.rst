@@ -418,7 +418,7 @@ Index                       **Leave at default value**
 
 **9**. Scroll down in the **Create VM** dialog box to the **Network Adapters (NIC)** section and click **+ Add New NIC**.
 
-**10**. In the **VLAN Name** drop-down menu, select **Managed Network** and click **Add**.
+**10**. In the **VLAN Name** drop-down menu, select **Network-01** and click **Add**.
 
 **11**. Click **Save**.
 
@@ -639,7 +639,7 @@ Task 2: Moving your Windows VM to a Managed Network
 
 **2**. In the **Update VM** dialog box, scroll down to the **Network Adapters (NIC)** area and click **+ Add New NIC**.
 
-**3**. In the **Create NIC** dialog box, select **Managed Network** from the **VLAN** Name drop-down menu and click **Add**.
+**3**. In the **Create NIC** dialog box, select **Network-01** from the **VLAN** Name drop-down menu and click **Add**.
 
 **4**. Click **Save**.
 
