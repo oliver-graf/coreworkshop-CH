@@ -51,6 +51,14 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: FILES DEPLOYMENT 
+  :name: _files_deploy
+  :hidden:
+
+  lab7_files_deploy/lab7_files_deploy
+
+.. toctree::
+  :maxdepth: 2
   :caption: APPENDIX  
   :name: _appendix
   :hidden:
@@ -116,8 +124,8 @@ Hosted POC clusters follow a standard naming convention:
 
 =================== ====================
 **Cluster Name**    POC\ *xxx*
-**Subnet**          10.*xxx*.\ *xxx*\ .0
-**Cluster IP**      10.*xxx*.\ *xxx*\ .7
+**Subnet**          10.*xxx*.\ *yyy*\ .0
+**Cluster IP**      10.*xxx*.\ *yyy*\ .7
 =================== ====================
 
 For example:
@@ -131,14 +139,16 @@ For example:
 Throughout the Workshop there are multiple instances where you will need to substitute *XYZ* with the correct octet for your subnet, for example:
 
 
-===================== ==============================================
-IP Address            Description
-===================== ==============================================
-10.*xxx*.\ *xxx*\ .7  Nutanix Cluster Virtual IP
-10.*xxx*.\ *xxx*\ .10 **PC** VM IP, Prism Central
-10.*xxx*.\ *xxx*\ .15 **DC1** VM IP, nutanix.local Domain Controller
-10.*xxx*.\ *xxx*\ .16 **DC2** VM IP, nutanix.local Domain Controller
-===================== ==============================================
+====================== ==============================================
+IP Address             Description
+====================== ==============================================
+10.*xxx*.\ *xxx*\ .7   Nutanix Cluster Virtual IP
+10.*xxx*.\ *xxx*\ .10  **PC** VM IP, Prism Central
+10.*xxx*.\ *xxx*\ .15  **DC1** VM IP, nutanix.local Domain Controller
+10.*xxx*.\ *xxx*\ .16  **DC2** VM IP, nutanix.local Domain Controller
+10.*xxx*.\ *yyy*\ .65  **Gateway** 10.*xxx*.\ *yyy*\ .64/26
+10.*xxx*.\ *yyy*\ .128 **Gateway** 10.*xxx*.\ *yyy*\ .128/25
+====================== ==============================================
 
 
 Each cluster is configured with 1 VLAN which can be used for VMs:
@@ -147,8 +157,9 @@ Each cluster is configured with 1 VLAN which can be used for VMs:
 ================= ========================= ====== =============================================
 Network           Name Address              VLAN   DHCP Scope
 ================= ========================= ====== =============================================
-Network-01        10.*xxx*.\ *xxx*\ .1/26   0      10.*xxx*.\ *xxx*\ .33-10.*xxx*.\ *xxx*\ .61
-Unmanaged Network                           141
+Network-01        10.*xxx*.\ *yyy*\ .64/26  0      10.*xxx*.\ *yyy*\ .97-10.*xxx*.\ *yyy*\ .125
+Network-02        10.*xxx*.\ *yyy*\ .129/25 yyy1   10.*xxx*.\ *yyy*\ .132-10.*xxx*.\ *yyy*\ .254
+Unmanaged Network                           71
 ================= ========================= ====== =============================================
 
 

@@ -1,7 +1,6 @@
-.. _files_deploy:
+.. _lab7_files_deploy:
 
--------------
-Files: Deploy
+Lab 7
 -------------
 
 *Estimated time to complete all Files labs: 1 HOUR*
@@ -18,32 +17,34 @@ Traditionally, file storage has been yet another silo within IT, introducing unn
 Lab Setup
 +++++++++
 
-This lab requires applications provisioned as part of the :ref:`windows_tools_vm`.
-
-If you have not yet deployed this VM, see the linked steps before proceeding with the lab.
+This lab requires applications provisioned as part of the Lab 4
 
 Deploy Files
 ++++++++++++
 
 #. In **Prism > File Server**, click **+ File Server** to open the **New File Server Pre-Check** dialogue.
 
-   .. figure:: images/1.png
+   |image085|
 
-   For the purpose of saving time, the Files 3.5.2 package has already been uploaded to your cluster. Files binaries can be downloaded directly through Prism or uploaded manually.
+..
 
-   .. figure:: images/2.png
+   |image086|
 
-   Additionally, the cluster's **Data Services** IP Address has already been configured (*10.XX.YY.38*). In a Files cluster, storage is presented to the Files VMs as a Volume Group via iSCSI, hence the dependency on the Data Services IP.
+For the purpose of saving time, the Files package has already been uploaded to your cluster. Files binaries can be downloaded directly through Prism or uploaded manually.
+
+   |image087|
+
+Additionally, the cluster's **Data Services** IP Address has already been configured (*10.xx.xx.72*). In a Files cluster, storage is presented to the Files VMs as a Volume Group via iSCSI, hence the dependency on the Data Services IP.
 
    .. note::
 
-     If staging your own environment, the Data Services IP can be easily configured by selecting :fa:`gear` **> Cluster Details**, specifying the **iSCSI Data Services IP**, and clicking **Save**. Currently, the Data Services IP must be in the same subnet as your CVMs.
+     If staging your own environment, the Data Services IP can be easily configured by selecting **Settings** **> Cluster Details**, specifying the **iSCSI Data Services IP**, and clicking **Save**. Currently, the Data Services IP must be in the same subnet as your CVMs.
 
    Lastly Files will ensure that at least 1 network has been configured on the cluster. A minimum of 2 networks are recommended to have segmentation between the client side and storage side networks.
 
 #. Click **Continue**.
 
-   .. figure:: images/3.png
+   |image088|
 
 #. Fill out the following fields:
 
@@ -51,17 +52,22 @@ Deploy Files
    - **Domain** - ntnxlab.local
    - **File Server Size** - 1 TiB
 
-   .. figure:: images/4.png
+..
+
+   |image089|
+
+..
 
    .. note::
 
      Clicking **Custom Configuration** will allow you to alter the scale up and scale out sizing of the Files VMs based on User and Throughput targets. It also allows for manual sizing of the Files cluster.
 
-     .. figure:: images/5.png
+     |image090|
+     |image091|
 
 #. Click **Next**.
 
-#. Select the **Secondary - Managed** VLAN for the **Client Network**.
+#. Select the **Network-01** VLAN for the **Client Network**.
 
    Each Files VM will consume a single IP on the client network.
 
@@ -83,7 +89,9 @@ Deploy Files
 
      <strong><font color="red">In order for the Files cluster to successfully find and join the NTNXLAB.local domain it is critical that the DNS Resolver IP is set to the Domain Controller VM IP FOR YOUR CLUSTER. By default, this field is set to the primary Name Server IP configured for the Nutanix cluster, this value is incorrect and will not work.</font></strong>
 
-   .. figure:: images/7.png
+..
+
+     |image092|
 
 #. Click **Next**.
 
@@ -154,3 +162,20 @@ What are the key things you should know about **Nutanix Files**?
 
 - Files can be rapidly deployed on top of existing Nutanix clusters, providing SMB and NFS storage for user shares, home directories, departmental shares, applications, and any other general purpose file storage needs.
 - Files is not a point solution. VM, File, Block, and Object storage can all be delivered by the same platform using the same management tools, reducing complexity and management silos.
+
+
+..
+
+.. |image085| image:: images/img085.jpg
+.. |image086| image:: images/img086.jpg
+.. |image087| image:: images/img087.jpg
+.. |image088| image:: images/img088.jpg
+.. |image089| image:: images/img089.jpg
+.. |image090| image:: images/img090.jpg
+.. |image091| image:: images/img091.jpg
+.. |image092| image:: images/img092.jpg
+.. |image093| image:: images/img093.jpg
+.. |image094| image:: images/img094.jpg
+.. |image095| image:: images/img095.jpg
+.. |image096| image:: images/img096.jpg
+.. |image097| image:: images/img097.jpg
