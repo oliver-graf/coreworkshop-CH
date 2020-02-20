@@ -289,12 +289,8 @@ Task 4: Observing the Result of Compression Savings
 
    What is the difference between the Compressed-Container and the NotCompressedContainer for the Data Reduction Ratio?
 
-**7**. From the **VM** dashboard, remove the **DSF-<your initials>** VM by selecting the VM from the list and clicking **Delete**. Check the box to delete all snapshots.
 
 ..
-
-   |image084|
-
 
 .. |image071| image:: images/img071.jpg
 .. |image072| image:: images/img072.jpg
@@ -309,4 +305,3 @@ Task 4: Observing the Result of Compression Savings
 .. |image081| image:: images/img081.jpg
 .. |image082| image:: images/img082.jpg
 .. |image083| image:: images/img083.jpg
-.. |image084| image:: images/img084.jpg
