@@ -10,9 +10,7 @@ Exercise 1: Creating a Performance Chart
 
    In this exercise you will create a performance chart to monitor VM disk I/O.
 
-**1**. If you are not logged into your Prism UI, log on now as the **admin**
-
-   user.
+**1**. If you are not logged into your Prism UI, log on now as the **admin** user.
 
 **2**. From the **dashboard** drop down menu, click **Analysis**.
 
