@@ -59,7 +59,7 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: TOOLSVMs  
+  :caption: TOOLS VMs  
   :name: _toolsvms
   :hidden:
 
