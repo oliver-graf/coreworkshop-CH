@@ -66,7 +66,7 @@ Storage Container **ISOs**
 Name              **CentOS7-ISO**
 Image Type        **ISO**
 Storage Container **ISOs**
-================= ========================
+================= =======================
 ..
 
 **c**. In the **Create Image** dialog box, under **Image Source**, click **from URL**.

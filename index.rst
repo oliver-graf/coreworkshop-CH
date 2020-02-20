@@ -56,7 +56,6 @@
   :hidden:
 
   appendix/glossary
-  appendix/basics
 
 .. _Getting_Started:
 
