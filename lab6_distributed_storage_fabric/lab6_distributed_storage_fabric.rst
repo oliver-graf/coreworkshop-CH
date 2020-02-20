@@ -187,59 +187,15 @@ Task 3: Writing a Large File to Each New Virtual Disk
 
    **Individual Exercise**
 
-   In this task you will upload the **Cubic Design Tools ISO** into the Image Service. You will then use Cubic Design Disk Tool to write a large file to each of the new disks.
+   In this task you will download the **Cubic Design Tools** to the windows server. You will then use Cubic Design Disk Tool to write a large file to each of the new disks.
 
-**1**. In the **Prism** UI, click the **gear** icon and select **Image Configuration** in the **Settings** list.
+      * Enable Remote Desktop on the windows Server and connect using user .\\\\administrator and the <password>
 
-**2**. Click **+ Upload Image**.
+**1**. open the iExplorer and past the link http://www.soft.tahionic.com/download/CubicDesign_tools.exe
 
-**3**. Complete the **Create Image** window as follows:
+**2**. When the file is donwnloadet install it
 
-================= ========================
-Name              **CubicDesignTools-ISO**
-================= ========================
-Image Type        **ISO**
-Storage Container **ISOs**
-================= ========================
-
-**4**. Click the **Upload a file** radio button.
-
-**5**. Click the **Choose File** button and select the **Cubic Design Tools ISO** as specified on your lab handout. After you have selected the **Cubic Design Tools** file, click **Open**. Click **Save**.
-
-.. note::
-
-    Note: Wait for the **CubicDesignTools** to become **Active** before continuing with the next step. Refresh the browser if needed. 
-
-
-**6**. Switch to the **VM** dashboard and click the **Table** tab.
-
-**7**. Select your **DSF-<your initials>** VM and click the **Update** link below the virtual machine table.
-
-**8**. Scroll down to the **Disks** section and click the **edit (pencil)** icon to the right of the CD-ROM.
-
-**9**. Complete the **Update Disk** window as follows:
-
-========= ============================
-Operation **Clone from Image Service**
-========= ============================
-Image     **CubicDesignTools ISO**
-========= ============================
-
-**10**. Click **Update**. Click **Save**.
-
-**11**. If the VM console window is not open from the previous lab task, click the **Launch Console** link below the table of virtual machines and log on to your virtual machine as **Administrator**. 
-
-**12**. Open **File Explorer** and double-click the **CubicDesignTools** CD Drive.
-
-**13**. Double click the **CubicDesign-tools** installer file.
-
-**14**. Click **Extract** to install Cubic Design Tools.
-
-**15**. In the **File Explorer** window, go to **This PC > Local Disk (C:)** and open the **System tools** **package** folder.
-
-**16**. Scroll down and double-click **Disk Tools**. The **Cubic Design Disk Tool File Generator** will start.
-
-..
+**3**. go to the direcory C:\\\\Tahionic tools package\\\\System & security and start "Disk Tools"
 
    |image080|
 
