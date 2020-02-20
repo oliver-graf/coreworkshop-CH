@@ -106,7 +106,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 #. Fill out the following fields:
 
    - Select **Use SMB Protocol**
-   - **Username** - adm-User-1-A@nutanix.local
+   - **Username** - administrator@nutanix.local
    - **Password** - <password>
    - Select **Make this user a File Server admin**
    - Select **Use NFS Protocol**

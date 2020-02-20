@@ -154,10 +154,10 @@ IP Address             Description
 ====================== ==============================================
 10.xxx.yyy.7           Nutanix Cluster Virtual IP
 10.xxx.yyy.10          **PC** VM IP, Prism Central
-10.xxx.yyy.15          **DC1** VM IP, nutanix.local Domain Controller
-10.xxx.yyy.16          **DC2** VM IP, nutanix.local Domain Controller
+10.xxx.yyy.zzz         **DC1** VM IP, nutanix.local Domain Controller
+10.xxx.yyy.zzz         **DC2** VM IP, nutanix.local Domain Controller
 10.xxx.yyy.65          **Gateway** for subnet 10.xxx.yyy.64/26
-10.xxx.yyy.128         **Gateway** for subnet 10.xxx.yyy.128/25
+10.xxx.yyy.129         **Gateway** for subnet 10.xxx.yyy.128/25
 ====================== ==============================================
 
 
@@ -168,7 +168,7 @@ Each cluster is configured with 1 VLAN which can be used for VMs:
 Network           Name Address              VLAN   DHCP Scope
 ================= ========================= ====== =============================================
 Network-01        10.xxx.yyy.64/26          0      10.xxx.yyy.97-10.xxx.yyy.125
-Network-02        10.xxx.yyy.129/25         yyy1   10.xxx.yyy.132-10.xxx.yyy.254
+Network-02        10.xxx.yyy.128/25         yyy1   10.xxx.yyy.132-10.xxx.yyy.254
 Unmanaged Network                           71
 ================= ========================= ====== =============================================
 
@@ -213,6 +213,11 @@ Customer-D-Admin-Account-Group   adm-User-1-D, adm-User-2-D, adm-User-3-D, adm-U
 Customer-D-Service-Account-Group ntnx-bck-svc-D, ntnx-exc-svc-D, ntnx-ntx-svc-D, ntnx-psr-svc-D, ntnx-sql-svc-D, ntnx-xda-svc-D *<Password>*
 Customer-D-User-Account-Group    user-1-D, user-2-D, user-3-D, user-4-D, user-5-D                                               *<Password>*
 ================================ ============================================================================================== ====================
+
+Nutanix Image web Address
++++++++++++++++++++++++++
+
+http://10.42.194.11/workshop_staging/
 
 
 Access Instructions
