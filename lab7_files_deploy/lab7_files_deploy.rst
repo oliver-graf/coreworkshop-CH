@@ -49,7 +49,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 #. Fill out the following fields:
 
    - **Name** - *Intials*-Files (e.g. XYZ-Files)
-   - **Domain** - ntnxlab.local
+   - **Domain** - nutanix.local
    - **File Server Size** - 1 TiB
 
 ..
@@ -67,7 +67,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
 #. Click **Next**.
 
-#. Select the **Network-01** VLAN for the **Client Network**.
+#. Select the **Network-02** VLAN for the **Client Network**.
 
    Each Files VM will consume a single IP on the client network.
 
@@ -83,7 +83,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
      .. figure:: images/6.png
 
-#. Specify your cluster's **Domain Controller** VM IP (found in :ref:`stagingdetails`) as the **DNS Resolver IP** (e.g. 10.XX.YY.40). Leave the default (cluster) NTP Server.
+#. Specify your cluster's **Domain Controller** VM IP as the **DNS Resolver IP** (e.g. 10.XX.YY.40). Leave the default (cluster) NTP Server.
 
    .. raw:: html
 
@@ -99,20 +99,20 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
    Each Files VM will consume a single IP on the storage network, plus 1 additional IP for the cluster.
 
-   .. figure:: images/8.png
+     |image093|
 
 #. Click **Next**.
 
 #. Fill out the following fields:
 
    - Select **Use SMB Protocol**
-   - **Username** - Administrator@ntnxlab.local
-   - **Password** - nutanix/4u
+   - **Username** - adm-User-1-A@nutanix.local
+   - **Password** - <password>
    - Select **Make this user a File Server admin**
    - Select **Use NFS Protocol**
    - **User Management and Authentication** - Unmanaged
 
-   .. figure:: images/9.png
+     |image094|
 
    .. note:: In unmanaged mode, users are only identified by UID/GID. In Files 3.5, Files supports both NFSv3 and NFSv4
 
@@ -134,11 +134,11 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
      If you receive a warning regarding DNS record validation failure, this can be safely ignored. The shared cluster does not use the same DNS servers as your Files cluster, and as a result is unable to resolve the DNS entries created when deploying Files.
 
-#. While waiting for the file server deployment, if you have not already done so deploy the Windows Tools VM.
+#. While waiting for the file server deployment, if you have not already done so deploy the Windows VM.
 
 #. Connect to the Windows Tools VM via RDP or console
 
-#. Download the sample files for File Analytics to the Tools VM:
+#. Download the sample files for File Analytics to the Windows VM:
 
    - `https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip <https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip>`_
 
