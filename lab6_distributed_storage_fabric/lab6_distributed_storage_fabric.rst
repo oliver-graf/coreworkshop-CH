@@ -236,7 +236,6 @@ Task 3: Writing a Large File to Each New Virtual Disk
 
    |image082|
 
-**22**. Close the **VM console** window.
 
 Task 4: Observing the Result of Compression Savings 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
