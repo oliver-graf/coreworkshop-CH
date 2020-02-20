@@ -5,7 +5,7 @@ Lab 4
 ========
 
 Exercise 1: Uploading an Image (Optional)
-------------------------------
+-----------------------------------------
 
         **Group Exercise**
 
