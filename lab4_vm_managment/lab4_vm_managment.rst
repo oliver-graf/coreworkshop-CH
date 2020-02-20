@@ -33,7 +33,6 @@ Advanced Settings **Do not configure Advanced Settings**
   
   **a**. Click **+ Upload Image**.
 
-
   |image024|
 
 ..
@@ -41,8 +40,8 @@ Advanced Settings **Do not configure Advanced Settings**
   **b**. Fill in the **Create Image** dialog box fields as follows:
 
 ================= =======================
-Name              **ToolsVM.qcow2**
-Image Type        **Disk**
+Name              **Windows2012R2ISO**
+Image Type        **ISO**
 Storage Container **ISOs**
 ================= =======================
 
@@ -50,7 +49,7 @@ Storage Container **ISOs**
 
   **c**. In the **Create Image** dialog box, under **Image Source**, click **From URL.**
 
-  **d**. http://10.42.194.11/workshop_staging/ToolsVM_02032020.qcow2
+  **d**. http://10.42.194.11/workshop_staging/Windows2012R2.iso
 
   **e**. Click **Save**.
 
@@ -67,17 +66,13 @@ Storage Container **ISOs**
 ================= =======================
 
 
-
   **c**. In the **Create Image** dialog box, under **Image Source**, click **from URL**.
 
->>> http://10.42.194.11/workshop_staging/CentOS7.iso
+  **d**. http://10.42.194.11/workshop_staging/CentOS7.iso
 
-  **d**. Click **Save**.
+  **e**. Click **Save**.
 
-.. note::
-
-    Windows User administrator
-    User Password nutanix/4u
+..
 
 **9**. Upload the Nutanix VirtIO ISO to the Image Configuration:
 
@@ -93,13 +88,11 @@ Storage Container **ISOs**
 
 ..
 
-  **c**. In the **Create Image** dialog box, under **Image Source**, click **Upload a file**.
+  **c**. In the **Create Image** dialog box, under **Image Source**, click **from URL**.
 
-  **d**. Click **Choose File** and navigate to the location of the **Nutanix VirtIO ISO** file and select it. The file name and location are listed in your lab handout.
+  **d**. http://10.42.194.11/workshop_staging/Nutanix-VirtIO-1.1.5.iso
 
-  **e**. Click **Open**.
-
-  **f**. Click **Save**.
+    **f**. Click **Save**.
 
 **10**. When all images have been uploaded into the Image Service, the Image Configuration window should show all three images. It is important that, before continuing, you ensure all images are shown with an Active state. If any images are shown as Inactive, wait until they are shown as Active. Refresh your browser.
 
@@ -136,7 +129,7 @@ Task 1: Building a Windows Virtual Machine
 **3**. Complete the Create VM dialog box with the information contained in the following table:
 
 ========================== =======================================================================================
-Name				             	 **Windows-<your initials>** Use the initials of your full name. For example: Windows-ABC
+Name				             	 **WinToolsVM-<your initials>** Use the initials of your full name. For example: Windows-ABC
 Description					       Leave blank.
 Use this VM as an agent VM Do not select.
 VCPU(s)   					       **1**

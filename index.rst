@@ -169,16 +169,19 @@ Credentials
 
 .. note::
 
-  The *<Password>* is the Same for all
+  The *<Password>* is the Same for all except Windows Tools VM and Linux Tools VM
 
-============= ========== ====================
-Credential    Username   Password
-============= ========== ====================
-Prism Element admin      *<Password>*
-Prism Central admin      *<Password>*
-Controller VM nutanix    *<Password>*
-Prism Central VM nutanix *<Password>*
-============= ========== ====================
+============= ============= ====================
+Credential    Username      Password
+============= ============= ====================
+Prism Element admin         *<Password>*
+Prism Central admin         *<Password>*
+Controller VM nutanix       *<Password>*
+Prism Central VM nutanix    *<Password>*
+...           ...           ...
+LinuxToolsVM  root          *nutanix/4u*
+WinToolsVM    administrator *nutanix/4u*
+============= ============= ====================
 
 
 
