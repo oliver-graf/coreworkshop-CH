@@ -27,7 +27,7 @@
 .. toctree::
   :maxdepth: 2
   :caption: VM Managment
-  :name: _lab4_vm_managment
+  :name: __vm_managment
 
   lab4_vm_managment/lab4_vm_managment
 
@@ -41,17 +41,16 @@
   lab5_healt_mintoring_and_alerts/lab5_healt_mintoring_and_alerts
 
 
-
-
-
 .. toctree::
   :maxdepth: 2
-  :caption: Appendix
-  :name: _appendix
+  :caption: DISTRIBUTED STORAGE FABRIC  
+  :name: _distributed_storage_fabric
   :hidden:
 
-  tools_vms/windows_tools_vm
-  tools_vms/linux_tools_vm
+  lab6_distributed_storage_fabric/lab6_distributed_storage_fabric
+
+..
+
   appendix/glossary
   appendix/basics
 

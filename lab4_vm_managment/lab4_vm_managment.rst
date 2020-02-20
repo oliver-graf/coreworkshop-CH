@@ -86,7 +86,7 @@ Storage Container **ISOs**
 Name              **Nutanix-VirtIO-ISO**
 Image Type        **ISO**
 Storage Container **ISOs**
-================= ========================
+================= =======================
 
 ..
 
@@ -132,14 +132,14 @@ Task 1: Building a Windows Virtual Machine
 
 **3**. Complete the Create VM dialog box with the information contained in the following table:
 
-==========================  ========================================================================================
-Name						**Windows-<your initials>** Use the initials of your full name. For example: Windows-ABC
-Description					Leave blank.
-Use this VM as an agent VM	Do not select.
-VCPU(s)   					**1**
-Number of Cores per VCPU  	**2**
-Memory  					**4**
-==========================  ========================================================================================
+========================== =======================================================================================
+Name				             	 **Windows-<your initials>** Use the initials of your full name. For example: Windows-ABC
+Description					       Leave blank.
+Use this VM as an agent VM Do not select.
+VCPU(s)   					       **1**
+Number of Cores per VCPU   **2**
+Memory  				           **4**
+========================== ========================================================================================
 
 ..
 
@@ -152,12 +152,12 @@ Memory  					**4**
 5. Attach the **Windows2016ISO** from the Image Service to the VM by completing the **Update Disk** dialog box with the information contained in the following table:
 
 
-============== ===============================
+============== =====================================
 Type           **CD-ROM (greyed out)**
 OPERATION      **Clone from Image Service**
 BUS TYPE       **Leave at default (IDE)**.
 IMAGE          **Select the Windows 2016 ISO image**
-============== ===============================
+============== =====================================
 
 ..
 
@@ -168,12 +168,12 @@ IMAGE          **Select the Windows 2016 ISO image**
 **8**. Attach the **Nutanix VirtIO ISO** from the Image Service to the VM by completing the **Update Disk** dialog box with the information contained in the following table:
 
 
-============== ===============================
+============== ===================================
 Type           **CD-ROM (greyed out)**
 OPERATION      **Clone from Image Service**
 BUS TYPE       **Leave at default (IDE)**.
 IMAGE          **Select the Nutanix VirtIO image**
-============== ===============================
+============== ===================================
 
 
 ..
@@ -184,14 +184,14 @@ IMAGE          **Select the Nutanix VirtIO image**
 
 **11**. Add a **40GB** virtual disk to the VM by completing the **Update Disk** dialog box with the information contained in the following table:
 
-================= ===============================
+================= =================================
 Type              **DISK**
 OPERATION         **Allocate on Storage Container**
 BUS TYPE          **Leave at default (SCSI)**.
 Storage Container **default**
 Size (GiB)        **40**.
 Index             **Leave at the default value**
-================= ===============================
+================= =================================
 
 
 ..
@@ -369,14 +369,14 @@ Exercise 3: Creating a Linux Virtual Machine
 **2**. Complete the **Create VM** dialog box with the information contained in the following table:
 
 
-=========================== =====================================
+=========================== =========================================================================================
 NAME                        **CentOS7-<your initials>, use the initials of your full name. For example: CentOS7-ABC**         
 DESCRIPTION                 **Leave blank.**
 Use this VM as an agent VM  **Do not select.**.
 VCPU(S)                     **2**
 NUMBER OF CORES PER VCPU    **2**
 MEMORY                      **8**
-=========================== =====================================
+=========================== =========================================================================================
 
 
 
