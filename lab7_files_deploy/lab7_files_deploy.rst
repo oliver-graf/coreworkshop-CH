@@ -144,8 +144,8 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
 #. Download the File Analytics json and qcow files to the Tools VM
 
-   - `nutanix-file-analytics-2.0.0-metadata.json <http://10.42.194.11/workshop_staging/fileanalytics-2.0.0.json>`_
-   - `nutanix-file-analytics-2.0.0.qcow2 <http://10.42.194.11/workshop_staging/nutanix-file_analytics-el7.6-release-2.0.0.qcow2>`_
+   - `http://10.42.194.11/workshop_staging/nutanix-file_analytics-el7.6-release-2.1.0-metadata.json`_
+   - `http://10.42.194.11/workshop_staging/nutanix-file_analytics-el7.6-release-2.1.0.qcow2`_
 
 #. Upon completion, return to **Prism > File Server** and select the *Initials*\ **-Files** server and click **Protect**.
 

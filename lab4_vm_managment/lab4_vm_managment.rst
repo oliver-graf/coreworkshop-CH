@@ -9,7 +9,7 @@ Exercise 1: Uploading an Image (Optional)
 
         **Group Exercise**
 
-    In this exercise you will upload ISO images for Windows Server 2016, CentOS7 and Nutanix VirtIO.
+    In this exercise you will upload ISO images for Windows Server 2012, CentOS7 and Nutanix VirtIO.
 
 **1**. Log on to your cluster’s Prism UI as the **admin** user.
 
@@ -29,7 +29,7 @@ Advanced Settings **Do not configure Advanced Settings**
 
 **6**. Click the **gear** icon and in the **Settings** column on the left, locate and click **Image Configuration**.
 
-**7**. Upload the **Windows 2016 ISO** to the Image Configuration: 
+**7**. Upload the **Windows ToolsVM** to the Image Configuration: 
   
   **a**. Click **+ Upload Image**.
 
@@ -41,20 +41,18 @@ Advanced Settings **Do not configure Advanced Settings**
   **b**. Fill in the **Create Image** dialog box fields as follows:
 
 ================= =======================
-Name              **Windows2016ISO**
-Image Type        **ISO**
+Name              **ToolsVM.qcow2**
+Image Type        **Disk**
 Storage Container **ISOs**
 ================= =======================
 
 ..
 
-  **c**. In the **Create Image** dialog box, under **Image Source**, click **Upload a file.**
+  **c**. In the **Create Image** dialog box, under **Image Source**, click **From URL.**
 
-  **d**. Click **Choose File** and navigate to the location of the **Windows 2016 ISO** file and select it. The file name and location are listed in your lab handout.
-  
-  **e**. Click **Open**.
+  **d**. http://10.42.194.11/workshop_staging/ToolsVM_02032020.qcow2
 
-  **f**. Click **Save**.
+  **e**. Click **Save**.
 
 **8**. Upload the **CentOS ISO** to the Image Configuration:
     
@@ -72,10 +70,14 @@ Storage Container **ISOs**
 
   **c**. In the **Create Image** dialog box, under **Image Source**, click **from URL**.
 
->>> http://ftp.osuosl.org/pub/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-DVD-1908.iso
+>>> http://10.42.194.11/workshop_staging/CentOS7.iso
 
-  **f**. Click **Save**.
+  **d**. Click **Save**.
 
+.. note::
+
+    Windows User administrator
+    User Password nutanix/4u
 
 **9**. Upload the Nutanix VirtIO ISO to the Image Configuration:
 
