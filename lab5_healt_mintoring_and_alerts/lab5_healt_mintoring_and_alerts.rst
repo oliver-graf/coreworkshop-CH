@@ -1,6 +1,6 @@
 .. _lab5_healt_mintoring_and_alerts:
 
-Lab 6
+Lab 5
 ========
 
 Exercise 1: Creating a Performance Chart
