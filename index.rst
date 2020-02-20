@@ -40,11 +40,7 @@
 
   lab5_healt_mintoring_and_alerts/lab5_healt_mintoring_and_alerts
 
-.. toctree::
-  :maxdepth: 2
-  :caption: Optional Labs
-  :name: _optional_labs
-  :hidden:
+
 
 
 
