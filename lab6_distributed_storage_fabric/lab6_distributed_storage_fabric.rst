@@ -113,7 +113,7 @@ Index             **Next Available**
 
 **9**. Scroll down (if required) in the **VM** dashboard and at the lower left, under **VM DETAILS**, verify the VM is utilizing three containers:
 
-        * **Default-container-####**
+        * **Default**
 
         * **Compressed-Container**
 

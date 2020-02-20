@@ -44,7 +44,7 @@ Advanced Settings **Do not configure Advanced Settings**
 Name              **Windows2016ISO**
 Image Type        **ISO**
 Storage Container **ISOs**
-================= ========================
+================= =======================
 
 ..
 
@@ -67,13 +67,14 @@ Name              **CentOS7-ISO**
 Image Type        **ISO**
 Storage Container **ISOs**
 ================= =======================
-..
 
-**c**. In the **Create Image** dialog box, under **Image Source**, click **from URL**.
+
+
+  **c**. In the **Create Image** dialog box, under **Image Source**, click **from URL**.
 
 >>> http://ftp.osuosl.org/pub/centos/7.7.1908/isos/x86_64/CentOS-7-x86_64-DVD-1908.iso
 
-**f**. Click **Save**.
+  **f**. Click **Save**.
 
 
 **9**. Upload the Nutanix VirtIO ISO to the Image Configuration:
