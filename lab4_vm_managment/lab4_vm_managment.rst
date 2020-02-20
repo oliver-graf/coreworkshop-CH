@@ -620,7 +620,7 @@ Task 1: Reviewing Your Windows VM on the Unmanaged Network
 
 **12**. In the **command prompt** window enter the command:
 
->>>       pconfig
+>>>       ipconfig
 
   What is the **IPv4** address assigned to the Ethernet adapter?
 
@@ -668,7 +668,7 @@ Task 2: Moving your Windows VM to a Managed Network
 
 **10**. In the console for the **Windows-<your initials>** VM, in the **Command Prompt** window enter the command:
 
->>>     ipconfig
+>>>    ipconfig
 
   How many network interfaces are displayed? 
   
