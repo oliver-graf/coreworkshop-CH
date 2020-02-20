@@ -81,7 +81,7 @@ Storage Container **ISOs**
   **b**. Fill in the **Create Image** dialog box fields as follows:
 
 ================= =======================
-Name              **Nutanix-VirtIO-ISO**
+Name              **Nutanix-VirtIO115-ISO**
 Image Type        **ISO**
 Storage Container **ISOs**
 ================= =======================
@@ -129,7 +129,7 @@ Task 1: Building a Windows Virtual Machine
 **3**. Complete the Create VM dialog box with the information contained in the following table:
 
 ========================== =======================================================================================
-Name				             	 **WinToolsVM-<your initials>** Use the initials of your full name. For example: Windows-ABC
+Name				             	 **Windows-<your initials>** Use the initials of your full name. For example: Windows-ABC
 Description					       Leave blank.
 Use this VM as an agent VM Do not select.
 VCPU(s)   					       **1**
@@ -145,7 +145,7 @@ Memory  				           **4**
 
 ..
 
-5. Attach the **Windows2016ISO** from the Image Service to the VM by completing the **Update Disk** dialog box with the information contained in the following table:
+5. Attach the **Windows2012R2ISO** from the Image Service to the VM by completing the **Update Disk** dialog box with the information contained in the following table:
 
 
 ============== =====================================
@@ -161,14 +161,14 @@ IMAGE          **Select the Windows 2016 ISO image**
 
 **7**. Scroll down in the **Create VM** dialog box to the **Disks** section. Click **+ Add New Disk**.
 
-**8**. Attach the **Nutanix VirtIO ISO** from the Image Service to the VM by completing the **Update Disk** dialog box with the information contained in the following table:
+**8**. Attach the **Nutanix-VirtIO115-ISO** from the Image Service to the VM by completing the **Update Disk** dialog box with the information contained in the following table:
 
 
 ============== ===================================
 Type           **CD-ROM (greyed out)**
 OPERATION      **Clone from Image Service**
 BUS TYPE       **Leave at default (IDE)**.
-IMAGE          **Select the Nutanix VirtIO image**
+IMAGE          **Select the Nutanix-VirtIO115-ISO**
 ============== ===================================
 
 
@@ -218,7 +218,7 @@ Task 2: Installing the Windows Operating System
 
  **Optional**
 
-  In this exercise, you will work individually to power on your new virtual machine and install the **Windows 2016 ISO** operating system. These steps require a console connection to the VM. To get the maximum ability to resize the console, use **Internet Explorer** as the Prism browser. If you would rather use Chrome or Firefox, you will need to disable the pop-up blocker. All console exercises can be done with any browser.
+  In this exercise, you will work individually to power on your new virtual machine and install the **Windows2012R2ISO** operating system. These steps require a console connection to the VM. To get the maximum ability to resize the console, use **Internet Explorer** as the Prism browser. If you would rather use Chrome or Firefox, you will need to disable the pop-up blocker. All console exercises can be done with any browser.
 
  **Chrome**
 
@@ -254,7 +254,7 @@ Task 2: Installing the Windows Operating System
 
 .. note::
 
-  If you receive a **boot image** error and the 2048 game is displayed, check the CD-ROM images you have set for the VM and verify the **Windows 2016 ISO installer** image is in the first CD-ROM.
+  If you receive a **boot image** error and the 2048 game is displayed, check the CD-ROM images you have set for the VM and verify the **Windows2012R2ISO installer** image is in the first CD-ROM.
 
 ..
 
@@ -262,7 +262,7 @@ Task 2: Installing the Windows Operating System
 
 **6**. Click **Install now**.
 
-**7**. Click to select **Windows 2016 Standard (Desktop Experience)** and click **Next**.
+**7**. Click to select **Windows 2012 Standard (Desktop Experience)** and click **Next**.
 
   |image030|
 
