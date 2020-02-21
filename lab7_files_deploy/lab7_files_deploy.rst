@@ -81,7 +81,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
      As this is an AHV managed network, configuration of individual IPs is not necessary. In an ESXi environment, or using an unmanaged AHV network, you would specify the network details and available IPs as shown below.
 
-     .. figure:: images/6.png
+     |image6|
 
 #. Specify your cluster's **Domain Controller** VM IP as the **DNS Resolver IP** (e.g. 10.XX.YY.40). Leave the default (cluster) NTP Server.
 
@@ -120,7 +120,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
    By default, Files will automatically create a Protection Domain to take daily snapshots of the Files cluster and retain the previous 2 snapshots. After deployment, the snapshot schedule can be modified and remote replication sites can be defined.
 
-   .. figure:: images/10.png
+   |image10|
 
 #. Click **Create** to begin the Files deployment.
 
@@ -128,7 +128,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
    Deployment should take approximately 10 minutes.
 
-   .. figure:: images/11.png
+   |image11|
 
    .. note::
 
@@ -179,3 +179,7 @@ What are the key things you should know about **Nutanix Files**?
 .. |image095| image:: images/img095.jpg
 .. |image096| image:: images/img096.jpg
 .. |image097| image:: images/img097.jpg
+.. |image6| image:: images/6.png
+.. |image10| image:: images/10.png
+.. |image11| image:: images/11.png
+
