@@ -134,31 +134,30 @@ Networking
 Hosted POC clusters follow a standard naming convention:
 
 =================== ====================
-**Cluster Name**    POC xxx
-**Subnet**          10.xxx.yyy.0
-**Cluster IP**      10.xxx.yyy.7
+**Cluster Name**    PHX-xxx
+**Subnet**          255.255.255.192
+**Cluster IP**      10.xxx.yyy.zzz
 =================== ====================
 
 For example:
 
 =================== ==========
-**Cluster Name**    POC055
-**Subnet**          10.21.55.0
-**Cluster IP**      10.21.55.7
+**Cluster Name**    PHX-POC034
+**Subnet**          255.255.255.192
+**Cluster IP**      10.21.55.71
 =================== ==========
 
-Throughout the Workshop there are multiple instances where you will need to substitute *XYZ* with the correct octet for your subnet, for example:
+Throughout the Workshop there are multiple instances where you will need to substitute *xxx.yyy.zzz* with the correct octet for your subnet, for example:
 
 
 ====================== ==============================================
 IP Address             Description
 ====================== ==============================================
-10.xxx.yyy.7           Nutanix Cluster Virtual IP
-10.xxx.yyy.10          **PC** VM IP, Prism Central
-10.xxx.yyy.zzz         **DC1** VM IP, nutanix.local Domain Controller
-10.xxx.yyy.zzz         **DC2** VM IP, nutanix.local Domain Controller
+10.xxx.yyy.71          Nutanix Cluster Virtual IP
+10.xxx.yyy.74          **PC** VM IP, Prism Central
+10.xxx.yyy.79          **DC1** VM IP, nutanix.local Domain Controller
+10.xxx.yyy.80          **DC2** VM IP, nutanix.local Domain Controller
 10.xxx.yyy.65          **Gateway** for subnet 10.xxx.yyy.64/26
-10.xxx.yyy.129         **Gateway** for subnet 10.xxx.yyy.128/25
 ====================== ==============================================
 
 
@@ -169,6 +168,7 @@ Each cluster is configured with 1 VLAN which can be used for VMs:
 Network           Name Address              VLAN   DHCP Scope
 ================= ========================= ====== =============================================
 Network-01        10.xxx.yyy.64/26          0      10.xxx.yyy.97-10.xxx.yyy.125
+...               ...  OPTIONAL             ...    ...
 Network-02        10.xxx.yyy.128/25         yyy1   10.xxx.yyy.132-10.xxx.yyy.254
 Unmanaged Network                           71
 ================= ========================= ====== =============================================
