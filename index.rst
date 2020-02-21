@@ -28,6 +28,7 @@
   :maxdepth: 2
   :caption: VM Managment
   :name: __vm_managment
+  :hidden:
 
   lab4_vm_managment/lab4_vm_managment
 
