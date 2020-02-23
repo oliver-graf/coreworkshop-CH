@@ -60,6 +60,22 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: FILES SMB SHARE
+  :name: _files_smb_share
+  :hidden:
+
+  lab8_files_smb_share/lab8_files_smb_share
+
+.. toctree::
+  :maxdepth: 2
+  :caption: FILES NFS EXPORT
+  :name: _files_nfs_export
+  :hidden:
+
+  lab9_files_nfs_export/lab9_files_nfs_export
+
+#.. toctree::
+  :maxdepth: 2
   :caption: TOOLS VMs  
   :name: _toolsvms
   :hidden:

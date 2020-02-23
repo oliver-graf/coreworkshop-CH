@@ -136,7 +136,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
 #. While waiting for the file server deployment, if you have not already done so deploy the Windows VM.
 
-#. Connect to the Windows Tools VM via RDP or console
+#. Connect to the Windows via RDP or console
 
 #. Download the sample files for File Analytics to the Windows VM:
 
