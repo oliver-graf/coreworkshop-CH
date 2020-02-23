@@ -25,13 +25,13 @@ Creating the Share
    - **Max Size (Optional)** - Leave blank. This field allows you to set a hard quota for the individual share.
    - **Select Protocol** - SMB
 
-   .. figure:: images/14.png
+   |image095|
 
 #. Click **Next**.
 
 #. Select **Enable Access Based Enumeration** and **Self Service Restore**.
 
-   .. figure:: images/15.png
+   |image096|
 
    As you are creating a departmental share, it should be created as a **Standard** share. This means that all top level directories and files within the share, as well as connections to the share, are served from a single Files VM.
 
@@ -45,18 +45,19 @@ Creating the Share
 
 #. Review the **Summary** and click **Create**.
 
-   .. figure:: images/16.png
+   |image097|
+   |image098|
 
 Testing the Share
 .................
 
-#. Connect to your *Initials*\ **-ToolsVM** via RDP or console.
+#. Connect to your **WindowsVM** via RDP or console.
 
    .. note::
 
-     The Tools VM has already been joined to the **NTNXLAB.local** domain. You could use any domain joined VM to complete the following steps.
+     The VM has already been joined to the **<POCname>.nutanix.local** domain. You could use any domain joined VM to complete the following steps.
 
-#. Open ``\\<Intials>-Files.ntnxlab.local\`` in **File Explorer**.
+#. Open ``\\<Intials>-Files.<POCname>.nutanix..local\`` in **File Explorer**.
 
    .. figure:: images/17.png
 
@@ -64,7 +65,7 @@ Testing the Share
 
    .. figure:: images/18.png
 
-   - The **NTNXLAB\\Administrator** user was specified as a Files Administrator during deployment of the Files cluster, giving it read/write access to all shares by default.
+   - The **<POCname>.nutanix.local\\Administrator** user was specified as a Files Administrator during deployment of the Files cluster, giving it read/write access to all shares by default.
    - Managing access for other users is no different than any other SMB share.
 
 #. Right-click **Marketing > Properties**.
@@ -114,3 +115,12 @@ Testing the Share
 #. With the Marketing share still selected, review the **Share Details**, **Usage** and **Performance** tabs to understand the available on a per share basis, including the number of files & connections, storage utilization over time, latency, throughput, and IOPS.
 
    .. figure:: images/23.png
+
+
+
+.. |image095| image:: images/img095.jpg
+.. |image096| image:: images/img096.jpg
+.. |image097| image:: images/img097.jpg
+.. |image098| image:: images/img098.jpg
+.. |image099| image:: images/img099.jpg
+.. |image100| image:: images/img100.jpg
