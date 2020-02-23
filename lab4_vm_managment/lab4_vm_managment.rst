@@ -262,7 +262,7 @@ Task 2: Installing the Windows Operating System
 
 **6**. Click **Install now**.
 
-**7**. Click to select **Windows 2012 Standard (Desktop Experience)** and click **Next**.
+**7**. Click to select **Windows 2012 Standard (Server with a GUI)** and click **Next**.
 
   |image030|
 
@@ -563,6 +563,26 @@ Index                       **Leave at default value**
 
 **6**. When the installation has completed, type **exit** and close the console window.
 
+Exercise 3.1 Adding Windows to a Domain
+---------------------------------------
+
+If you wanna use RDP pleas enable the RDP on Windows
+
+    **a**.  Open the Server Manager
+    **b**.  klick on the **Disabled** Remoted Desktop link
+      
+      |imagewin01|
+    
+    **c**.  enable the RDP
+    
+      |imagewin02|
+    
+    **d**.  Check the IP address
+    **e**.  Close the console and connect by RDP use .\administrator and <Password>
+
+      |imagewin03|
+      |imagewin04|
+
 Exercise 4: Using Dynamic VM Resource Management
 ------------------------------------------------
 
@@ -727,3 +747,7 @@ Task 3: Updating CPU and Memory
 .. |image057| image:: images/img057.jpg
 .. |image058| image:: images/img058.jpg
 .. |image059| image:: images/img059.jpg
+.. |imagewin01| image:: images/imgwin01.jpg
+.. |imagewin02| image:: images/imgwin02.jpg
+.. |imagewin03| image:: images/imgwin03.jpg
+.. |imagewin04| image:: images/imgwin04.jpg
