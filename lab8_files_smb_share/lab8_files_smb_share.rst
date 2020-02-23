@@ -59,11 +59,11 @@ Testing the Share
 
 #. Open ``\\<Intials>-Files.<POCname>.nutanix..local\`` in **File Explorer**.
 
-   .. figure:: images/17.png
+   |image099|
 
 #. Test accessing the Marketing share by extracting the SampleData_Small.zip files downloaded in the previous step into the share.
 
-   .. figure:: images/18.png
+   |image100|
 
    - The **<POCname>.nutanix.local\\Administrator** user was specified as a Files Administrator during deployment of the Files cluster, giving it read/write access to all shares by default.
    - Managing access for other users is no different than any other SMB share.
@@ -72,7 +72,7 @@ Testing the Share
 
 #. Select the **Security** tab and click **Advanced**.
 
-   .. figure:: images/19.png
+   |image101|
 
 #. Select **Users (**\ *Initials*\ **-Files\\Users)** and click **Remove**.
 
@@ -80,7 +80,7 @@ Testing the Share
 
 #. Click **Select a principal** and specify **Everyone** in the **Object Name** field. Click **OK**.
 
-   .. figure:: images/20.png
+   |image102|
 
 #. Fill out the following fields and click **OK**:
 
@@ -91,7 +91,7 @@ Testing the Share
    - Select **Read**
    - Select **Write**
 
-   .. figure:: images/21.png
+   |image103|
 
 #. Click **OK > OK > OK** to save the permission changes.
 
@@ -108,13 +108,13 @@ Testing the Share
    - **Quota** - 10 GiB
    - **Enforcement Type** - Hard Limit
 
-   .. figure:: images/22.png
+   |image104|
 
 #. Click **Save**.
 
 #. With the Marketing share still selected, review the **Share Details**, **Usage** and **Performance** tabs to understand the available on a per share basis, including the number of files & connections, storage utilization over time, latency, throughput, and IOPS.
 
-   .. figure:: images/23.png
+   |image105|
 
 
 
@@ -122,5 +122,10 @@ Testing the Share
 .. |image096| image:: images/img096.jpg
 .. |image097| image:: images/img097.jpg
 .. |image098| image:: images/img098.jpg
-.. |image099| image:: images/img099.jpg
-.. |image100| image:: images/img100.jpg
+.. |image099| image:: images/17.png
+.. |image100| image:: images/18.png
+.. |image101| image:: images/19.png
+.. |image102| image:: images/20.png
+.. |image103| image:: images/21.png
+.. |image104| image:: images/22.png
+.. |image105| image:: images/23.png

@@ -214,22 +214,22 @@ WinToolsVM    administrator *nutanix/4u*
 
 Each cluster has a dedicated domain controller VM, **DC1**, **DC2** responsible for providing AD services for the **<POCname>.nutanix.local** domain. The domain is populated with the following Users and Groups:
 
-================================ ============================================================================================== ====================
-Group                            Username(s)                                                                                    Password
-================================ ============================================================================================== ====================
-Customer-A-Admin-Account-Group   adm-User-1-A, adm-User-2-A, adm-User-3-A, adm-User-4-A, adm-User-5-A                           *<Password>*
-Customer-A-Service-Account-Group ntnx-bck-svc-A, ntnx-exc-svc-A, ntnx-ntx-svc-A, ntnx-psr-svc-A, ntnx-sql-svc-A, ntnx-xda-svc-A *<Password>*
-Customer-A-User-Account-Group    user-1-A, user-2-A, user-3-A, user-4-A, user-5-A                                               *<Password>*
-Customer-B-Admin-Account-Group   adm-User-1-B, adm-User-2-B, adm-User-3-B, adm-User-4-B, adm-User-5-B                           *<Password>*
-Customer-B-Service-Account-Group ntnx-bck-svc-B, ntnx-exc-svc-B, ntnx-ntx-svc-B, ntnx-psr-svc-B, ntnx-sql-svc-B, ntnx-xda-svc-B *<Password>*
-Customer-B-User-Account-Group    user-1-B, user-2-B, user-3-B, user-4-B, user-5-B                                               *<Password>*
-Customer-C-Admin-Account-Group   adm-User-1-C, adm-User-2-C, adm-User-3-C, adm-User-4-C, adm-User-5-C                           *<Password>*
-Customer-C-Service-Account-Group ntnx-bck-svc-C, ntnx-exc-svc-C, ntnx-ntx-svc-C, ntnx-psr-svc-C, ntnx-sql-svc-C, ntnx-xda-svc-C *<Password>*
-Customer-C-User-Account-Group    user-1-C, user-2-C, user-3-C, user-4-C, user-5-C                                               *<Password>*
-Customer-D-Admin-Account-Group   adm-User-1-D, adm-User-2-D, adm-User-3-D, adm-User-4-D, adm-User-5-D                           *<Password>*
-Customer-D-Service-Account-Group ntnx-bck-svc-D, ntnx-exc-svc-D, ntnx-ntx-svc-D, ntnx-psr-svc-D, ntnx-sql-svc-D, ntnx-xda-svc-D *<Password>*
-Customer-D-User-Account-Group    user-1-D, user-2-D, user-3-D, user-4-D, user-5-D                                               *<Password>*
-================================ ============================================================================================== ====================
+================================= ============================================================================================== ====================
+Group                             Username(s)                                                                                    Password
+================================= ============================================================================================== ====================
+Customer-A-Admin-Accounts-Group   adm-User-1-A, adm-User-2-A, adm-User-3-A, adm-User-4-A, adm-User-5-A                           *<Password>*
+Customer-A-Service-Accounts-Group ntnx-bck-svc-A, ntnx-exc-svc-A, ntnx-ntx-svc-A, ntnx-psr-svc-A, ntnx-sql-svc-A, ntnx-xda-svc-A *<Password>*
+Customer-A-User-Accounts-Group    user-1-A, user-2-A, user-3-A, user-4-A, user-5-A                                               *<Password>*
+Customer-B-Admin-Accounts-Group   adm-User-1-B, adm-User-2-B, adm-User-3-B, adm-User-4-B, adm-User-5-B                           *<Password>*
+Customer-B-Service-Accounts-Group ntnx-bck-svc-B, ntnx-exc-svc-B, ntnx-ntx-svc-B, ntnx-psr-svc-B, ntnx-sql-svc-B, ntnx-xda-svc-B *<Password>*
+Customer-B-User-Accounts-Group    user-1-B, user-2-B, user-3-B, user-4-B, user-5-B                                               *<Password>*
+Customer-C-Admin-Accounts-Group   adm-User-1-C, adm-User-2-C, adm-User-3-C, adm-User-4-C, adm-User-5-C                           *<Password>*
+Customer-C-Service-Accounts-Group ntnx-bck-svc-C, ntnx-exc-svc-C, ntnx-ntx-svc-C, ntnx-psr-svc-C, ntnx-sql-svc-C, ntnx-xda-svc-C *<Password>*
+Customer-C-User-Accounts-Group    user-1-C, user-2-C, user-3-C, user-4-C, user-5-C                                               *<Password>*
+Customer-D-Admin-Accounts-Group   adm-User-1-D, adm-User-2-D, adm-User-3-D, adm-User-4-D, adm-User-5-D                           *<Password>*
+Customer-D-Service-Accounts-Group ntnx-bck-svc-D, ntnx-exc-svc-D, ntnx-ntx-svc-D, ntnx-psr-svc-D, ntnx-sql-svc-D, ntnx-xda-svc-D *<Password>*
+Customer-D-User-Accounts-Group    user-1-D, user-2-D, user-3-D, user-4-D, user-5-D                                               *<Password>*
+================================= ============================================================================================== ====================
 
 Nutanix Image web Address
 +++++++++++++++++++++++++

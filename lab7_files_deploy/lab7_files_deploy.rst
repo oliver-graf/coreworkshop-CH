@@ -135,7 +135,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
 #. Download the sample files for File Analytics to the Windows VM:
 
-   - https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip <https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip
+   - https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip
 
 #. Download the File Analytics json and qcow files to the Windows VM
 
