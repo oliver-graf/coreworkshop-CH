@@ -590,9 +590,13 @@ If you wanna use RDP pleas enable the RDP on Windows
 
 **3**. select Local Server and klick on the Workgroup link
 
-**4**. Click on Change and on the Domain type <POCname>.nutanix.local and **OK**
+      |imagewin05|
 
-**5**. Now give the User and Password (administrator / <password>)
+**4**. Click Change and on the Domain type <POCname>.nutanix.local and **OK**
+
+      |imagewin06|
+
+**5**. Now set the User and Password (administrator / <password>)
 
 **6**. close all and reboot.
 
@@ -601,6 +605,8 @@ the Windows system should be in the domain now you can connect using the domain 
 
   administrator@<POCname>.nutanix.local
 
+      |imagewin07|
+      |imagewin08|
 
 
 Exercise 4: Using Dynamic VM Resource Management
