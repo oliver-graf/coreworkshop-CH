@@ -33,7 +33,9 @@ Creating the Export
 #. Fill out the following fields:
 
    - Select **Enable Self Service Restore**
+
       - These snapshots appear as a .snapshot directory for NFS clients.
+
    - **Authentication** - System
    - **Default Access (For All Clients)** - No Access
    - Select **+ Add exceptions**
@@ -52,7 +54,7 @@ Testing the Export
 
 You will first provision a CentOS VM to use as a client for your Files export.
 
-.. note:: If you have already deployed the :ref:`linux_tools_vm` as part of another lab, you may use this VM as your NFS client instead.
+.. note:: If you have already deployed the CENTO OS7 as part of another lab, you may use this VM as your NFS client instead.
 
 #. In **Prism > VM > Table**, click **+ Create VM**.
 
@@ -78,7 +80,7 @@ You will first provision a CentOS VM to use as a client for your Files export.
 #. Note the IP address of the VM in Prism, and connect via SSH using the following credentials:
 
    - **Username** - root
-   - **Password** - nutanix/4u
+   - **Password** - <password>
 
 #. Execute the following:
 
