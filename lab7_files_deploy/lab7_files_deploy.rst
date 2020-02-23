@@ -85,11 +85,6 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
 #. Specify your cluster's **Domain Controller** VM IP as the **DNS Resolver IP** (e.g. 10.XX.YY.15,16). Leave the default (cluster) NTP Server.
 
-   .. raw:: html
-
-     <strong><font color="red">In order for the Files cluster to successfully find and join the NTNXLAB.local domain it is critical that the DNS Resolver IP is set to the Domain Controller VM IP FOR YOUR CLUSTER. By default, this field is set to the primary Name Server IP configured for the Nutanix cluster, this value is incorrect and will not work.</font></strong>
-
-..
 
      |image092|
 
@@ -140,12 +135,12 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
 #. Download the sample files for File Analytics to the Windows VM:
 
-   - `https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip <https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip>`_
+   - https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip <https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip
 
-#. Download the File Analytics json and qcow files to the Tools VM
+#. Download the File Analytics json and qcow files to the Windows VM
 
-   - `http://10.42.194.11/workshop_staging/nutanix-file_analytics-el7.6-release-2.1.0-metadata.json`_
-   - `http://10.42.194.11/workshop_staging/nutanix-file_analytics-el7.6-release-2.1.0.qcow2`_
+   - http://10.42.194.11/workshop_staging/nutanix-file_analytics-el7.6-release-2.1.0-metadata.json
+   - http://10.42.194.11/workshop_staging/nutanix-file_analytics-el7.6-release-2.1.0.qcow2
 
 #. Upon completion, return to **Prism > File Server** and select the *Initials*\ **-Files** server and click **Protect**.
 
