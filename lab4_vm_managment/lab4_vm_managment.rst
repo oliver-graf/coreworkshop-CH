@@ -563,51 +563,6 @@ Index                       **Leave at default value**
 
 **6**. When the installation has completed, type **exit** and close the console window.
 
-Exercise 3.1 Adding Windows to a Domain
----------------------------------------
-
-If you wanna use RDP pleas enable the RDP on Windows
-
-    **a**.  Open the Server Manager
-    **b**.  klick on the **Disabled** Remoted Desktop link
-      
-      |imagewin01|
-    
-    **c**.  enable the RDP
-    
-      |imagewin02|
-    
-    **d**.  Check the IP address
-    **e**.  Close the console and connect by RDP use .\administrator and <Password>
-
-      |imagewin03|
-      |imagewin04|
-
-
-**1**. Connecting Windows to the domain <POCname>.nutanix.local
-
-**2**. click on the Server Manager icon bottom right side.
-
-**3**. select Local Server and klick on the Workgroup link
-
-      |imagewin05|
-
-**4**. Click Change and on the Domain type <POCname>.nutanix.local and **OK**
-
-      |imagewin06|
-
-**5**. Now set the User and Password (administrator / <password>)
-
-**6**. close all and reboot.
-
-
-the Windows system should be in the domain now you can connect using the domain login for the administrator
-
-  administrator@<POCname>.nutanix.local
-
-      |imagewin07|
-      |imagewin08|
-
 
 Exercise 4: Using Dynamic VM Resource Management
 ------------------------------------------------
@@ -736,6 +691,52 @@ Task 3: Updating CPU and Memory
   |image059|
 
 
+Exercise 5 Adding Windows to a Domain
+---------------------------------------
+
+If you wanna use RDP pleas enable the RDP on Windows
+
+    **a**.  Open the Server Manager
+    **b**.  klick on the **Disabled** Remoted Desktop link
+      
+      |imagewin01|
+    
+    **c**.  enable the RDP
+    
+      |imagewin02|
+    
+    **d**.  Check the IP address
+    **e**.  Close the console and connect by RDP use .\administrator and <Password>
+
+      |imagewin03|
+      |imagewin04|
+
+
+**1**. Connecting Windows to the domain <POCname>.nutanix.local
+
+**2**. click on the Server Manager icon bottom right side.
+
+**3**. select Local Server and klick on the Workgroup link
+
+      |imagewin05|
+
+**4**. Click Change and on the Domain type <POCname>.nutanix.local and **OK**
+
+      |imagewin06|
+
+**5**. Now set the User and Password (administrator / <password>)
+
+**6**. close all and reboot.
+
+
+the Windows system should be in the domain now you can connect using the domain login for the administrator
+
+  administrator@<POCname>.nutanix.local
+
+      |imagewin07|
+      |imagewin08|
+
+
 
 .. |image024| image:: images/img024.jpg
 .. |image025| image:: images/img025.jpg
@@ -777,3 +778,7 @@ Task 3: Updating CPU and Memory
 .. |imagewin02| image:: images/imgwin02.jpg
 .. |imagewin03| image:: images/imgwin03.jpg
 .. |imagewin04| image:: images/imgwin04.jpg
+.. |imagewin05| image:: images/imgwin05.jpg
+.. |imagewin06| image:: images/imgwin06.jpg
+.. |imagewin07| image:: images/imgwin07.jpg
+.. |imagewin08| image:: images/imgwin08.jpg
