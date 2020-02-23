@@ -49,7 +49,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 #. Fill out the following fields:
 
    - **Name** - *Intials*-Files (e.g. XYZ-Files)
-   - **Domain** - nutanix.local
+   - **Domain** - <POCname>.nutanix.local
    - **File Server Size** - 1 TiB
 
 ..
@@ -67,7 +67,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
 #. Click **Next**.
 
-#. Select the **Network-02** VLAN for the **Client Network**.
+#. Select the **Network-01** VLAN for the **Client Network**.
 
    Each Files VM will consume a single IP on the client network.
 
@@ -83,7 +83,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
      |image6|
 
-#. Specify your cluster's **Domain Controller** VM IP as the **DNS Resolver IP** (e.g. 10.XX.YY.40). Leave the default (cluster) NTP Server.
+#. Specify your cluster's **Domain Controller** VM IP as the **DNS Resolver IP** (e.g. 10.XX.YY.15,16). Leave the default (cluster) NTP Server.
 
    .. raw:: html
 
@@ -95,7 +95,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
 #. Click **Next**.
 
-#. Select the **Primary - Managed** VLAN for the Storage Network.
+#. Select the **Network-01** VLAN for the Storage Network.
 
    Each Files VM will consume a single IP on the storage network, plus 1 additional IP for the cluster.
 
@@ -106,7 +106,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 #. Fill out the following fields:
 
    - Select **Use SMB Protocol**
-   - **Username** - administrator@nutanix.local
+   - **Username** - administrator@<POCname>.nutanix.local
    - **Password** - <password>
    - Select **Make this user a File Server admin**
    - Select **Use NFS Protocol**

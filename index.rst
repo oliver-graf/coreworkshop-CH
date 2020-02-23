@@ -155,8 +155,8 @@ IP Address             Description
 ====================== ==============================================
 10.xxx.yyy.71          Nutanix Cluster Virtual IP
 10.xxx.yyy.74          **PC** VM IP, Prism Central
-10.xxx.yyy.79          **DC1** VM IP, nutanix.local Domain Controller
-10.xxx.yyy.80          **DC2** VM IP, nutanix.local Domain Controller
+10.xxx.yyy.79          **DC1** VM IP, <POCname>.nutanix.local Domain Controller
+10.xxx.yyy.80          **DC2** VM IP, <POCname>.nutanix.local Domain Controller
 10.xxx.yyy.65          **Gateway** for subnet 10.xxx.yyy.64/26
 ====================== ==============================================
 
@@ -196,7 +196,7 @@ WinToolsVM    administrator *nutanix/4u*
 
 
 
-Each cluster has a dedicated domain controller VM, **DC1**, **DC2** responsible for providing AD services for the **nutanix.local** domain. The domain is populated with the following Users and Groups:
+Each cluster has a dedicated domain controller VM, **DC1**, **DC2** responsible for providing AD services for the **<POCname>.nutanix.local** domain. The domain is populated with the following Users and Groups:
 
 ================================ ============================================================================================== ====================
 Group                            Username(s)                                                                                    Password
