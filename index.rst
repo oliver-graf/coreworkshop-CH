@@ -74,6 +74,22 @@
 
   lab9_files_nfs_export/lab9_files_nfs_export
 
+.. toctree::
+  :maxdepth: 2
+  :caption: FILE ANALYTICS DEPLOY
+  :name: _file_analytics_deploy
+  :hidden:
+
+  lab10_file_analytics_deploy/lab10_file_analytics_deploy
+
+.. toctree::
+  :maxdepth: 2
+  :caption: FILE ANALYTICS SCAN
+  :name: _file_analytics_scan
+  :hidden:
+
+  lab11_file_analytics_scan/lab11_file_analytics_scan
+
 #.. toctree::
   :maxdepth: 2
   :caption: TOOLS VMs  
