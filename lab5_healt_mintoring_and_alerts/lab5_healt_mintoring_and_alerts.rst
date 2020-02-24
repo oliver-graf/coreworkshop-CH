@@ -68,7 +68,9 @@ Exercise 2: Generating Write I/O
 
 ..
 
->>>      for ((i=1;i<=100;i++)); do dd if=/dev/zero of=/root/bigfile bs=64k count=500000 oflag=direct; done
+ .. code-block:: bash
+
+      for ((i=1;i<=100;i++)); do dd if=/dev/zero of=/root/bigfile bs=64k count=500000 oflag=direct; done
 
 ..
 
@@ -100,27 +102,39 @@ Exercise 3: Managing Alerts
 
 ..
 
->>>      cluster status (this output shows the status of all CVMs, scroll to review)
+ .. code-block:: bash
 
->>>      genesis stop stargate
+      cluster status (this output shows the status of all CVMs, scroll to review)
+
+ .. code-block:: bash
+
+      genesis stop stargate
 
 **3**. Confirm the Stargate service has stopped by entering the following command:
 
 ..
 
- >>>     cluster status \| grep -iw down (or cluster status and scroll to review)
+ .. code-block:: bash
+
+     cluster status \| grep -iw down (or cluster status and scroll to review)
 
 **4**. Log on as the **root** user on the **AHV** hypervisor by entering the following command:
 
 ..
 
->>>      ssh 192.168.5.1 -l root
+ .. code-block:: bash
+
+      ssh 192.168.5.1 -l root
 
 5. Confirm **Data Path Redundancy** is in effect by observing a route specific to the **192.168.5.2** IP address in the hypervisor routing table (Data Path Redundancy takes effect whenever Stargate is not running). You can observe the route table by entering the following command:
 
 ..
 
->>>      route
+ .. code-block:: bash
+
+      route
+
+..
 
    |image064|
 
@@ -130,7 +144,9 @@ Exercise 3: Managing Alerts
 
 ..
 
->>>   exit
+ .. code-block:: bash
+
+   exit
 
 .. note::
 
@@ -174,13 +190,17 @@ Exercise 3: Managing Alerts
 
 ..
 
- >>>        genesis restart stargate
+ .. code-block:: bash
+
+        genesis restart stargate
 
 **16**. Confirm Stargate is running on all of your cluster’s nodes by entering the following command:
 
 ..
 
->>>         cluster status \| grep -i stargate
+ .. code-block:: bash
+
+         cluster status \| grep -i stargate
 
    The output should indicate Stargate is up on all nodes. You may need to run the cluster status several times.
 
@@ -193,13 +213,17 @@ Exercise 3: Managing Alerts
 
 ..
 
->>>         ssh 92.168.5.1 -l root
+ .. code-block:: bash
+
+         ssh 92.168.5.1 -l root
 
 **18**. Confirm the specific route for the **192.168.5.2** address (which the Data Path Redundancy feature added when Stargate was stopped) is no longer in the hypervisor route table by entering the following command:
 
 ..
 
->>>         route -n
+ .. code-block:: bash
+
+         route -n
 
 After several minutes, the **192.168.5.2** line item will no longer show in the host’s route table.
 

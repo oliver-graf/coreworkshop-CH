@@ -464,6 +464,8 @@ Index                       **Leave at default value**
 
     ip addr sh
 
+..
+
   |image047|
 
 .. note::
@@ -477,6 +479,8 @@ Index                       **Leave at default value**
  .. code-block:: bash
 
      nmcli d
+
+..
 
   |image048|
 
@@ -521,6 +525,8 @@ Index                       **Leave at default value**
  .. code-block:: bash
 
      ip addr sh
+
+..
 
   |image052|
 
