@@ -26,7 +26,7 @@ Creating the Export
    - **Max Size (Optional)** - Leave blank
    - **Select Protocol** - NFS
 
-   .. figure:: images/24.png
+      |image105|
 
 #. Click **Next**.
 
@@ -39,9 +39,9 @@ Creating the Export
    - **Authentication** - System
    - **Default Access (For All Clients)** - No Access
    - Select **+ Add exceptions**
-   - **Clients with Read-Write Access** - *The first 3 octets of your cluster network*\ .* (e.g. 10.38.1.\*)
+   - **Clients with Read-Write Access** - *The first 3 octets of your cluster network*\ .* (e.g. 10.38.14.\*)
 
-   .. figure:: images/25.png
+      |image106|
 
    By default an NFS export will allow read/write access to any host that mounts the export, but this can be restricted to specific IPs or IP ranges.
 
@@ -73,7 +73,7 @@ You will first provision a CentOS VM to use as a client for your Files export.
       - Select **Add**
 
    - Select **Add New NIC**
-   
+
       - **VLAN Name** - Secondary
       - Select **Add**
 
