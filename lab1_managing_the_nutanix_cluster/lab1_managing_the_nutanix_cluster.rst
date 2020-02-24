@@ -45,8 +45,10 @@ Nutanix cluster.
     b. In the PuTTY Host Name (or IP address) field, type the IP address of the first CVM from your lab handout.
     c. In the PuTTY terminal window, login using the default CVM credentials. user: nutanix and password: *<password>*
     d. Once logged in, type the command:
-        
->>>     $ ncli cluster get-ntp-servers
+
+ .. code-block:: bash
+
+   ncli cluster get-ntp-servers
 
     e. Confirm the IP address you entered in Prism is shown. Type exit to close the PuTTY session.
 
@@ -184,11 +186,16 @@ Task 1: Accessing nCLI and Using Basic Commands
 
 **4**. To display help for the datastore entity, type the command: 
 
->>>     <ncli> datastore help
+ .. code-block:: bash
+
+    <ncli> datastore help
 
 **5**. To get help on the container entity, type the command:
 
->>>     <ncli> container help
+
+ .. code-block:: bash
+
+     <ncli> container help
 
 What command do you enter to get nCLI help for user accounts?
 
@@ -203,7 +210,9 @@ Task 2: Extracting Information
 
 **1**. Type **storagepool** list. How many storage pools does the cluster have?
 
->>>     <ncli> storagepool ls
+ .. code-block:: bash
+
+    <ncli> storagepool ls
     
 **2**. Type the command that lists all the storage containers in the cluster. How many storage containers does the cluster have?
     
@@ -225,7 +234,9 @@ Task 2: Extracting Information
 
 **7**. You can combine Bash shell commands and nCLI commands to filter and format nCLI output. For example, to count the number of SSDs in the cluster, type the command:
 
->>>     ncli disk list | grep SSD | wc -l
+.. code-block:: bash
+
+     ncli disk list | grep SSD | wc -l
 
 .. note::
 
@@ -250,15 +261,22 @@ In this task you will create and delete a storage container using nCLI.
 
 **2**. To get help with the container create command, type:
 
->>>     <ncli> container create help
+
+ .. code-block:: bash
+
+    <ncli> container create help
 
 **3**. The name of the storage pool is a required argument to the container create command. Get the unique name of the default storage pool by typing the following command:
 
->>>     <ncli> storagepool list
+ .. code-block:: bash
+
+     <ncli> storagepool list
 
 **4**. Create a container named **cli-container1** by typing the following command:
 
->>>     <ncli> container create name=cli-container1 sp-name=SP01
+ .. code-block:: bash
+
+     <ncli> container create name=cli-container1 sp-name=SP01
 
 **5**. Repeat the previous step to create a second container named cli-container2 in the default storage pool
 
@@ -286,11 +304,15 @@ In this task you will create and delete a storage container using nCLI.
 
 **11**. Delete the second container you created:
 
->>>     <ncli> container remove name=cli-container2
+ .. code-block:: bash
+
+     <ncli> container remove name=cli-container2
 
 **12**. Verify both containers have been deleted: 
 
->>>     <ncli> container list
+.. code-block:: bash
+
+    <ncli> container list
 
 
 .. |image001| image:: images/img001.jpg
