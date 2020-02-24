@@ -81,7 +81,9 @@ Exercise 3: Managing Open vSwitch (OVS)
 
 **2**. Use **allssh** to execute commands on all CVMs. To view network interface information, type the command:
 
->>>     allssh manage_ovs show_interfaces
+ .. code-block:: bash
+
+     allssh manage_ovs show_interfaces
     
     * How many network interfaces are on each node?
     * How many network interfaces are 10GbE?
@@ -89,13 +91,17 @@ Exercise 3: Managing Open vSwitch (OVS)
 
 **3**. To list existing bridges for each Nutanix node in the cluster, type the command:
 
->>>     allssh manage_ovs show_bridges
+ .. code-block:: bash
+
+    allssh manage_ovs show_bridges
     
     * How many bridges are on each node?
 
 **4**. To show bridge uplinks for each Nutanix node in the cluster, type the command:
 
->>>     allssh manage_ovs show_uplinks
+ .. code-block:: bash
+
+     allssh manage_ovs show_uplinks
    
    * Which network interfaces are on bond (or port) **br0-up** of the first bridge (**br0**)?
 
@@ -108,20 +114,28 @@ Exercise 4: Creating a New OVS
 
 **1**. Create a new virtual switch by typing the following command from any CVM:
 
->>>     hostssh ovs-vsctl add-br br1
->>>     allssh manage_ovs show_bridges
+ .. code-block:: bash
+
+     hostssh ovs-vsctl add-br br1
+     allssh manage_ovs show_bridges
 
 **2**. Remove the 1GbE interfaces from the default bridge by typing the following command on any CVM:
 
->>>     allssh manage_ovs --bridge_name br0 --interfaces 10G update_uplinks
+ .. code-block:: bash
+
+     allssh manage_ovs --bridge_name br0 --interfaces 10G update_uplinks
 
 **3**. Now associate the 1GbE interfaces with the new br1 by typing the following command on any CVM:
 
->>>     allssh manage_ovs –-bridge_name br1 –-bond_name bond1 –-interfaces 1G update_uplinks
+ .. code-block:: bash
+
+     allssh manage_ovs –-bridge_name br1 –-bond_name bond1 –-interfaces 1G update_uplinks
 
 **4**. Verify the changes have been successfully written by typing the following command on any CVM:
 
->>>     allssh manage_ovs show_uplinks
+ .. code-block:: bash
+
+     allssh manage_ovs show_uplinks
 
 .. note::
 

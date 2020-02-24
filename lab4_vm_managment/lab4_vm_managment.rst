@@ -378,7 +378,7 @@ MEMORY                      **8**
 
 **3**. Scroll down in the **Create VM** dialog box to the **Disks** section and click the CD-ROM’s **pencil** icon.
 
-4. Complete the **Update Disk** dialog box with the information contained in the following table:
+**4**. Complete the **Update Disk** dialog box with the information contained in the following table:
 
 
 =========================== =====================================
@@ -442,7 +442,7 @@ Index                       **Leave at default value**
 
   |image044|
 
-19. When the **User Settings** window is displayed, click **ROOT PASSWORD** to configure the password for the root user. The installation will still be in progress.
+**19**. When the **User Settings** window is displayed, click **ROOT PASSWORD** to configure the password for the root user. The installation will still be in progress.
 
   |image045|
 
@@ -460,7 +460,9 @@ Index                       **Leave at default value**
 
 **25**. Display the **VM NIC IP** address by entering the command:
 
->>>     ip addr sh
+ .. code-block:: bash
+
+    ip addr sh
 
   |image047|
 
@@ -472,13 +474,17 @@ Index                       **Leave at default value**
 
 **26**. Confirm the **eth0** interface is disconnected by entering the command:
 
->>>     nmcli d
+ .. code-block:: bash
+
+     nmcli d
 
   |image048|
 
 **27**. Launch the **NetworkManager TUI** tool by entering the command:
 
->>>     nmtui
+ .. code-block:: bash
+
+     nmtui
 
 **28**. In the **NetworkManager TUI** window, using the **up/down** arrows on your keyboard, select **Edit a connection** and press the **Enter** key.
 
@@ -506,17 +512,23 @@ Index                       **Leave at default value**
 
 **34**. Restart the network services by entering the command:
 
->>>     service network restart
+ .. code-block:: bash
+
+     service network restart
 
 **35**. Verify the virtual machine has been assigned an IP address by entering the command:
 
->>>     ip addr sh
+ .. code-block:: bash
+
+     ip addr sh
 
   |image052|
 
 **36**. Verify connectivity to the default gateway by entering the following command:
 
->>>     ping <get the gateway IP from your lab handout>
+ .. code-block:: bash
+
+     ping <get the gateway IP from your lab handout>
 
 .. note::
 
@@ -532,7 +544,9 @@ Index                       **Leave at default value**
 
 **37**. Shutdown CentOS by typing the following:
 
->>>    init 0
+ .. code-block:: bash
+
+    init 0
 
 **38**. Close the **VM console** window.
 
@@ -555,11 +569,13 @@ Index                       **Leave at default value**
 
 **5**. Perform the following steps to install Nutanix Guest Tools.
 
->>>     df -h (view what is currently mounted)
->>>     mount /dev/sr0 /mnt
->>>     df -h (/dev/sr0 shows mounted to /mnt)
->>>     cd /mnt/installer/linux
->>>     ./install_ngt.py
+ .. code-block:: bash
+
+     df -h (view what is currently mounted)
+     mount /dev/sr0 /mnt
+     df -h (/dev/sr0 shows mounted to /mnt)
+     cd /mnt/installer/linux
+     ./install_ngt.py
 
 **6**. When the installation has completed, type **exit** and close the console window.
 
@@ -611,13 +627,17 @@ Task 1: Reviewing Your Windows VM on the Unmanaged Network
 
 **10**. Open a command prompt on the Windows virtual machine by clicking the four pane **Windows Start** button on the task bar (in the lower left corner). Click the **magnifying glass** at the upper right and in the **search** field type:
 
->>>       cmd
+ .. code-block:: bash
+
+       cmd
 
 **11**. Select **Command Prompt** from the list presented.
 
 **12**. In the **command prompt** window enter the command:
 
->>>       ipconfig
+ .. code-block:: bash
+
+       ipconfig
 
   What is the **IPv4** address assigned to the Ethernet adapter?
 
@@ -648,7 +668,9 @@ Task 2: Moving your Windows VM to a Managed Network
 
 **6**. In the remote console for the **Windows-<your initials>** VM, in the **Command Prompt** window enter the command:
 
->>>     ipconfig
+ .. code-block:: bash
+
+     ipconfig
 
   How many interfaces are displayed and what are the IPv4 addresses? 
 
@@ -665,7 +687,9 @@ Task 2: Moving your Windows VM to a Managed Network
 
 **10**. In the console for the **Windows-<your initials>** VM, in the **Command Prompt** window enter the command:
 
->>>    ipconfig
+ .. code-block:: bash
+
+    ipconfig
 
   How many network interfaces are displayed? 
   
