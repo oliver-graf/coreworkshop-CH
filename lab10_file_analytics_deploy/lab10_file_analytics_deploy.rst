@@ -18,10 +18,6 @@ Deploy File Analytics
 
 #. Select **Deploy**
 
-
-
-#. After the upload completes select **Install**
-
 #. Fill out the details
 
    - **Name** - Initials
