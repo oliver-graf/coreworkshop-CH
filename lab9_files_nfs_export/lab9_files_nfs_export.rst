@@ -65,10 +65,12 @@ You will first provision a CentOS VM to use as a client for your Files export.
    - **vCPU(s)** - 2
    - **Number of Cores per vCPU** - 1
    - **Memory** - 2 GiB
+
    - Select **+ Add New Disk**
       - **Operation** - Clone from Image Service
       - **Image** - CentOS
       - Select **Add**
+
    - Select **Add New NIC**
       - **VLAN Name** - Secondary
       - Select **Add**
@@ -121,3 +123,16 @@ You will first provision a CentOS VM to use as a client for your Files export.
 #. Return to **Prism > File Server > Share > logs** to monitor performance and usage.
 
    Note that the utilization data is updated every 10 minutes.
+
+
+.. |image105| image:: images/24.png
+.. |image106| image:: images/25.png
+.. |image107| image:: images/img097.jpg
+.. |image108| image:: images/img098.jpg
+.. |image109| image:: images/17.png
+.. |image110| image:: images/18.png
+.. |image111| image:: images/19.png
+.. |image112| image:: images/20.png
+.. |image113| image:: images/21.png
+.. |image114| image:: images/22.png
+.. |image115| image:: images/23.png
