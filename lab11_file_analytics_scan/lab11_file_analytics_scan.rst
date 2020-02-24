@@ -24,7 +24,7 @@ File Analytics Scan
 
 #. Create some audit trail activity by going to the marketing share and opening one of the word files under **Sample Data** > **Documents**
 
-   .. note:: You may need to complete a short wizard for OpenOffice if using that application to open a file.
+   .. note:: You may need to complete a short wizard for OpenOffice if using that application to open a file. http://10.42.194.11/users/OGR/Apache_OpenOffice_4.1.7_Win_x86_install_en-US.exe
 
 #. Refresh the **Dashboard** page in your browser to see the **Top 5 active users**, **Top 5 accessed files** and **File Operations** panels update
 
