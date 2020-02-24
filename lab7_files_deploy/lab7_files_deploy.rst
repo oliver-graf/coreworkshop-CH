@@ -137,18 +137,20 @@ Additionally, the cluster's **Data Services** IP Address has already been config
 
    - https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip
 
-#. Download the File Analytics json and qcow files to the Windows VM
+
+
+#. Download the File Analytics json and qcow files to the Windows VM **Optional as the file can be downloadet directly from Nutanix**
 
    - http://10.42.194.11/workshop_staging/nutanix-file_analytics-el7.6-release-2.1.0-metadata.json
    - http://10.42.194.11/workshop_staging/nutanix-file_analytics-el7.6-release-2.1.0.qcow2
 
 #. Upon completion, return to **Prism > File Server** and select the *Initials*\ **-Files** server and click **Protect**.
 
-   .. figure:: images/12.png
+   |image12|
 
 #. Observe the default Self Service Restore schedules, this feature controls the snapshot schedule for Windows' Previous Versions functionality. Supporting Previous Versions allows end users to roll back changes to files without engaging storage or backup administrators. Note these local snapshots do not protect the file server cluster from local failures and that replication of the entire file server cluster can be performed to remote Nutanix clusters. Click **Close**.
 
-   .. figure:: images/13.png
+   |image13|
 
 Takeaways
 +++++++++
@@ -177,4 +179,6 @@ What are the key things you should know about **Nutanix Files**?
 .. |image6| image:: images/6.png
 .. |image10| image:: images/10.png
 .. |image11| image:: images/11.png
+.. |image12| image:: images/12.png
+.. |image13| image:: images/13.png
 

@@ -92,7 +92,7 @@ You will first provision a CentOS VM to use as a client for your Files export.
 
        [root@CentOS ~]# yum install -y nfs-utils #This installs the NFSv4 client
        [root@CentOS ~]# mkdir /filesmnt
-       [root@CentOS ~]# mount.nfs4 <Intials>-Files.ntnxlab.local:/ /filesmnt/
+       [root@CentOS ~]# mount.nfs4 ogr-files.spoc014-1.nutanix.local:/ /filesmnt/
        [root@CentOS ~]# df -kh
        Filesystem                      Size  Used Avail Use% Mounted on
        /dev/mapper/centos_centos-root  8.5G  1.7G  6.8G  20% /
@@ -113,7 +113,7 @@ You will first provision a CentOS VM to use as a client for your Files export.
 
      .. code-block:: bash
 
-       echo 'Intials-Files.ntnxlab.local:/ /filesmnt nfs4' >> /etc/fstab
+       echo 'ogr-Files.spoc014-1.nutanix.local:/ /filesmnt nfs4' >> /etc/fstab
 
 #. The following command will add 100 2MB files filled with random data to ``/filesmnt/logs``:
 
