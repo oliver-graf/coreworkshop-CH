@@ -90,15 +90,6 @@
 
   lab11_file_analytics_scan/lab11_file_analytics_scan
 
-#.. toctree::
-  :maxdepth: 2
-  :caption: TOOLS VMs  
-  :name: _toolsvms
-  :hidden:
-
-  tools_vms/linux_tools_vm
-  tools_vms/windows_tools_vm
-
 .. toctree::
   :maxdepth: 2
   :caption: APPENDIX  
