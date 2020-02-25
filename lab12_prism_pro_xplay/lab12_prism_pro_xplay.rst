@@ -145,6 +145,8 @@ Create Playbook
 
 2. Click **Create Playbook**.
 
+..
+
 3. Select **Alert** as Trigger, and click **Select**.
 
 -----------
@@ -163,6 +165,8 @@ Create Playbook
 
 5. Click **Add Action**, and select the **VM Snapshot** action.
 
+..
+
 6. Select **Source Entity** from the parameters.
 
 ..
@@ -180,6 +184,8 @@ Create Playbook
 
 7. Click **Add Action**, and select the **VM Add Memory** action.
 
+..
+
 8. Select **Source Entity** from the parameters.
 
    -  **Target VM** - Alert: Source Entity
@@ -188,52 +194,40 @@ Create Playbook
 
    -  **Absolute Maximum** - 20 GiB
 
-9. Click **Add Action**, and select the **Email** action.
-
 -----------
 
    |image10|
 
 -----------
 
-.. Note::
 
-   Try creating your own alert messages using available parameters.
+9. Click **Add Action**, and select the **Acknowledge Alert** action.
 
--  **Recipient** - `YourEmail@nutanix.com <mailto:YourEmail%40nutanix.com>`__
+..
 
--  **Subject** - Playbook: Playbook NameAlert: Alert Name
-
--  **Message** - Prism Pro X-FIT detected Alert: Alert NameNamein Alert: Source Entity Name. Prism Pro X-Play has run the playbook of Playbook: Playbook Name. As a result, Prism Pro increased 1GB memory in Alert: Source Entity Name.
-
------------
-
-   |image11|
-
------------
-
-10. Click **Add Action**, and select the **Acknowledge Alert** action.
-
-11. Select **Alert** from the parameters.
+10. Select **Alert** from the parameters.
 
     -  **Target Alert** - Alert: Alert
 
-12. Click **Save & Close**, and fill out the following fields:
+..
 
-    -  **Name** - *Initials* - Auto Remove Memory Constraint
+11. Click **Save & Close**, and fill out the following fields:
 
-    -  **Description** - Optional
+    *  **Name** - *Initials* - Auto Remove Memory Constraint
+    *  **Description** - Optional
+    *  **Status** - Enabled
 
-    -  **Status** - Enabled
+..
 
-13. Click **Save**.
+12. Click **Save**.
+
 
 Cause Memory Constraint
 =======================
 
 1. In **Prism Central** > select **> Virtual Infrastructure > VMs**, and click *Initials*\ **-centos7**.
 
-2. Take note of your *Initials*\ **-Linux-ToolsVM** VM’s memory capacity (should be 2 GiB).
+2. Take note of your *Initials*\ **-centos7** VM’s memory capacity (should be 2 GiB).
 
 3. Click **Alerts**, Select **Alert Policy** from **Configure** drop-down menu.
 
@@ -241,9 +235,7 @@ Cause Memory Constraint
 
    After 2-5 minutes you should receive an email from Prism.
 
-7. Verify the email reflects the subject and body relevant to the parameters configured earlier in the lab.
-
-8. Verify that the memory capacity on your *Initials*\ **-centos7** VM has increased.
+5. Verify that the memory capacity on your *Initials*\ **-centos7** VM has increased.
 
 Review the Playbook Play
 ========================
@@ -260,29 +252,29 @@ Review the Playbook Play
 
 4. Click the Play, and examine the details.
 
+
 Reset VM Memory
 ===============
 
-1. Change your *Initials*\ **-centos7** memory back to 2GB.
+1. Change your *Initials*\ **-centos7** memory back to 2GB you have to power off the vm to reduce the memory, as well add 2 more vcpus
 
-Reduce CPU Capacity for a VM During a Maintenance Window\ 
+Reduce CPU Capacity for a VM During a Maintenance Window 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-X-Fit in Prism Pro utilizes Machine Learning to continually analyze the
-environment. This is helpful to detect resource constraints, such as our
-memory constraint in the last lab, or inefficiencies such as VMs with
-too many vCPUs or too much memory.
+X-Fit in Prism Pro utilizes Machine Learning to continually analyze the environment. This is helpful to detect resource constraints, such as our memory constraint in the last lab, or inefficiencies such as VMs with too many vCPUs or too much memory.
 
-In this exercise we will create a playbook to take care of
-over-provisioned CPU.
+In this exercise we will create a playbook to take care of over-provisioned CPU.
+
+Acknowledge and Resolve the Alert if there are any 
+
+Go to **Prism Central**> select **Virtual Infrastructure**> **VMs** > *Initials*\ **-centos7** > **Alerts**
 
 .. _create-alert-policy-1:
 
 Create Alert Policy
 ===================
 
-1. In **Prism Central** > select **> Activity > Alerts**, and select
-   **Alert Policy** from **Configure** drop-down menu.
+1. In **Prism Central** > select **> Activity > Alerts**, and select **Alert Policy** from **Configure** drop-down menu.
 
 2. Click **+ New Alert Policy**.
 
@@ -292,7 +284,7 @@ Create Alert Policy
 
    -  **Entity (Line 1)** - One VM
 
-   -  **Entity (Line 2)** - *Initials*\ **-Linux-ToolsVM**
+   -  **Entity (Line 2)** - *Initials*\ **-centos7**
 
    -  **Metric** - CPU Usage
 
@@ -325,74 +317,38 @@ Create Playbook
 
 3.  Select **Alert** as Trigger, and click **Select**.
 
-4.  Start typing to search for “VM CPU Overprovisioned” in **Alert
-    Policy**, and select *Initials* - **VM CPU Overprovisioned**.
+4.  Start typing to search for “VM CPU Overprovisioned” in **Alert Policy**, and select *Initials* - **VM CPU Overprovisioned**.
 
-5.  Click **Add Action**, and select the **Power Off VM** action.
+5.  In many Environments, a production VM can not be powered off to alter the VM configuration. X-Play provides a way for the administrator to specify the time window where the actions can be executed. pleas choos **Wait until Day of Week** 
 
-6.  Select **Source Entity** from the parameters.
+6.  Click **Add Action**, and select the **Power Off VM** action.
 
-    -  **Target VM** - {{trigger[0].source_entity_info}}
+7.  Select **Source Entity** from the parameters.
+
+    -  **Target VM** - Alert: Source Entity
 
     -  **Type of Power Off Action** - Power Off
 
-7.  Click **Add Action**, and select the **VM Reduce CPU** action.
+8.  Click **Add Action**, and select the **VM Reduce CPU** action.
 
-8.  Select **Source Entity** from the parameters.
+9.  Select **Source Entity** from the parameters.
 
-    -  **Target VM** - {{trigger[0].source_entity_info}}
+    -  **Target VM** - Alert: Source Entity
 
     -  **vCPUs to Remove** - 1
 
     -  **Minimum Number of vCPUs** - 1
 
-    -  **Cores per vCPU to Remove** - Leave Blank
+10.  Click **Add Action**, and select the **Power On VM** action.
 
-    -  **Minimum Number of Cores per vCPU** - Leave Blank
+11. Select **Source Entity** from the parameters.
 
-9.  Click **Add Action**, and select the **Power On VM** action.
+    -  **Target VM** - Alert: Source Entity
 
-10. Select **Source Entity** from the parameters.
+12. Click **Add Action**, and select the **Email** action.
 
-    -  **Target VM** - {{trigger[0].source_entity_info}}
 
-11. Click **Add Action**, and select the **Email** action.
-
-..
-
-   In many Environments, a production VM can not be powered off to alter
-   the VM configuration. X-Play provides a way for the administrator to
-   specify the time window where the actions can be executed.
-
-12. Click **Restrict**.
-
-13. Configure the start time for ~5 minutes after your current time.
-
-14. Click **Set Restriction**.
-
-..
-
-   The **Restrict** label will change to **Restriction Set**. If you
-   hover the mouse, you will see the schedule you just set.
-
-   Note
-
-   The steps above illustrate the way you can achieve this in 5.10 EA.
-   In GA there will be three action types that will replace and enhance
-   the **Restrict**:
-
-   **Wait for Some Time**
-
-   **Wait until Day of Month**
-
-   **Wait until Day of Week**
-
-   These action types can be used the same as any other regular action
-   type in any part of the Playbook. These restrictions can help support
-   both planned maintenance windows and human approval process for
-   playbook execution.
-
-15. Click **Save & Close**, and fill out the following fields:
+13. Click **Save & Close**, and fill out the following fields:
 
     -  **Name** - *Initials* - Reduce VM CPU
 
@@ -400,84 +356,43 @@ Create Playbook
 
     -  **Status** - Enabled
 
-16. Click **Save**.
+14. Click **Save**.
 
 Cause CPU Over-Provision
 ========================
 
-1. In **Prism Central** > select **> Virtual Infrastructure > VMs**, and
-   click *Initials*\ **-Linux-ToolsVM**.
+1. In **Prism Central** > select **> Virtual Infrastructure > VMs**, and click *Initials*\ **-centos7**.
 
-2. Take note of your *Initials*\ **-Linux-ToolsVM** VM’s CPU Cores
-   (should be 2).
+2. Take note of your *Initials*\ **-centos7** VM’s CPU Cores.
 
-3. Click **Alerts**, select **Alert Policy** from **Configure**
-   drop-down menu.
+3. Click **Alerts**, select **Alert Policy** from **Configure** drop-down menu.
 
-4. Select *Initials* - **VM CPU Overprovisioned**, and **Enable** the
-   policy.
+4. Select *Initials* - **VM CPU Overprovisioned**, and **Enable** the policy.
 
-5. Open a console session or SSH into Prism Central, and run the
-   **paintrigger.py** script:
+5. In **Prism Central** > select **> Operations > Playbooks**.
 
-   -  **Username** - nutanix
-
-   -  **password** - nutanix/4u
-
-6. python paintrigger.py
-
-7. In **Prism Central** > select **> Operations > Playbooks**.
-
-8. Select your *Initials* - **Reduce VM CPU -**, and click **Plays**.
+6. Select your *Initials* - **Reduce VM CPU -**, and click **Plays**.
 
 ..
 
-   You should see that there is a Play with your initials in
-   **Scheduled** status.
+   You should see that there is a Play with your initials in **Paused** status.
 
-9.  Wait for 1-2 minutes past the previously configured start time and
-    you should receive an email from Prism.
+7.  you can now manualy resume or wait till the timer you set triggers.
 
-10. Verify the email reflects the subject and body relevant to the
-    parameters configured earlier in the lab.
-
-11. Verify that the CPU cores on your *Initials*\ **-Linux-ToolsVM** VM
-    have been reduced.
+8. Verify that the CPU cores on your *Initials*\ **-centos7** VM have been reduced.
 
 ..
 
-   This indicates that the trigger happened and the rest of the Play is
-   waiting for the window to execute. You can select this Play and abort
-   it from the **Action** menu.
-
-.. _review-the-playbook-play-1:
-
-Review the Playbook Play
-========================
-
-1. In **Prism Central** > select **> Operations > Playbooks**.
-
-2. Select your *Initials* - **Reduce VM CPU**, and **Disable** it.
-
-3. Click **Plays**.
-
-..
-
-   You should see that the Play has just completed.
-
-4. Click the Play, and examine the details.
 
 Things to do Next
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+=================
 
-As you can see, X-Play paired with X-Fit is very powerful. You can go to
-**Action Gallery** page and familiarize yourself with all the
-out-of-the-box Actions to see all the possible things you can do.
+As you can see, X-Play paired with X-Fit is very powerful. You can go to **Action Gallery** page and familiarize yourself with all the out-of-the-box Actions to see all the possible things you can do.
 
 1. In **Prism Central** > select **> Operations > Actions Gallery**.
 
 Use X-Play with Other Nutanix Products
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+======================================
 
 Let’s see how we can use X-Play with other Nutanix products by creating a Playbook to automatically quarantine a bully VM.
 
@@ -488,14 +403,11 @@ Let’s see how we can use X-Play with other Nutanix products by creating a Play
 
     -  **password** - <password>
 
-2.  Make sure NODE_PATH has the global nodejs module directory by
-    running the following command to set it:
+2.  Make sure NODE_PATH has the global nodejs module directory by running the following command to set it:
 
 3.  export NODE_PATH=/usr/lib/node_modules
 
-4.  Within *Initials*\ **-Linux-ToolsVM**, download the
-    `processapi.js <https://s3.amazonaws.com/handsonworkshops.prod.media/ws/c7322d4049734ea285178658664d8fee/d/file/ebfe7f3bbc8642d6901c70dac59e444e/e590e68a4a7177083c84e2b1ff2441a6/processapi.js>`__
-    file:
+4.  Within *Initials*\ **-centos7**, download the `processapi.js <https://s3.amazonaws.com/handsonworkshops.prod.media/ws/c7322d4049734ea285178658664d8fee/d/file/ebfe7f3bbc8642d6901c70dac59e444e/e590e68a4a7177083c84e2b1ff2441a6/processapi.js>`__ file:
 
 5.  curl -L https://s3.amazonaws.com/get-ahv-images/processapi.js -o processapi.js
 
@@ -526,8 +438,7 @@ Let’s see how we can use X-Play with other Nutanix products by creating a Play
 Create Alert Policy 
 =====================
 
-1. In **Prism Central** > select **> Activity > Alerts**, and Select
-   **Alert Policy** from **Configure** drop-down menu.
+1. In **Prism Central** > select **> Activity > Alerts**, and Select **Alert Policy** from **Configure** drop-down menu.
 
 2. Click **+ New Alert Policy**.
 
@@ -537,7 +448,7 @@ Create Alert Policy
 
    -  **Entity (Line 1)** - One VM
 
-   -  **Entity (Line 2)** - *Initials*\ **-Linux-ToolsVM**
+   -  **Entity (Line 2)** - *Initials*\ **-centos7**
 
    -  **Metric** - Controller IO Bandwidth
 
@@ -563,20 +474,16 @@ Create Alert Policy
 
 4. Click **Save**.
 
-..
+.. Note::
 
-   Note
-
-   Customers can choose out-of-the-box alert policies (shown below) to
-   detect the bully VM with X-Fit.
+   Customers can choose out-of-the-box alert policies (shown below) to detect the bully VM with X-Fit.
 
 Create Custom REST API Action 
 ==============================
 
 1. In **Prism Central** > select **> Operations > Actions Gallery**.
 
-2. Select **REST API** action, and then select **Clone** from the
-   **Action** dropdown.
+2. Select **REST API** action, and then select **Clone** from the **Action** dropdown.
 
 3. Fill in the following fields:
 
@@ -586,8 +493,7 @@ Create Custom REST API Action
 
    -  **Method** - PUT
 
-   -  **URL** - `https:// <NULL>`__\ *<your PC
-      IP>*:9440/api/nutanix/v3/vms/{{trigger[0].source_entity_info.uuid}}
+   -  **URL** - `https:// <NULL>`__\ *<your PC IP>*:9440/api/nutanix/v3/vms/{{trigger[0].source_entity_info.uuid}}
 
    -  **Request Headers** - Content-Type: application/json
 
@@ -604,35 +510,25 @@ Create Playbook
 
 3. Select **Alert** as Trigger, and click **Select**.
 
-4. Start typing to search for “Bully VM” in **Alert Policy**, and select
-   *Initials* - **Bully VM**.
+4. Start typing to search for “Bully VM” in **Alert Policy**, and select *Initials* - **Bully VM**.
 
 5. Click **Add Action**, and select the **REST API** action.
 
    -  **Method** - GET
 
-   -  **URL** - `http:/ <NULL>`__/<IP of *Initial*-Linux-toolsVM>:3000/vm/{{trigger[0].source_entity_info.uuid}}
+   -  **URL** - `http:/ <NULL>`__/<IP of *Initial*-centos7>:3000/vm/{{trigger[0].source_entity_info.uuid}}
 
-..
+.. Note::
 
-   Note
+   There is a known issue in 5.10 where you have to click the “GET” in the drop list once even though “GET” is shown as the default value.
 
-   There is a known issue in 5.10 where you have to click the “GET” in
-   the drop list once even though “GET” is shown as the default value.
+6. Click **Add Action**, and select the *Initials* - **Quarantine a VM** action.
 
-6. Click **Add Action**, and select the *Initials* - **Quarantine a VM**
-   action.
+.. Note::
 
-..
+   There is a known issue in 5.10 where the title of this action still shows as “REST API”. In 5.11 GA, you will see the title as you specified earlier.
 
-   Note
-
-   There is a known issue in 5.10 where the title of this action still
-   shows as “REST API”. In 5.11 GA, you will see the title as you
-   specified earlier.
-
-7.  Click **Parameters** and select **Response Body** into the request
-    body field.
+7.  Click **Parameters** and select **Response Body** into the request body field.
 
 8.  Specify the **Username** and **Password** for **Prism Central**.
 
@@ -655,37 +551,23 @@ Create Playbook
 Cause Bully VM Condition 
 ========================
 
-1. In **Prism Central** > select **> Virtual Infrastructure > VMs**, and
-   click *Initials*\ **-Linux-ToolsVM**.
+1. In **Prism Central** > select **> Virtual Infrastructure > VMs**, and click *Initials*\ **-centos7**.
 
-2. Click **Categories**, and make sure it is not currently quarantined
-   and associated with any categories.
+2. Click **Categories**, and make sure it is not currently quarantined and associated with any categories.
 
-3. In **Prism Central** > select **> Activity > Alerts**, and select
-   **Alert Policy** from **Configure** drop-down menu.
+3. In **Prism Central** > select **> Activity > Alerts**, and select **Alert Policy** from **Configure** drop-down menu.
 
 ..
 
    Select *Initials* - **Bully VM**, and **Enable** the policy.
 
-   Open a console session or SSH into Prism Central, and run the
-   **paintrigger.py** script:
 
--  **Username** - nutanix
-
--  **password** - nutanix/4u
-
-..
-
-   python paintrigger.py
-
-4. After 1-2 minutes check *Initials*\ **-Linux-ToolsVM**, you should
-   now see the VM is quarantined.
+4. After 1-2 minutes check *Initials*\ **-centos7**, you should  now see the VM is quarantined.
 
 Cleanup Bully VM Condition 
 ==========================
 
-1. Un-quarantine your *Initials*\ **-Linux-ToolsVM**.
+1. Un-quarantine your *Initials*\ **-centos7**.
 
 2. In **Prism Central** > select **> Operations > Playbooks**.
 
@@ -696,32 +578,24 @@ Cleanup Bully VM Condition
    completed.
 
 5. If the terminal session is broken (due to the quarantine), log in to
-   *Initial*-**Linux-ToolsVM** to kill the node and stress processes.
+   *Initial*-**centos7** to kill the node and stress processes.
 
 (Optional) Endless Possibilities Using APIs
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+===========================================
 
-This exercise will show how you can easily include 3rd party tools into
-X-Play. Using `IFTTT <https://ifttt.com/>`__ you can easily send a Slack
-message when an alert is detected. This same functionality could be
-extended to SMS alerts, ServiceNow, or any other 3rd party tools.
+This exercise will show how you can easily include 3rd party tools into X-Play. Using `IFTTT <https://ifttt.com/>`__ you can easily send a Slack message when an alert is detected. This same functionality could be extended to SMS alerts, ServiceNow, or any other 3rd party tools.
 
-1. Before we set up IFTTT, ensure your *Initial*-**Linux-ToolsVM** has
-   2GB of memory assigned.
+1. Before we set up IFTTT, ensure your *Initial*-**centos7** has   2GB of memory assigned.
 
-2. Log in to the *Initials*\ **-Linux-ToolsVM** via ssh or Console
-   session.
+2. Log in to the *Initials*\ **-centos7** via ssh or Console session.
 
 3. Run stress again to generate memory pressure:
 
 4. stress -m 4 --vm-bytes 500M
 
-..
+.. Note::
 
-   Note
-
-   It will take roughly 5min for Stress to generate the memory load to
-   cause the alert.
+   It will take roughly 5min for Stress to generate the memory load to cause the alert.
 
 Setup IFTTT
 ===========
@@ -736,20 +610,15 @@ Setup IFTTT
 
 5. Click the **Settings** button at the top right.
 
-6. Copy the URL shown in the **Settings** (e.g.
-   https://maker.ifttt.com/use/xxxxxyyyyzzz).
+6. Copy the URL shown in the **Settings** (e.g. https://maker.ifttt.com/use/xxxxxyyyyzzz).
 
-7. Paste that URL into a new browser tab, and go to the page. The page
-   that opens will show your unique Webhook address (e.g.
-   https://maker.ifttt.com/trigger/{event}/with/key/xxxxxyyyzzz).
+7. Paste that URL into a new browser tab, and go to the page. The page that opens will show your unique Webhook address (e.g. https://maker.ifttt.com/trigger/{event}/with/key/xxxxxyyyzzz).
 
 ..
 
-   Take note of the address, as this is what we will be targeting in the
-   X-Play REST API action later.
+   Take note of the address, as this is what we will be targeting in the X-Play REST API action later.
 
-   Now you can create your own applet that will be triggered when it is
-   called from X-Play.
+   Now you can create your own applet that will be triggered when it is called from X-Play.
 
 8.  In a new browser tab, open https://ifttt.com/my_applets.
 
@@ -759,20 +628,17 @@ Setup IFTTT
 
 ..
 
-   This is where you will set up the Webhook URL that X-Play can
-   trigger.
+   This is where you will set up the Webhook URL that X-Play can trigger.
 
 11. Search and click **Webhooks**.
 
 12. Click **Receive a web request**.
 
-13. Fill your **event** name. This name will be part of the Webhook URL
-    from earlier in the exercise:
+13. Fill your **event** name. This name will be part of the Webhook URL from earlier in the exercise:
 
 ..
 
-   For example, if the event name is **xplay**, the Webhook URL you will
-   use in X-Play will be something like this:
+   For example, if the event name is **xplay**, the Webhook URL you will use in X-Play will be something like this:
 
    https://maker.ifttt.com/trigger/xplay/with/key/xxxxxyyyzzz
 
@@ -780,27 +646,19 @@ Setup IFTTT
 
 ..
 
-   You can now create the **+that** to decide what you are going to do
-   in this applet.
+   You can now create the **+that** to decide what you are going to do in this applet.
 
-   You can use your imagination here. There are over 600 IFTTT services
-   from which you can choose. For example, you can call your cell phone,
-   send you an calendar event, send a text message, change the color of
-   a Philips HUE LED lightbulb, or even open your garage door.
+   You can use your imagination here. There are over 600 IFTTT services from which you can choose. For example, you can call your cell phone, send you an calendar event, send a text message, change the color of a Philips HUE LED lightbulb, or even open your garage door.
 
-   Note
+.. Note::
 
-   If you are familiar with Zapier, you can also use that instead of
-   IFTTT. Zapier can connect to over 1000 services, including
-   Salesforce, PagerDuty, and many enterprise applications.
+   If you are familiar with Zapier, you can also use that instead of IFTTT. Zapier can connect to over 1000 services, including Salesforce, PagerDuty, and many enterprise applications.
 
-   For this lab we are using its Slack service as an example. You are
-   free and **encouraged** to choose any other service in this step.
+   For this lab we are using its Slack service as an example. You are free and **encouraged** to choose any other service in this step.
 
-   Note
+.. Note::
 
-   X-Play also includes a native Slack action without requiring 3rd
-   party services such as IFTTT.
+   X-Play also includes a native Slack action without requiring 3rd party services such as IFTTT.
 
 15. Click **+that**.
 
@@ -816,8 +674,7 @@ Setup IFTTT
 
    You have three values can pass from from X-Play to IFTTT:
 
-   In this example, Value 1 is the Alert name, Value 2 is the VM name,
-   and Value 3 is the Playbook name.
+   In this example, Value 1 is the Alert name, Value 2 is the VM name, and Value 3 is the Playbook name.
 
 20. Click **Add Ingredient** to specify **Values 1-3**.
 
@@ -825,9 +682,7 @@ Setup IFTTT
 
     -  **Which channel** - Direct Messages & @yourSlackHandle
 
-    -  **Message** - Nutanix X-FIT just detected an issue of {{Value1}}
-       in {{Value2}} VM. Playbook “{{Value3}}” has increased its memory
-       by 1GB. – This message was sent by Prism Pro on {{OccurredAt}}.
+    -  **Message** - Nutanix X-FIT just detected an issue of {{Value1}} in {{Value2}} VM. Playbook “{{Value3}}” has increased its memory by 1GB. – This message was sent by Prism Pro on {{OccurredAt}}.
 
     -  **Title** - Nutanix Prism Pro just fixed an issue for you.
 
@@ -835,8 +690,7 @@ Setup IFTTT
 
 ..
 
-   You now have an IFTTT applet that can be called from X-Play through a
-   generic Webhook!
+   You now have an IFTTT applet that can be called from X-Play through a generic Webhook!
 
 .. _create-custom-rest-api-action-1:
 
@@ -845,8 +699,7 @@ Create Custom REST API Action
 
 1. In **Prism Central** > select **> Operations > Actions Gallery**.
 
-2. Select **REST API** action, and then select **Clone** from the
-   **Action** dropdown.
+2. Select **REST API** action, and then select **Clone** from the **Action** dropdown.
 
 3. Fill in the following fields:
 
@@ -856,13 +709,9 @@ Create Custom REST API Action
 
    -  **Method** - Post
 
-   -  **URL** - *Your IFTTT URL*, (e.g.
-      https://maker.ifttt.com/trigger/xplay/with/key/xxxxxyyyzzz)
+   -  **URL** - *Your IFTTT URL*, (e.g. https://maker.ifttt.com/trigger/xplay/with/key/xxxxxyyyzzz)
 
-   -  **Request Body** - { “value1”:
-      “{{trigger[0].alert_entity_info.name}}”, “value2”:
-      “{{trigger[0].source_entity_info.name}}”, “value3”:
-      “{{playbook.playbook_name}}” }
+   -  **Request Body** - { “value1”: “{{trigger[0].alert_entity_info.name}}”, “value2”:“{{trigger[0].source_entity_info.name}}”, “value3”:“{{playbook.playbook_name}}” }
 
    -  **Request Headers** - Content-Type: application/json
 
@@ -875,11 +724,9 @@ Create Playbook
 
 1. In **Prism Central** > select **> Operations > Playbooks**.
 
-2. Select *Initials* - **Auto Remove Memory Constraint** created in the
-   earlier lab, and click **Update** from the **Action** drop-down menu.
+2. Select *Initials* - **Auto Remove Memory Constraint** created in the earlier lab, and click **Update** from the **Action** drop-down menu.
 
-3. Click next to the action **Email** and then choose **Add Action
-   Before**.
+3. Click next to the action **Email** and then choose **Add Action Before**.
 
 4. Select the *Initials* - **Slack an X-Play Message by IFTTT** action.
 
@@ -892,44 +739,26 @@ Create Playbook
 Cause Memory Constraint
 =======================
 
-1. Click **Alerts**, Select **Alert Policy** from **Configure**
-   drop-down menu.
+1. Click **Alerts**, Select **Alert Policy** from **Configure** drop-down menu.
 
-2. Select *Initials*-**VM Memory Constrained**, and **Enable** the
-   policy.
+2. Select *Initials*-**VM Memory Constrained**, and **Enable** the policy.
 
-3. Open a console session or SSH into Prism Central, and run the
-   **paintrigger.py** script:
+3. After 2-5 minutes you should receive both an email and a Slack message from Prism.
 
-   -  **Username** - nutanix
-
-   -  **password** - nutanix/4u
-
-4. python paintrigger.py
-
-5. After 2-5 minutes you should receive both an email and a Slack
-   message from Prism.
-
-6. Verify the amount of memory assigned to
-   *Initials*\ **-Linux-ToolsVM** has increased.
+4. Verify the amount of memory assigned to *Initials*\ **-centos7** has increased.
 
 Takeaways
---------------------------------------------------------------------------------------------------------------------------------------------
+=========
 
 What are the key things you should know about **Prism Pro: X-Play**?
 
--  Prism Pro is our solution to make IT OPS smarter and automated. It
-   covers the IT OPS process ranging from intelligent detection to
-   automated remediation.
+-  Prism Pro is our solution to make IT OPS smarter and automated. It covers the IT OPS process ranging from intelligent detection to automated remediation.
 
--  X-Fit is our machine learning engine to support smart IT OPS,
-   including forecast, anomaly detection, and inefficiency detection.
+-  X-Fit is our machine learning engine to support smart IT OPS, including forecast, anomaly detection, and inefficiency detection.
 
--  X-Play, the IFTTT for the enterprise, is our engine to enable the
-   automation of daily operations tasks.
+-  X-Play, the IFTTT for the enterprise, is our engine to enable the automation of daily operations tasks.
 
--  X-Play enables admins to confidently automate their daily tasks
-   within minutes.
+-  X-Play enables admins to confidently automate their daily tasks within minutes.
 
 Getting Connected
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
