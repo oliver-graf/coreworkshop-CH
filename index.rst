@@ -98,6 +98,20 @@
 
   lab12_prism_pro_xplay/lab12_prism_pro_xplay
 
+  :maxdepth: 2
+  :caption: KNOWLEDGE CHECK
+  :name: _Knowledge_Check
+  :hidden:
+
+  Knowledge_Check/Knowledge_Check
+
+    :maxdepth: 2
+  :caption: KNOWLEDGE CHECK ANSWER KEY
+  :name: _Knowledge_Check_Answer_Key
+  :hidden:
+
+  Knowledge_Check_Answer_Key/Knowledge_Check_Answer_Key
+
 .. toctree::
   :maxdepth: 2
   :caption: APPENDIX  

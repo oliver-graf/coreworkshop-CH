@@ -1,4 +1,4 @@
-.. _module99_Lab_1_Knowledge_Check_Answer_Key:
+.. _Knowledge_Check_Answer_Key:
 
 Module 99
 ==================
