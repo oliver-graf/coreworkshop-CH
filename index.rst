@@ -92,6 +92,14 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: XPLAY
+  :name: _prism_pro_xplay
+  :hidden:
+
+  lab12_prism_pro_xplay/lab12_prism_pro_xplay
+
+.. toctree::
+  :maxdepth: 2
   :caption: APPENDIX  
   :name: _appendix
   :hidden:

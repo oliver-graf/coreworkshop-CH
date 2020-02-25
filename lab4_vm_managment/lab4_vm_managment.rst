@@ -369,9 +369,9 @@ Exercise 3: Creating a Linux Virtual Machine
 NAME                        **CentOS7-<your initials>, use the initials of your full name. For example: CentOS7-ABC**         
 DESCRIPTION                 **Leave blank.**
 Use this VM as an agent VM  **Do not select.**.
-VCPU(S)                     **2**
+VCPU(S)                     **1**
 NUMBER OF CORES PER VCPU    **2**
-MEMORY                      **8**
+MEMORY                      **2**
 =========================== =========================================================================================
 
 

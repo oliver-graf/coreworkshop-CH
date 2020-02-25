@@ -1,13 +1,15 @@
 .. _prism_pro_xplay:
 
---------------------------------------------
+
 Prism Pro: X-Play
 --------------------------------------------
 
 Overview
 ++++++++
 
+Connect to Prism Central
 
+   |image114|
 
 Increase Constrained VM Memory with X-Play
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -16,11 +18,11 @@ In this lab story we will now use X-Play to create a Playbook to automatically a
 
 #. Use the search bar to navigate to the **Playbooks** page.
 
-   .. figure:: images/ppro_26.png
+   |image115|
 
 #. We will start by creating a Playbook. Click **Create Playbook** at the top of the table view
 
-   .. figure:: images/ppro_27.png
+   |image116|
 
 #. Select Alert as a trigger
 
@@ -202,3 +204,30 @@ Takeaways
 - X-Play, the IFTTT for the enterprise, is our engine to enable the automation of daily operations tasks.
 - X-Play enables admins to confidently automate their daily tasks within minutes.
 - X-Play is extensive that can use customer’s existing APIs and scripts as part of its playbooks.
+
+
+
+.. |image114| image:: images/ppro_76.png
+.. |image115| image:: images/ppro_26.png
+.. |image116| image:: images/27.png
+.. |image117| image:: images/36.png
+.. |image118| image:: images/35.png
+.. |image119| image:: images/36.png
+.. |image120| image:: images/37.png
+.. |image121| image:: images/36.png
+.. |image122| image:: images/35.png
+.. |image123| image:: images/36.png
+.. |image124| image:: images/37.png
+.. |image125| image:: images/36.png
+.. |image126| image:: images/35.png
+.. |image127| image:: images/36.png
+.. |image128| image:: images/37.png
+.. |image129| image:: images/36.png
+.. |image130| image:: images/35.png
+.. |image131| image:: images/36.png
+.. |image132| image:: images/37.png
+.. |image133| image:: images/36.png
+.. |image134| image:: images/35.png
+.. |image135| image:: images/36.png
+.. |image135| image:: images/37.png
+.. |image136| image:: images/36.png
