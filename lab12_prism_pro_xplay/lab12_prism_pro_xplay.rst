@@ -12,12 +12,15 @@ Follow the prism central unlock procedure if this demo is executed prior
 The demo is already prepped, you will be working with the first IIS VM
 deployed.
 
+ - .. raw:: html
+
+           <video controls src="image/X-PlayIIS.mp4" width="320" height="320"> </video>   
 
 +-----------------------------------------------------+----------+---+
 | .. rubric:: **Learning XPlay**                      |          |   |
 |    :name: learning-xplay                            |          |   |
 +=====================================================+==========+===+
-| -  First step of this demo is to understand what    | |image2| |   |
+| -  First step of this demo is to understand what    | |image01||   |
 |    X-Play is.                                       |          |   |
 |                                                     |          |   |
 | -  In short its a operations automation system for  |          |   |
@@ -123,20 +126,20 @@ deployed.
 
 |image13|
 
-.. |image0| image:: media/image1.png
-.. |image1| image:: media/image1.png
-.. |image2| image:: media/image1.png
-.. |image3| image:: media/image2.png
-.. |image4| image:: media/image3.png
-.. |image5| image:: media/image4.png
-.. |image6| image:: media/image5.png
-.. |image7| image:: media/image6.png
-.. |image8| image:: media/image7.png
-.. |image9| image:: media/image8.png
-.. |image10| image:: media/image9.png
-.. |image11| image:: media/image10.png
-.. |image12| image:: media/image11.png
-.. |image13| image:: media/image12.png
-.. |image14| image:: media/X-PlayIIS.mp4
+.. |image0| image:: images/image01.png
+.. |image1| image:: images/image02.png
+.. |image2| image:: images/image03.png
+.. |image3| image:: images/image04.png
+.. |image4| image:: images/image05.png
+.. |image5| image:: images/image06.png
+.. |image6| image:: images/image07.png
+.. |image7| image:: images/image08.png
+.. |image8| image:: images/image09.png
+.. |image9| image:: images/image10.png
+.. |image10| image:: images/image11.png
+.. |image11| image:: images/image12.png
+.. |image12| image:: images/image13.png
+.. |image13| image:: images/image14.png
+.. |image14| image:: images/X-PlayIIS.mp4
 
 
