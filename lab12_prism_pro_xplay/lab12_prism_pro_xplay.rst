@@ -14,7 +14,7 @@ deployed.
 
  - .. raw:: html
 
-           <video controls src="image/X-PlayIIS.mp4" width="320" height="320"> </video>   
+           <video controls src="images/X-PlayIIS.mp4" width="320" height="320"> </video>   
 
 +-----------------------------------------------------+----------+---+
 | .. rubric:: **Learning XPlay**                      |          |   |
