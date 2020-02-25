@@ -98,6 +98,7 @@
 
   lab12_prism_pro_xplay/lab12_prism_pro_xplay
 
+.. toctree::
   :maxdepth: 2
   :caption: KNOWLEDGE CHECK
   :name: _Knowledge_Check
@@ -105,6 +106,7 @@
 
   Knowledge_Check/Knowledge_Check
 
+.. toctree::
   :maxdepth: 2
   :caption: KNOWLEDGE CHECK ANSWER KEY
   :name: _Knowledge_Check_Answer_Key
