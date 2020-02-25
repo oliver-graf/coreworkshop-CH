@@ -1,9 +1,7 @@
 .. _Knowledge_Check_Answer_Key:
 
-Module 99
-==================
 
-Lab 1: Knowledge Check Answer Key
+Knowledge Check Answer Key
 ---------------------------------
 
    **Individual Exercise**

@@ -1,10 +1,7 @@
 .. _Knowledge_Check:
 
-Module 1
-========
-
-Lab 1: Knowledge Check
-----------------------
+Knowledge Check
+----------------
 
     **Individual Exercise**
 

@@ -105,7 +105,7 @@
 
   Knowledge_Check/Knowledge_Check
 
-    :maxdepth: 2
+  :maxdepth: 2
   :caption: KNOWLEDGE CHECK ANSWER KEY
   :name: _Knowledge_Check_Answer_Key
   :hidden:
