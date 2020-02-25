@@ -737,6 +737,8 @@ Create Custom REST API Action
 
    -  **Request Headers** - Content-Type: application/json
 
+   |image19|
+
 4. Click **Copy**.
 
 .. _create-playbook-3:
@@ -749,6 +751,9 @@ Create Playbook
 2. Select *Initials* - **Auto Remove Memory Constraint** created in the earlier lab, and click **Update** from the **Action** drop-down menu.
 
 3. Click next to the action **Email** and then choose **Add Action Before**.
+
+   |image20|
+
 
 4. Select the *Initials* - **Slack an X-Play Message by IFTTT** action.
 
@@ -803,3 +808,5 @@ What are the key things you should know about **Prism Pro: X-Play**?
 .. |image16| image:: images/image19.png
 .. |image17| image:: images/image20.png
 .. |image18| image:: images/image21.png
+.. |image19| image:: images/image22.png
+.. |image20| image:: images/image23.png
