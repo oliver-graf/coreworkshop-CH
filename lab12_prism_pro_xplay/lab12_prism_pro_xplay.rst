@@ -26,7 +26,7 @@ In this lab story we will now use X-Play to create a Playbook to automatically a
 
 #. Select Alert as a trigger
 
-   .. figure:: images/ppro_28.png
+   |image117|
 
 #. Search and select **VM {vm_name} Memory Constrained** as the alert policy, since this is the issue we are looking to take automated steps to remediate.
 
@@ -65,7 +65,9 @@ In this lab story we will now use X-Play to create a Playbook to automatically a
 ``Playbook {{playbook.playbook_name}} addressed alert {{trigger[0].alert_entity_info.name}}``
 
 **Message:**
-``Prism Pro X-FIT detected  {{trigger[0].alert_entity_info.name}} in {{trigger[0].source_entity_info.name}}.  Prism Pro X-Play has run the playbook of "{{playbook.playbook_name}}". As a result, Prism Pro increased 1GB memory in {{trigger[0].source_entity_info.name}}.``
+``Prism Pro X-FIT detected  {{trigger[0].alert_entity_info.name}} in {{trigger[0].source_entity_info.name}}.  
+Prism Pro X-Play has run the playbook of "{{playbook.playbook_name}}". As a result, Prism Pro increased 
+1GB memory in {{trigger[0].source_entity_info.name}}.``
 
 You are welcome to compose your own subject message. The above is just an example. You could use the “parameters” to enrich the message.
 
@@ -209,8 +211,8 @@ Takeaways
 
 .. |image114| image:: images/ppro_76.png
 .. |image115| image:: images/ppro_26.png
-.. |image116| image:: images/27.png
-.. |image117| image:: images/36.png
+.. |image116| image:: images/ppro_27.png
+.. |image117| image:: images/ppro_28.png
 .. |image118| image:: images/35.png
 .. |image119| image:: images/36.png
 .. |image120| image:: images/37.png
@@ -229,5 +231,5 @@ Takeaways
 .. |image133| image:: images/36.png
 .. |image134| image:: images/35.png
 .. |image135| image:: images/36.png
-.. |image135| image:: images/37.png
-.. |image136| image:: images/36.png
+.. |image136| image:: images/37.png
+.. |image137| image:: images/36.png
