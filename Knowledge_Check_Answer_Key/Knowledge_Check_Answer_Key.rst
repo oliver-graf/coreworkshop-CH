@@ -8,7 +8,7 @@ Knowledge Check Answer Key
 
    In this exercise you will work Individually to review what you have learned so far.
 
-1. Which two (2) product families comprise the Enterprise Cloud Platform? a. Kryptonite
+**1**. Which two (2) product families comprise the Enterprise Cloud Platform? a. Kryptonite
 
    b. **Acropolis**
 
@@ -16,7 +16,7 @@ Knowledge Check Answer Key
 
    d. Asteroid
 
-2. What are the three foundational components of Acropolis?
+**2**. What are the three foundational components of Acropolis?
 
    a. **Distributed Storage Fabric (DSF)**
 
@@ -26,7 +26,7 @@ Knowledge Check Answer Key
 
    d. **Acropolis Hypervisor**
 
-3. What is the difference between Prism Element and Prism Central?
+**3**. What is the difference between Prism Element and Prism Central?
 
    a. **Prism Element = cluster based; Prism Central = across clusters**
 
@@ -36,7 +36,7 @@ Knowledge Check Answer Key
 
    d. Prism Element = rack based; Prism Central = across racks
 
-4. Which of the following two (2) statements are true?
+**4**. Which of the following two (2) statements are true?
 
    a. **Mixing nodes with different Intel processor families in the same cluster is supported**
 
@@ -46,7 +46,7 @@ Knowledge Check Answer Key
 
    d. Encrypted disks (SED) can be mixed with unencrypted (non-SED) disks in the same node
 
-5. What services run within each node and performs specific tasks during cluster operation? Choose three (3).
+**5**. What services run within each node and performs specific tasks during cluster operation? Choose three (3).
 
    a. **Curator**
 
@@ -56,7 +56,7 @@ Knowledge Check Answer Key
 
    d. Quantum
 
-6. What three types of AOS licenses are available?
+**6**. What three types of AOS licenses are available?
 
    a. **Pro**
 
@@ -66,7 +66,7 @@ Knowledge Check Answer Key
 
    d. **Starter**
 
-7. Which hypervisors are supported by Nutanix?
+**7**. Which hypervisors are supported by Nutanix?
 
    a. ESXi, Oracle VM, and Hyper-V
 
@@ -76,7 +76,7 @@ Knowledge Check Answer Key
 
    d. AHV, ESXi, and Oracle VM
 
-8. What protocols are supported for communication between CVMs and hosts?
+**8**. What protocols are supported for communication between CVMs and hosts?
 
    a. iSCSI, NFS, and Fibre Channel
 
@@ -86,7 +86,7 @@ Knowledge Check Answer Key
 
    d. **iSCSI, NFS, and SMB3**
 
-9. What does “CVM” stand for?
+**9**. What does “CVM” stand for?
 
    a. Communications Virtual Machine
 
