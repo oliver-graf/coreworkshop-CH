@@ -30,73 +30,70 @@ In this lab story we will now use X-Play to create a Playbook to automatically a
 
 #. Search and select **VM {vm_name} Memory Constrained** as the alert policy, since this is the issue we are looking to take automated steps to remediate.
 
-   .. figure:: images/ppro_29.png
+   |image118|
 
 #. Select the *Specify VMs* radio button and choose the VM you created for the lab. This will make it so only alerts raised on your VM will trigger this Playbook.
 
-   .. figure:: images/ppro_29b.png
+   |image119|
 
 #. We will first need to snapshot the VM. Click **Add Action** on the left side and select the **VM Snapshot** action.
 
-   .. figure:: images/ppro_30.png
+   |image120|
 
 #. The Target VM is auto filled with the source entity from the Alert trigger. To finish filling the details for this action, enter a value, such as **1**, in the Time to Live field.
 
-   .. figure:: images/ppro_32.png
+   |image121|
 
 #. Next we would like to remediate the constrained memory by adding more memory to the VM. Click **Add Action** to add the **VM Add Memory** action
 
-   .. figure:: images/ppro_33.png
+   |image122|
 
 #. Set the empty fields according to the screen below.
 
-   .. figure:: images/ppro_34.png
+   |image123|
 
 
 #. Next we would like to notify someone that an automated action was taken. Click **Add Action** to add the email action
 
-   .. figure:: images/ppro_35.png
+   |image124|
 
 #. Fill in the field in the email action. Here are the examples
 
 **Recipient:** Fill in your email address.
 
 **Subject :**
-``Playbook {{playbook.playbook_name}} addressed alert {{trigger[0].alert_entity_info.name}}``
+Playbook {{playbook.playbook_name}} addressed alert {{trigger[0].alert_entity_info.name}}
 
 **Message:**
-
-    .. code-block:: bash
-    
-   Prism Pro X-FIT detected  {{trigger[0].alert_entity_info.name}} in {{trigger[0].source_entity_info.name}}. Prism Pro X-Play has run the playbook of "{{playbook.playbook_name}}". As a result, Prism Pro increased 1GB memory in {{trigger[0].source_entity_info.name}}.
+Prism Pro X-FIT detected  {{trigger[0].alert_entity_info.name}} in {{trigger[0].source_entity_info.name}}. Prism Pro X-Play has run the playbook of "{{playbook.playbook_name}}". As a result, Prism Pro increased 1GB memory in {{trigger[0].source_entity_info.name}}.
 
 You are welcome to compose your own subject message. The above is just an example. You could use the “parameters” to enrich the message.
 
-   .. figure:: images/ppro_36.png
+   |image125|
 
 #. Click **Add Action** to add the **Acknowledge Alert** action
 
-   .. figure:: images/ppro_37.png
+   |image126|
 
 #. Click **Save & Close** button and save it with a name “*Initials* - Auto Increase Constrained VM Memory”. **Be sure to enable the ‘Enabled’ toggle.**
 
-   .. figure:: images/ppro_39.png
+   |image127|
 
 #. You should see a new playbook in the “Playbooks” list page.
 
-   .. figure:: images/ppro_40.png
+   |image128|
 
 #. Search for your VM and record the current memory capacity. You can scroll down in the properties widget to see the configured memory.
 
-   .. figure:: images/ppro_41.png
+   |image129|
 
 #. **Switch tabs back to** the http://10.42.247.70 page and press Continue from the Story 1-3 Step, if you have not already.
 
-   .. figure:: images/ppro_08b.png
+   |image130|
 
 #. Now we will simulate an alert for ‘VM Memory Constrained’ which will trigger the Playbook we just created. Click the ‘Simulate Alert’ button to create the alert.
 
-   .. figure:: images/ppro_64.png
+   |image131|
 
 #. Go back to Prism page and check your VMs page again, you should now see the memory capacity is increased by 1GB. If the memory does not show updated you can refresh the browser page to speedup the process.
 
@@ -104,15 +101,15 @@ You are welcome to compose your own subject message. The above is just an exampl
 
 #. Go to the **Playbook** page, click the playbook you just created.
 
-   .. figure:: images/ppro_44.png
+   |image132|
 
 #. Click the **Plays** tab, you should see that a play has just completed.
 
-   .. figure:: images/ppro_45.png
+   |image133|
 
 #. Click the “Play” to examine the details
 
-   .. figure:: images/ppro_46.png
+   |image134|
 
 
 Using X-Play with 3rd Party API
@@ -123,19 +120,19 @@ For this story we will be using Habitica to show how we can use 3rd Party APIs w
 
 #. Use the search bar to navigate to the **Playbooks** page.
 
-   .. figure:: images/ppro_26.png
+   |image135|
 
 #. We will start by creating a Playbook. Click **Create Playbook** at the top of the table view
 
-   .. figure:: images/ppro_27.png
+   |image136|
 
 #. Use the search bar to navigate to the **Action Gallery** page.
 
-   .. figure:: images/ppro_47.png
+   |image137|
 
 #. Click the checkbox next to the item for ‘Rest API’ and then from the actions menu select the ‘Clone’ option.
 
-   .. figure:: images/ppro_48.png
+   |image138|
 
 #. We are creating an Action that we can later use in our playbook to create a Task in Habitica. Fill in the following values replacing your name in the <YOUR NAME HERE> part.
 
@@ -154,7 +151,7 @@ For this story we will be using Habitica to show how we can use 3rd Party APIs w
 | Content-Type:application/json;charset=utf-8
 
 
-   .. figure:: images/ppro_49.png
+   |image139|
 
 #. Click the **copy** button to save the action.
 
@@ -162,35 +159,35 @@ For this story we will be using Habitica to show how we can use 3rd Party APIs w
 
 #. Select the **Alert trigger** and search for and select the alert policy **VM Bully {vm_name}**. This is the alert that we would like to act on to handle when the system detects a Bully VM.
 
-   .. figure:: images/ppro_50.png
+   |image140|
 
 #. Select the **Specify VMs** radio button and choose the VM you created for the lab. This will make it so only alerts raised on your VM will trigger this Playbook.
 
-   .. figure:: images/ppro_50b.png
+   |image141|
 
 #. The first thing we would like to do is Power off the VM, so we can make sure it is not starving other VMs of resources. Click the **Add Action** button and select **Power Off VM**.
 
-   .. figure:: images/ppro_51.png
+   |image142|
 
 #. Next we would like to create a task so that we can look into what is causing this VM to be a Bully. Add another Action. This time select the action you created called, Create Habitica Task.
 
-   .. figure:: images/ppro_53.png
+   |image143|
 
 #. Add one more action, select the Acknowledge Alert action. Use the parameters for this action to fill in the ‘Alert’ parameter.
 
-   .. figure:: images/ppro_54.png
+   |image144|
 
 #. Save & Enable the playbook. You can name it  “*Initials* - Power Off Bully VM for Investigation”. **Be sure to enable the ‘Enabled’ toggle.** Click the Save button.
 
-   .. figure:: images/ppro_55.png
+   |image145|
 
 #. **Switch back to the other tab** running http://10.42.247.70 and Simulate the ‘VM Bully Detected’ alert for Story 5.
 
-   .. figure:: images/ppro_65.png
+   |image146|
 
 #. Once the alert is successfully simulated, you can check that your Playbook ran, and view the details as before.
 
-   .. figure:: images/ppro_75.png
+   |image147|
 
 #. You can verify the Rest API was called for Habitica by logging in from another tab at https://habitica.com using the credentials:
 
@@ -199,7 +196,7 @@ For this story we will be using Habitica to show how we can use 3rd Party APIs w
 
 And verify your task is created.
 
-   .. figure:: images/ppro_57.png
+   |image148|
 
 Takeaways
 +++++++++
@@ -214,23 +211,34 @@ Takeaways
 .. |image115| image:: images/ppro_26.png
 .. |image116| image:: images/ppro_27.png
 .. |image117| image:: images/ppro_28.png
-.. |image118| image:: images/35.png
-.. |image119| image:: images/36.png
-.. |image120| image:: images/37.png
-.. |image121| image:: images/36.png
-.. |image122| image:: images/35.png
-.. |image123| image:: images/36.png
-.. |image124| image:: images/37.png
-.. |image125| image:: images/36.png
-.. |image126| image:: images/35.png
-.. |image127| image:: images/36.png
-.. |image128| image:: images/37.png
-.. |image129| image:: images/36.png
-.. |image130| image:: images/35.png
-.. |image131| image:: images/36.png
-.. |image132| image:: images/37.png
-.. |image133| image:: images/36.png
-.. |image134| image:: images/35.png
-.. |image135| image:: images/36.png
-.. |image136| image:: images/37.png
-.. |image137| image:: images/36.png
+.. |image118| image:: images/ppro_29.png
+.. |image119| image:: images/ppro_29b.png
+.. |image120| image:: images/ppro_30.png
+.. |image121| image:: images/ppro_32.png
+.. |image122| image:: images/ppro_33.png
+.. |image123| image:: images/ppro_34.png
+.. |image124| image:: images/ppro_35.png
+.. |image125| image:: images/ppro_36.png
+.. |image126| image:: images/ppro_37.png
+.. |image127| image:: images/ppro_39.png
+.. |image128| image:: images/ppro_40.png
+.. |image129| image:: images/ppro_41.png
+.. |image130| image:: images/ppro_08b.png
+.. |image131| image:: images/ppro_64.png
+.. |image132| image:: images/ppro_44.png
+.. |image133| image:: images/ppro_45.png
+.. |image134| image:: images/ppro_46.png
+.. |image135| image:: images/ppro_26.png
+.. |image136| image:: images/ppro_27.png
+.. |image137| image:: images/ppro_47.png
+.. |image138| image:: images/ppro_48.png
+.. |image139| image:: images/ppro_49.png
+.. |image140| image:: images/ppro_50.png
+.. |image141| image:: images/ppro_50b.png
+.. |image142| image:: images/ppro_51.png
+.. |image143| image:: images/ppro_53.png
+.. |image144| image:: images/ppro_54.png
+.. |image145| image:: images/ppro_55.png
+.. |image146| image:: images/ppro_65.png
+.. |image147| image:: images/ppro_75.png
+.. |image148| image:: images/ppro_57.png
