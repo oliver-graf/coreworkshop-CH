@@ -62,12 +62,10 @@ In this lab story we will now use X-Play to create a Playbook to automatically a
 **Recipient:** Fill in your email address.
 
 **Subject :**
-Playbook {{playbook.playbook_name}} addressed alert {{trigger[0].alert_entity_info.name}}
+Playbook: Playbook Name Alert: Alert Name
 
 **Message:**
-Prism Pro X-FIT detected  {{trigger[0].alert_entity_info.name}} in {{trigger[0].source_entity_info.name}}. Prism Pro X-Play has run the playbook of "{{playbook.playbook_name}}". As a result, Prism Pro increased 1GB memory in {{trigger[0].source_entity_info.name}}.
-
-You are welcome to compose your own subject message. The above is just an example. You could use the “parameters” to enrich the message.
+Prism Pro X-FIT detected Alert: Alert Name in Alert: Source Entity Name  Prism Pro X-Play has run the playbook of Playbook: Playbook Name  As a result, Prism Pro increased 1GB memory in Alert: Source Entity Name
 
    |image125|
 
@@ -242,3 +240,6 @@ Takeaways
 .. |image146| image:: images/ppro_65.png
 .. |image147| image:: images/ppro_75.png
 .. |image148| image:: images/ppro_57.png
+.. |image149| image:: images/ppro_77.png
+.. |image150| image:: images/ppro_78.png
+
