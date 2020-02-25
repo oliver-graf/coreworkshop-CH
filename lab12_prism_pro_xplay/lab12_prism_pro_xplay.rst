@@ -591,7 +591,9 @@ This exercise will show how you can easily include 3rd party tools into X-Play. 
 
 3. Run stress again to generate memory pressure:
 
-4. stress -m 4 --vm-bytes 500M
+ .. code-block:: bash
+
+   stress -m 4 --vm-bytes 500M
 
 .. Note::
 
@@ -606,9 +608,15 @@ Setup IFTTT
 
 3. Click on **Services > Webhooks**.
 
+   |image11|
+
 4. Click **Connect**.
 
+   |image12|
+
 5. Click the **Settings** button at the top right.
+
+   |image13|
 
 6. Copy the URL shown in the **Settings** (e.g. https://maker.ifttt.com/use/xxxxxyyyyzzz).
 
@@ -624,13 +632,21 @@ Setup IFTTT
 
 9.  Click **New Applet**.
 
+   |image14|
+
 10. Click **+this**.
 
 ..
 
    This is where you will set up the Webhook URL that X-Play can trigger.
 
+   |image15|
+
+
 11. Search and click **Webhooks**.
+
+   |image16|
+
 
 12. Click **Receive a web request**.
 
@@ -641,6 +657,9 @@ Setup IFTTT
    For example, if the event name is **xplay**, the Webhook URL you will use in X-Play will be something like this:
 
    https://maker.ifttt.com/trigger/xplay/with/key/xxxxxyyyzzz
+
+   |image17|
+
 
 14. Click **Create Trigger**.
 
@@ -685,6 +704,9 @@ Setup IFTTT
     -  **Message** - Nutanix X-FIT just detected an issue of {{Value1}} in {{Value2}} VM. Playbook “{{Value3}}” has increased its memory by 1GB. – This message was sent by Prism Pro on {{OccurredAt}}.
 
     -  **Title** - Nutanix Prism Pro just fixed an issue for you.
+
+   |image18|
+
 
 22. Click **Create Action > Finish**.
 
@@ -760,8 +782,7 @@ What are the key things you should know about **Prism Pro: X-Play**?
 
 -  X-Play enables admins to confidently automate their daily tasks within minutes.
 
-Getting Connected
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 .. |image01| image:: images/image01.png
@@ -774,3 +795,11 @@ Getting Connected
 .. |image08| image:: images/image08.png
 .. |image09| image:: images/image09.png
 .. |image10| image:: images/image10.png
+.. |image11| image:: images/image14.png
+.. |image12| image:: images/image15.png
+.. |image13| image:: images/image16.png
+.. |image14| image:: images/image17.png
+.. |image15| image:: images/image18.png
+.. |image16| image:: images/image19.png
+.. |image17| image:: images/image20.png
+.. |image18| image:: images/image21.png
