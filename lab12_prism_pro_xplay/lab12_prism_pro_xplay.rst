@@ -259,7 +259,7 @@ Reset VM Memory
 1. Change your *Initials*\ **-centos7** memory back to 2GB you have to power off the vm to reduce the memory, as well add 2 more vcpus
 
 Reduce CPU Capacity for a VM During a Maintenance Window 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+========================================================
 
 X-Fit in Prism Pro utilizes Machine Learning to continually analyze the environment. This is helpful to detect resource constraints, such as our memory constraint in the last lab, or inefficiencies such as VMs with too many vCPUs or too much memory.
 
