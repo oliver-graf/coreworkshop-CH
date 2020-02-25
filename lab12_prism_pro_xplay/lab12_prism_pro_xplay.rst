@@ -65,9 +65,10 @@ In this lab story we will now use X-Play to create a Playbook to automatically a
 ``Playbook {{playbook.playbook_name}} addressed alert {{trigger[0].alert_entity_info.name}}``
 
 **Message:**
-``Prism Pro X-FIT detected  {{trigger[0].alert_entity_info.name}} in {{trigger[0].source_entity_info.name}}.  
-Prism Pro X-Play has run the playbook of "{{playbook.playbook_name}}". As a result, Prism Pro increased 
-1GB memory in {{trigger[0].source_entity_info.name}}.``
+
+    .. code-block:: bash
+    
+   Prism Pro X-FIT detected  {{trigger[0].alert_entity_info.name}} in {{trigger[0].source_entity_info.name}}. Prism Pro X-Play has run the playbook of "{{playbook.playbook_name}}". As a result, Prism Pro increased 1GB memory in {{trigger[0].source_entity_info.name}}.
 
 You are welcome to compose your own subject message. The above is just an example. You could use the “parameters” to enrich the message.
 
