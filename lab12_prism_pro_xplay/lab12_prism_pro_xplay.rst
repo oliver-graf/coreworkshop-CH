@@ -12,11 +12,6 @@ Follow the prism central unlock procedure if this demo is executed prior
 The demo is already prepped, you will be working with the first IIS VM
 deployed.
 
-The feature is documented `Here <file:///C:/display/SEW/11)+X-Play>`__
-
-Here is a Video about a Xplay Automation
-
-   |image14|
 
 +-----------------------------------------------------+----------+---+
 | .. rubric:: **Learning XPlay**                      |          |   |
@@ -24,9 +19,6 @@ Here is a Video about a Xplay Automation
 +=====================================================+==========+===+
 | -  First step of this demo is to understand what    | |image2| |   |
 |    X-Play is.                                       |          |   |
-|                                                     |          |   |
-| -  Please read up on                                |          |   |
-|    https://nutanix.slack.com/messages/GEG48SGK0     |          |   |
 |                                                     |          |   |
 | -  In short its a operations automation system for  |          |   |
 |    Nutanix.                                         |          |   |
