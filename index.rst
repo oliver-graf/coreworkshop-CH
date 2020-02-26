@@ -268,27 +268,46 @@ Nutanix Image web Address
 http://10.42.194.11/workshop_staging/
 
 
-Access Instructions
-+++++++++++++++++++
 
-The Nutanix Hosted POC environment can be accessed a number of different ways:
+Lab Access User Credentials
++++++++++++++++++++++++++++
+20 x VDI/VPN User Accounts: PHX-POC049-User01, PHX-POC049-User02 … PHX-POC049-User20 etc.
+VDI/VPN User Password: nx2Tech007!
 
+Lab Access Methods
+++++++++++++++++++
 
-Parallels VDI this is slow and shoudl only be used if any thing else dose not work.
-...................................................................................
+**Parallels VDI**
 
-Login to: https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutanix.com (for RTP)
+1. Login to https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutanix.com (for RTP) using your supplied credentials
+2. Select HTML5 (web browser) OR Install the Parallels Client
+3. Select a desktop or application of your choice.
 
-**Username:** POCxxx-User01 (up to POCxxx-User20), **Password:** *<Provided by Instructor>*
+**Pulse Secure VPN Client**
 
-Employee Pulse Secure VPN
-.........................
+1. If client already installed skip to step 5
+2. To download the client, login to either side
 
-To download the client: login to https://xlv-uswest1.nutanix.com or https://xlv-useast1.nutanix.com - **Username:** POCxxx-User01 (up to POCxxx-User20), **Password:** *<Provided by Instructor>*
+  * https://xlv-uswest1.nutanix.com --> for PHX
+  * https://xlv-useast1.nutanix.com --> for RTP
 
-Download and install the client.
+ and using the supplied user credentials
 
-In Pulse Secure Client, **Add** a connection:
+3. Download and install client
+4. Logout of the Web UI
+5. Open client and ADD a connection with the following details:
+
+ * **Type**: Policy Secure (UAC) or Connection Server(VPN)
+ * **Name**: X-Labs - PHX
+ * **Server URL**: xlv-uswest1.nutanix.com
+
+OR
+
+ * **Type**: Policy Secure (UAC) or Connection Server(VPN)
+ * **Name**: X-Labs - RTP
+ * **Server URL**: xlv-useast1.nutanix.com
+
+6. Once setup, login with the supplied credentials
 
 For PHX:
 
@@ -306,8 +325,8 @@ For RTP:
 **Server URL** xlv-useast1.nutanix.com
 ============== ========================================
 
-Bootcamp WLAN Connection
-........................
+Bootcamp WLAN Connection in Baden
+.................................
 
 ============ ==========
 ntnx_hpoc_5G nutanix/4u
