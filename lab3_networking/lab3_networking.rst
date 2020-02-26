@@ -129,7 +129,7 @@ Exercise 4: Creating a New OVS
 
  .. code-block:: bash
 
-     allssh manage_ovs –-bridge_name br1 –-bond_name bond1 –-interfaces 1G update_uplinks
+     allssh manage_ovs --bridge_name br1 --bond_name bond1 --interfaces 1G update_uplinks
 
 **4**. Verify the changes have been successfully written by typing the following command on any CVM:
 
