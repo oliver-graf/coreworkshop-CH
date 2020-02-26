@@ -215,7 +215,7 @@ Exercise 3: Managing Alerts
 
  .. code-block:: bash
 
-         ssh 92.168.5.1 -l root
+         ssh 192.168.5.1 -l root
 
 **18**. Confirm the specific route for the **192.168.5.2** address (which the Data Path Redundancy feature added when Stargate was stopped) is no longer in the hypervisor route table by entering the following command:
 
