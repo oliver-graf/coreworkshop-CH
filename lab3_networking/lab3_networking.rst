@@ -33,39 +33,8 @@ Enable IP address management  **Leave unchecked**
 
 **6**. Click Save to create the network.
 
-Exercise 2: Creating a Managed Network
---------------------------------------
 
-        **Group Exercise**
-
-In this exercise you will work with your lab partner to create an IP address management (IPAM) or managed network.
-
-**1** . Click **+ Create Network**.
-
-**2**. Use the information in the table below to complete the **Create Network** dialog box:
-
-
-================================= ===============================
-Name                              **Network-02**
-VLAN ID                           **yyy1**
-Enable IP address management      **Click the check box to enable.**
-Network IP Address/Prefix Length  **Refer to your lab handout.**
-Gateway IP address                **Refer to your lab handout.**
-Configure Domain Settings         **Uncheck the box**
-================================= ===============================
-
-
-
-**3**. Scroll down and click **+ Create Pool**.
-
-**4**. Fill out the **Add IP Pool** dialog box with the IP pool **Start Address** and **End Address** from your lab handout.
-
-
-  |image022|
-
-**5**. Click **Submit**, then click **Save**.
-
-**6**. Verify you now have an **Unmanaged Network** and a **Managed Network** in the Network **Configuration** dialog box.
+**7**. Verify you now have an **Unmanaged Network** and a **Network-01, Network-02** in the Network **Configuration** dialog box.
 
 
   |image023|
