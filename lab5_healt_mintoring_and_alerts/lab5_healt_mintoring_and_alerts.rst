@@ -116,7 +116,7 @@ Exercise 3: Managing Alerts
 
  .. code-block:: bash
 
-     cluster status \| grep -iw down (or cluster status and scroll to review)
+     cluster status | grep -iw down (or cluster status and scroll to review)
 
 **4**. Log on as the **root** user on the **AHV** hypervisor by entering the following command:
 
@@ -200,7 +200,7 @@ Exercise 3: Managing Alerts
 
  .. code-block:: bash
 
-         cluster status \| grep -i stargate
+         cluster status | grep -i stargate
 
    The output should indicate Stargate is up on all nodes. You may need to run the cluster status several times.
 
