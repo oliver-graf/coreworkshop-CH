@@ -51,6 +51,7 @@ Additionally, the cluster's **Data Services** IP Address has already been config
    - **Name** - *Intials*-Files (e.g. XYZ-Files)
    - **Domain** - <POCname>.nutanix.local
    - **File Server Size** - 1 TiB
+   - **Capacity Configuration** - on a singel node only one vm is provisioned on a 3 Node 3 VMs are provisioned
 
 ..
 
