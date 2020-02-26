@@ -296,7 +296,7 @@ Task 2: Installing the Windows Operating System
 
 **17**. Disable the Server Manager from auto starting. In the **Server Manager** window, click **Manage** at the upper right and select **Server Manager Properties**. In the new dialog box, click the check box for **Do not start Server Manager automatically at logon**. Click **OK** and close the Server Manager. 
 
-**18**. Power off Windows by selecting the four pane **Windows** icon at the lower left, on the **Windows** task bar. Click the **power** icon at the upper-right and choose **Shut down**. Choose **Other (Planned)** from the drop down menu and click **Continue**.
+**18**. Power off Windows by selecting the four pane **Windows** icon at the lower left, on the **Windows** task bar. Click the Right Mouse and **shutdown** Windows. Choose **Other (Planned)** from the drop down menu and click **Continue**.
 
 **19**. Close the console window.
 
