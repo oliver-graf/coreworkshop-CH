@@ -257,7 +257,7 @@ Exercise 4: NCC
 ---------------
 
 NCC Command line
-----------------
+++++++++++++++++
 
 For this part of the lab we are going to run NCC again, but now from a command line. Also we will have a look at what needs to be run to collect log information if a case is opened by the customer and our SREs are asking for a collection of the logs. At the end we’re going to show what our SREs might do with the received data.
 
@@ -371,10 +371,15 @@ After data collection has stopped, the output .tgz file will be available in /ho
 
 **So what does support do with these things?**
 
-*Performance cases do not always fall into a typical “break-fix” category, and are often complex in nature. Additionally, analyzing performance data collected for these cases can be time consuming, and complicated. Performance data bundles are first uploaded to an internal server called `Illuminati <https://illuminati.corp.nutanix.com>`__ where the data will be automatically checked for common performance issues.*
+*Performance cases do not always fall into a typical “break-fix” category, and are often complex in nature. Additionally, analyzing performance data collected for these cases can be time consuming, and complicated. Performance data bundles are first uploaded to an internal server called* `Illuminati <https://illuminati.corp.nutanix.com>`__ *where the data will be automatically checked for common performance issues.*
+
+
+   |image071|
 
 *The resulting report, called the Weather Report, provides key details regarding CPU usage, Oplog usage, Medusa (metadata) latency, and cold tier (HDD) reads to can be used to pinpoint the cause of a given performance issue.*
 
+
+   |image072|
 
 .. |image060| image:: images/img060.jpg
 .. |image061| image:: images/img061.jpg
