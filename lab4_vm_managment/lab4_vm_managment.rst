@@ -29,7 +29,7 @@ Advanced Settings **Do not configure Advanced Settings**
 
 **6**. Click the **gear** icon and in the **Settings** column on the left, locate and click **Image Configuration**.
 
-**7**. Upload the **Windows ToolsVM** to the Image Configuration: 
+**7**. Upload the **Windows2012R2** to the Image Configuration: 
   
   **a**. Click **+ Upload Image**.
 
