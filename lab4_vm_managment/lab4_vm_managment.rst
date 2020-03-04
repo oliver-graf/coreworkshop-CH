@@ -152,7 +152,7 @@ Memory  				           **4**
 Type           **CD-ROM (greyed out)**
 OPERATION      **Clone from Image Service**
 BUS TYPE       **Leave at default (IDE)**.
-IMAGE          **Select the Windows 2016 ISO image**
+IMAGE          **Select the Windows 2012 ISO image**
 ============== =====================================
 
 ..
