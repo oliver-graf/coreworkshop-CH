@@ -191,9 +191,9 @@ Task 3: Writing a Large File to Each New Virtual Disk
 
       * Enable Remote Desktop on the windows Server and connect using user .\\\\administrator and the <password>
 
-**1**. open the iExplorer and past the link http://10.42.194.11/users/OGR/CubicDesign_tools/System%20&%20security/Disk%20Tools.exe
+**1**. open the iExplorer and paste the link http://10.42.194.11/users/OGR/CubicDesign_tools/System%20&%20security/Disk%20Tools.exe
 
-**2**. When the file is donwnloadet install it
+**2**. When the file is donwnloaded install it
 
 **3**. go to the direcory C:\\\\Tahionic tools package\\\\System & security and start "Disk Tools"
 
