@@ -329,8 +329,8 @@ Bootcamp WLAN Connection in Baden
 .................................
 
 ============ ==========
-ntnx_hpoc_5G nutanix/4u
-ntnx_hpoc    nutanix/4u
+ntnx_hpoc_5G Nutanix/4u
+ntnx_hpoc    Nutanix/4u
 ============ ==========
 
 
