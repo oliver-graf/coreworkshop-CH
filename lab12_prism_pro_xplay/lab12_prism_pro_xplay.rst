@@ -384,15 +384,18 @@ Cause CPU Over-Provision
 ..
 
 
-Things to do Next
-=================
+**Things to do Next**
+=====================
 
 As you can see, X-Play paired with X-Fit is very powerful. You can go to **Action Gallery** page and familiarize yourself with all the out-of-the-box Actions to see all the possible things you can do.
 
 1. In **Prism Central** > select **> Operations > Actions Gallery**.
 
-Use X-Play with Other Nutanix Products  (OPTIONAL ONLY)
-======================================
+------------------------------------------
+
+
+Use X-Play with Other Nutanix Products  (**OPTIONAL ONLY**)
+=======================================================
 
 Let’s see how we can use X-Play with other Nutanix products by creating a Playbook to automatically quarantine a bully VM.
 
@@ -436,7 +439,7 @@ Let’s see how we can use X-Play with other Nutanix products by creating a Play
 .. _create-alert-policy-2:
 
 Create Alert Policy 
-=====================
+===================
 
 1. In **Prism Central** > select **> Activity > Alerts**, and Select **Alert Policy** from **Configure** drop-down menu.
 
@@ -479,7 +482,7 @@ Create Alert Policy
    Customers can choose out-of-the-box alert policies (shown below) to detect the bully VM with X-Fit.
 
 Create Custom REST API Action 
-==============================
+=============================
 
 1. In **Prism Central** > select **> Operations > Actions Gallery**.
 
@@ -502,7 +505,7 @@ Create Custom REST API Action
 .. _create-playbook-2:
 
 Create Playbook 
-================
+===============
 
 1. In **Prism Central** > select **> Operations > Playbooks**.
 
