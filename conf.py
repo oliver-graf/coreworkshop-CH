@@ -81,9 +81,19 @@ todo_include_todos = True
 # html_theme_options = {}
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.
-#html_theme_options = {
-
-#}
+html_theme_options = {
+    'canonical_url': '',
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 1,
+    'includehidden': True,
+    'titles_only': False
+}
 
 
 #html_sidebars = {'**': ['localtoc.html']}

@@ -2,6 +2,14 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: ---------------------------------------- 
+  :name: _basic_core
+  :hidden:
+
+  basic_core/basic_core
+
+.. toctree::
+  :maxdepth: 2
   :caption: MANAGING THE NUTANIX CLUSTER
   :name: _lab1_managing_the_nutanix_cluster
   :hidden:
@@ -57,6 +65,14 @@
   :hidden:
 
   lab7_data_protection/lab7_data_protection
+
+.. toctree::
+  :maxdepth: 2
+  :caption: ---------------------------------------- 
+  :name: _advanced_core
+  :hidden:
+
+  advanced_core/advanced_core
 
 .. toctree::
   :maxdepth: 2
