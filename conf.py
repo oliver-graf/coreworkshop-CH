@@ -50,9 +50,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Nutanix Tech Summit 2018'
-copyright = u'2018 Nutanix'
-author = u'Nutanix Global Technical Enablement'
+project = u'Nutanix Switzerland Core Bootcamp'
+copyright = u'2020 Nutanix'
+author = u'Oliver Graf'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -190,3 +190,6 @@ html_static_path = ['_static']
 
 # Output file base name for HTML help builder.
 #htmlhelp_basename = 'NutanixLabsdoc'
+
+#
+html_logo = 'Nutanix_color.png'
