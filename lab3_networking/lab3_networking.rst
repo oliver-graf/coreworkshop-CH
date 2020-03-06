@@ -14,7 +14,9 @@ Exercise 1: Creating an Unmanaged Network
 
 **2**. Click the gear icon, scroll down in Settings to the Network section and click Network Configuration.
 
-**3**. Click Virtual Networks if not already selected.
+    |image024|
+
+**3**. Click Virtual Networks if not already selected. There should be already two networks configured **Network-01** and **Network-02**
 
 
   |image021|
@@ -119,3 +121,4 @@ Exercise 4: Creating a New OVS
 .. |image021| image:: images/img021.jpg
 .. |image022| image:: images/img022.jpg
 .. |image023| image:: images/img023.jpg
+.. |image024| image:: images/img024.jpg
