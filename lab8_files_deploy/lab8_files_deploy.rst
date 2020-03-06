@@ -1,6 +1,6 @@
-.. _lab7_files_deploy:
+.. _lab8_files_deploy:
 
-Lab 7
+Lab 8
 -------------
 
 *Estimated time to complete all Files labs: 1 HOUR*

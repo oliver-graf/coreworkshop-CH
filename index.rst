@@ -56,7 +56,7 @@
   :name: _files_deploy
   :hidden:
 
-  lab7_files_deploy/lab7_files_deploy
+  lab8_files_deploy/lab8_files_deploy
 
 .. toctree::
   :maxdepth: 2
@@ -64,7 +64,7 @@
   :name: _files_smb_share
   :hidden:
 
-  lab8_files_smb_share/lab8_files_smb_share
+  lab9_files_smb_share/lab9_files_smb_share
 
 .. toctree::
   :maxdepth: 2
@@ -72,7 +72,7 @@
   :name: _files_nfs_export
   :hidden:
 
-  lab9_files_nfs_export/lab9_files_nfs_export
+  lab10_files_nfs_export/lab10_files_nfs_export
 
 .. toctree::
   :maxdepth: 2
@@ -80,7 +80,7 @@
   :name: _file_analytics_deploy
   :hidden:
 
-  lab10_file_analytics_deploy/lab10_file_analytics_deploy
+  lab11_file_analytics_deploy/lab11_file_analytics_deploy
 
 .. toctree::
   :maxdepth: 2
@@ -88,7 +88,7 @@
   :name: _file_analytics_scan
   :hidden:
 
-  lab11_file_analytics_scan/lab11_file_analytics_scan
+  lab12_file_analytics_scan/lab12_file_analytics_scan
 
 .. toctree::
   :maxdepth: 2
@@ -96,7 +96,7 @@
   :name: _prism_pro_xplay
   :hidden:
 
-  lab12_prism_pro_xplay/lab12_prism_pro_xplay
+  lab13_prism_pro_xplay/lab13_prism_pro_xplay
 
 .. toctree::
   :maxdepth: 2
