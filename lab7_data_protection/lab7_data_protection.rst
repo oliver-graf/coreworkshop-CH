@@ -1,7 +1,7 @@
 .. _lab7_data_protection:
 
 
-Data Protection Lab
+Lab 7
 ---------------------
 
 Overview
@@ -27,7 +27,7 @@ VM Snapshots
 
 #. Select the **VM Snapshots** tab below the table to view the available snapshots for the selected VM.
 
-   .. figure:: images/manage_workloads_04.png
+   |image001|
 
 #. Under **Actions**, click **Details** to see all of the VM’s properties at the time of the snapshot.
 
@@ -92,7 +92,7 @@ Protection Domains
 
       For environments with remote cluster(s) configured, setting up replication is as easy as defining how many snapshots to keep at each remote site.
 
-      .. figure:: images/snapshot_02.png
+   |image002|
 
 #. Click **Create Schedule**.
 
@@ -106,3 +106,7 @@ Takeaways
 - Nutanix offers data protection solutions for virtual datacenters via different strategies including one-to-one or one-to-many replication.
 - Nutanix provides data protection functions at the VM, file, and volume group level, so VMs and data remain safe in a crash-consistent environment.
 - VM-level snapshot and replication policies can be managed through Prism for any supported hypervisor.
+
+
+.. |image001| image:: images/img039.png
+.. |image002| image:: images/img040.png
