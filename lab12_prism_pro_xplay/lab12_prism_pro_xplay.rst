@@ -391,7 +391,7 @@ As you can see, X-Play paired with X-Fit is very powerful. You can go to **Actio
 
 1. In **Prism Central** > select **> Operations > Actions Gallery**.
 
-Use X-Play with Other Nutanix Products
+Use X-Play with Other Nutanix Products  (OPTIONAL ONLY)
 ======================================
 
 Let’s see how we can use X-Play with other Nutanix products by creating a Playbook to automatically quarantine a bully VM.
