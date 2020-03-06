@@ -82,7 +82,11 @@ Protection Domains
 
 **2**. Provide a name for the PD, and click **Create**.
 
+   |image011|
+
 **2**. Filter or scroll to select the VMs created during this lab that you want to add to the PD.
+
+   |image012|
 
 **3**. Click **Protect Selected Entities** and verify the VMs appear under **Protected Entities**.
 
@@ -96,6 +100,8 @@ Protection Domains
 
 **6**. Configure your desired snapshot frequency (e.g. Repeat every 1 hour)
 
+   |image013|
+
    .. note::
 
       AHV supports NearSync snapshots, with RPOs as low as 1 minute.
@@ -104,7 +110,9 @@ Protection Domains
 
       Multiple schedules can be applied to the same PD, allowing you to take and retain X number of hourly, daily, monthly snapshots.
 
-**7**. Configure a retention policy (e.g. Keep the last 5 snapshots)
+**7**. Configure a retention policy (e.g. Keep the last 6 snapshots)
+
+-------------------------------------------
 
    .. note::
 
@@ -136,4 +144,6 @@ Takeaways
 .. |image008| image:: images/img046.jpg
 .. |image009| image:: images/img047.jpg
 .. |image010| image:: images/img048.jpg
-
+.. |image011| image:: images/img049.jpg
+.. |image012| image:: images/img050.jpg
+.. |image013| image:: images/img051.jpg
