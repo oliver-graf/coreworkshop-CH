@@ -1,6 +1,6 @@
-.. _lab_data_protection:
+.. _lab7_data_protection:
 
----------------------
+
 Data Protection Lab
 ---------------------
 

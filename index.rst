@@ -52,6 +52,14 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: DATA PROTECTION  
+  :name: _data_protection
+  :hidden:
+
+  lab7_data_protection/lab7_data_protection
+
+.. toctree::
+  :maxdepth: 2
   :caption: FILES DEPLOYMENT 
   :name: _files_deploy
   :hidden:
