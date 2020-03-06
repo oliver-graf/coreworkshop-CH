@@ -1,6 +1,6 @@
 .. _prism_pro_xplay:
 
-Lab 12
+Lab 13
 -----------------
 
 *The estimated time to complete this lab is 60 minutes.*

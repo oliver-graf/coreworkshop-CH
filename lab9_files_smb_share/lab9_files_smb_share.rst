@@ -1,6 +1,6 @@
 .. _lab8_files_smb_share:
 
-Lab 8
+Lab 9
 ----------------------------
 
 Overview
