@@ -484,8 +484,8 @@ To be 100% sure you are a CVM, after a ssh connection the CVM will tell you you 
 
 .. code-block:: bash
 
-   oliver.graf@PC11APYQ ~
-   $ ssh nutanix@10.38.14.7
+   oliver.graf@PC11APYQ
+   ssh nutanix@10.38.14.7
    Nutanix Controller VM
    nutanix@10.38.14.7's password:
 

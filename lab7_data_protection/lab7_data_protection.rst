@@ -17,66 +17,84 @@ Data Protection
 VM Snapshots
 ............
 
-#. In **Prism Element > VM > Table**, select your *Initials*-**Linux_VM** VM.
+**1**. In **Prism Element > VM > Table**, select your **Linux_VM**-*Initials* VM.
 
-#. If the VM is powered on, perform a **Guest Shutdown** power action.
+**2**. If the VM is powered on, perform a **Guest Shutdown** power action.
 
-#. Select the VM and click **Snapshot** from the menu below the table.
+   |image003|
 
-#. Provide a name for your snapshot and click **Submit**.
+**3**. Select the VM and click **Take Snapshot** from the menu below the table.
 
-#. Select the **VM Snapshots** tab below the table to view the available snapshots for the selected VM.
+   |image004|
 
-   |image001|
+---------------------
 
-#. Under **Actions**, click **Details** to see all of the VM’s properties at the time of the snapshot.
+   |image005|
+
+**4**. Provide a name for your snapshot and click **Submit**.
+
+**5**. Select the **VM Snapshots** tab below the table to view the available snapshots for the selected VM.
+
+   |image006|
+
+**6**. Under **Actions**, click **Details** to see all of the VM’s properties at the time of the snapshot.
 
    You can see the snapshot contains VM state in addition to just its data.
 
    *Now it's time to break your VM!*
 
-#. Click **Update** to modify your VM and remove both the CD-ROM and DISK by clicking the **X** icon for each item.
+**7**. Click **Update** to modify your VM and remove both the CD-ROM and DISK by clicking the **X** icon for each item.
 
-#. Click **Save**.
+   |image007|
 
-#. Attempt to power on the VM and launch its console window.
+**8**. Click **Save**.
+
+**9**. Attempt to power on the VM and launch its console window.
 
    Note that the VM no longer has any disks from which to boot and that the 2048 game is displayed.
 
-#. Power off the VM.
+   |image008|
 
-#. Under **VM Snapshots**, select your snapshot and click **Restore** to revert the VM to a functioning state.
+**10**. Power off the VM.
+
+**11**. Under **VM Snapshots**, select your snapshot and click **Restore** to revert the VM to a functioning state.
 
    Alternatively you can click **Clone** to restore to a new VM.
 
-#. Verify that the VM boots successfully.
+**12**. Verify that the VM boots successfully.
 
 As previously mentioned, Nutanix snapshots use a `redirect-on-write <https://nutanixbible.com/#anchor-book-of-acropolis-snapshots-and-clones>`_ approach that does not suffer from the performance degradation of chained snapshots found in other hypervisors.
 
 Protection Domains
 ..................
 
-#. In **Prism Element > Data Protection > Table**, click **+ Protection Domain > Async DR** to begin creating a PD.
+**1**. In **Prism Element > Data Protection > Table**, click **+ Protection Domain > Async DR** to begin creating a PD.
+
+   |image009|
+
+------------------------
+
+   |image010|
 
    .. note::
 
       Synchronous replication (Metro Availability) is currently support on ESXi and will be supported in AHV in a future release.
 
-#. Provide a name for the PD, and click **Create**.
+**2**. Provide a name for the PD, and click **Create**.
 
-#. Filter or scroll to select the VMs created during this lab that you want to add to the PD.
+**2**. Filter or scroll to select the VMs created during this lab that you want to add to the PD.
 
-#. Click **Protect Selected Entities** and verify the VMs appear under **Protected Entities**.
+**3**. Click **Protect Selected Entities** and verify the VMs appear under **Protected Entities**.
 
    Consistency groups allow you to group multiple VMs to be snapshot at the same time, e.g. multiple VMs belonging to the same application.
 
    .. note:: Nutanix snapshots can perform application consistent snapshots for supported operating systems with NGT installed. Each VM using application consistent snapshots will be part of its own consistency group.
 
-#. Click **Next**.
+**4**. Click **Next**.
 
-#. Click **New Schedule** to define Recovery Point Objective (RPO) and retention.
+**5**. Click **New Schedule** to define Recovery Point Objective (RPO) and retention.
 
-#. Configure your desired snapshot frequency (e.g. Repeat every 1 hour)
+**6**. Configure your desired snapshot frequency (e.g. Repeat every 1 hour)
 
    .. note::
 
@@ -86,7 +104,7 @@ Protection Domains
 
       Multiple schedules can be applied to the same PD, allowing you to take and retain X number of hourly, daily, monthly snapshots.
 
-#. Configure a retention policy (e.g. Keep the last 5 snapshots)
+**7**. Configure a retention policy (e.g. Keep the last 5 snapshots)
 
    .. note::
 
@@ -94,9 +112,9 @@ Protection Domains
 
    |image002|
 
-#. Click **Create Schedule**.
+**8**. Click **Create Schedule**.
 
-#. Click **Close** to exit.
+**9**. Click **Close** to exit.
 
 That's it! You've successfully configured native data protection in Prism.
 
@@ -110,3 +128,12 @@ Takeaways
 
 .. |image001| image:: images/img039.png
 .. |image002| image:: images/img040.png
+.. |image003| image:: images/img041.jpg
+.. |image004| image:: images/img042.jpg
+.. |image005| image:: images/img043.jpg
+.. |image006| image:: images/img044.jpg
+.. |image007| image:: images/img045.jpg
+.. |image008| image:: images/img046.jpg
+.. |image009| image:: images/img047.jpg
+.. |image010| image:: images/img048.jpg
+
