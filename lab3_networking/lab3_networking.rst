@@ -41,7 +41,7 @@ Enable IP address management  **Leave unchecked**
 
   |image023|
 
-Exercise 3: Managing Open vSwitch (OVS)
+Exercise 2: Managing Open vSwitch (OVS)
 ---------------------------------------
 
     **Group Exercise**
@@ -76,7 +76,7 @@ Exercise 3: Managing Open vSwitch (OVS)
    
    * Which network interfaces are on bond (or port) **br0-up** of the first bridge (**br0**)?
 
-Exercise 4: Creating a New OVS
+Exercise 3: Creating a New OVS
 ------------------------------
 
     **Group Exercise**
