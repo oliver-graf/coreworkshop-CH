@@ -68,9 +68,26 @@ As previously mentioned, Nutanix snapshots use a `redirect-on-write <https://nut
 Remote site
 ...........
 
-**1**. In **Prism Element > Data Protection > Table**, click **+ Protection Domain > Remote Site** to begin creating a PD.
+   **this exercice should be with a group of 2 as we need a secund cluster**
+
+**1**. In **Prism Element > Data Protection > Table**, click **+ Protection Domain > Remote Site** to begin creating a Remote Site.
 
    |image013|
+
+**2**. click on the **+ Remote Site** and add a physical cluster
+
+   |image014|
+
+**3**. Give the **REMOTE SITE NAME** the name of the remote cluster, you have to do this on both clusters. In CAPABILITIES you can choos either backup or Disater Recovery. In this exercise we choos DR. For the ADDRESS you take the IP address of the remote cluster. Click **Add Site**
+
+   |image015|
+
+**4**. At the Settings you can choos different options like Bandwidth Throttling or compression on wire. The Mappings of the Network and vStore, for this exercise we choos **Network-01** on both sides, **images** on source and **Default..** on the Destination. Click **Save**
+
+   |image016|
+   |image017|
+
+
 
 Protection Domains
 ..................
