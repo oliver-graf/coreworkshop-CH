@@ -148,6 +148,8 @@ Protection Domains
 
 **9**. Click **Close** to exit.
 
+You can now try a clone from the image on the remote cluster or do an activate for DR funtionality.
+
 That's it! You've successfully configured native data protection in Prism.
 
 Takeaways
