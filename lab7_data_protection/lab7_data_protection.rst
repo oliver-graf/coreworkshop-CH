@@ -87,7 +87,7 @@ Remote site
    |image016|
    |image017|
 
-
+   *Now as we have setup the remote side we can go tho the next step the Protection Domains*
 
 Protection Domains
 ..................
