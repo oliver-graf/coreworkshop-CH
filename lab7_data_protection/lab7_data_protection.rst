@@ -65,6 +65,13 @@ VM Snapshots
 
 As previously mentioned, Nutanix snapshots use a `redirect-on-write <https://nutanixbible.com/#anchor-book-of-acropolis-snapshots-and-clones>`_ approach that does not suffer from the performance degradation of chained snapshots found in other hypervisors.
 
+Remote site
+...........
+
+**1**. In **Prism Element > Data Protection > Table**, click **+ Protection Domain > Remote Site** to begin creating a PD.
+
+   |image013|
+
 Protection Domains
 ..................
 
@@ -146,4 +153,9 @@ Takeaways
 .. |image010| image:: images/img048.jpg
 .. |image011| image:: images/img049.jpg
 .. |image012| image:: images/img050.jpg
-.. |image013| image:: images/img051.jpg
+.. |image013| image:: images/img052.jpg
+.. |image014| image:: images/img053.jpg
+.. |image015| image:: images/img054.jpg
+.. |image016| image:: images/img055.jpg
+.. |image017| image:: images/img056.jpg
+.. |image018| image:: images/img057.jpg
