@@ -157,7 +157,7 @@ Exercise 4: Exploring Prism Views
     |image012|
 
 
-Exercise 5: Using nCLI
+Exercise 5: Using nCLI **(Optional)**
 ----------------------
 
 In this exercise you will learn the Nutanix Command Line Interface (nCLI):
