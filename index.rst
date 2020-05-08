@@ -301,11 +301,14 @@ VDI/VPN User Password: nx2Tech007!
 Lab Access Methods
 ++++++++++++++++++
 
-**Parallels VDI**
+**Frame VDI**
 
-1. Login to https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutanix.com (for RTP) using your supplied credentials
-2. Select HTML5 (web browser) OR Install the Parallels Client
-3. Select a desktop or application of your choice.
+1. Login to https://frame.nutanix.com/x/labs using your supplied credentials
+2. Select the most applicable datacenter launchpad for the clusters you will be accessing or modify an existing selection using the breadcrumb menu at the top-center of the page
+3. Launch desktop
+
+For further guidance on features like clipboard sync, Frame file transfers, etc. SEs can reference: Frame Tips
+
 
 **Pulse Secure VPN Client**
 
